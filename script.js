@@ -1,4 +1,45 @@
-// Login bilgileri
+// Sayfa yüklendiğinde cache temizleme ve yeniden yükleme
+document.addEventListener('DOMContentLoaded', function() {
+    // Tüm localStorage verilerini temizle (cache temizliği için)
+    if (window.location.search.includes('clearcache=true')) {
+        localStorage.clear();
+        console.log('🧹 Tüm cache temizlendi');
+    }
+
+    // Eğer F5 (yenile) tuşuna basıldıysa localStorage'ı temizle
+    if (performance.getEntriesByType('navigation')[0] && performance.getEntriesByType('navigation')[0].type === 'reload') {
+        localStorage.clear();
+        console.log('🔄 Sayfa yenilendi, localStorage temizlendi');
+    }
+});
+// Tüm fetch isteklerine otomatik cache-busting ekleme
+const originalFetch = window.fetch;
+window.fetch = function(...args) {
+    // Eğer URL zaten ? içeriyorsa &timestamp= ekle, yoksa ?timestamp= ekle
+    if (args[0] && typeof args[0] === 'string') {
+        const separator = args[0].includes('?') ? '&' : '?';
+        args[0] = args[0] + separator + 'timestamp=' + new Date().getTime();
+    }
+    return originalFetch.apply(this, args);
+};
+
+// Cache temizleme fonksiyonu
+function clearAllCache() {
+    if (confirm('Tüm cache temizlenecek ve sayfa yeniden yüklenecek. Devam edilsin mi?')) {
+        localStorage.clear();
+        // Tüm açık pencereleri yeniden yükle
+        window.location.reload();
+    }
+}
+
+// Tüm açık sekmelerde cache temizleme
+function clearAllTabsCache() {
+    if (confirm('Tüm açık sekmelerde cache temizlenecek. Devam edilsin mi?')) {
+        localStorage.clear();
+        // Tüm açık pencereleri yeniden yükle
+        window.location.href = window.location.href + '?clearcache=true';
+    }
+}
 const ADMIN_USERNAME = 'Lordastong';
 const ADMIN_PASSWORD = 'berkay2121';
 
