@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgisayar Programcılığı(ataüni)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<!-- Ana script dosyası -->
+<script src="script.js"></script>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <span class="login-logo">📚</span>
+                <h2>Atatürk Üni</h2>
+                <p>Yönetici Girişi</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" id="loginUsername" class="form-control" placeholder="Kullanıcı adınızı girin" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Şifrenizi girin" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span>🔐</span> Giriş Yap
+                </button>
+                <button type="button" class="btn btn-secondary btn-block" onclick="skipLogin()">
+                    <span>👤</span> Misafir Olarak Devam Et
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Bilgisayar Programcılığı(ataüni)</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="javascript:void(0)" onclick="showPage('home')" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('lessons')" class="nav-link">Konu Anlatımı</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('exams')" class="nav-link">Sınavlar</a></li>
+                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content')" class="nav-link">İçerik Ekle</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('results')" class="nav-link">Sonuçlarım</a></li>
+                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings')" class="nav-link">⚙️</a></li>
+                <li><a href="javascript:void(0)" onclick="logout()" class="nav-link">🚪 Çıkış</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Veriler yükleniyor...</p>
+        </div>
+    </div>
+
+    <!-- Ana Sayfa -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="hero">
+                <h1 class="hero-title">Hoş Geldin! 🎓</h1>
+                <p class="hero-subtitle">Ders çalış, sınavlara hazırlan, başarıya ulaş!</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📖</div>
+                        <div class="stat-number" id="totalLessons">0</div>
+                        <div class="stat-label">Konu</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📝</div>
+                        <div class="stat-number" id="totalQuestions">0</div>
+                        <div class="stat-label">Sınav</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-number" id="completedExams">0</div>
+                        <div class="stat-label">Çözülen Sınav</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-number" id="avgScore">0%</div>
+                        <div class="stat-label">Ortalama Başarı</div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="btn btn-primary" onclick="showPage('lessons')">
+                        <span>📚</span> Konulara Başla
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPage('exams')">
+                        <span>🎯</span> Sınava Gir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konu Anlatımı Sayfası -->
+    <div id="lessons" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>📖 Konu Anlatımı</h2>
+                <p>Öğrenmek istediğin dersi seç, sonra üniteyi aç ve çalışmaya başla</p>
+            </div>
+            
+            <div id="lessonsAccordion" class="accordion-container">
+                <!-- Dersler buraya eklenecek -->
+            </div>
+
+            <!-- Konu Özeti Modal -->
+            <div id="summaryModal" class="modal">
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h3 id="summaryTitle">Konu Özeti</h3>
+                        <button class="close-btn" onclick="closeSummaryModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="summary-content" id="summaryContent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF Görüntüleyici Modal -->
+            <div id="pdfModal" class="modal">
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h3 id="pdfTitle">Konu Anlatımı PDF</h3>
+                        <button class="close-btn" onclick="closePdfModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pdf-controls">
+                            <button class="pdf-btn" onclick="previousPage()">◀ Önceki</button>
+                            <span class="pdf-page-info">
+                                Sayfa <span id="currentPage">1</span> / <span id="totalPages">1</span>
+                            </span>
+                            <button class="pdf-btn" onclick="nextPage()">Sonraki ▶</button>
+                            <button class="pdf-btn" onclick="zoomIn()">🔍+</button>
+                            <button class="pdf-btn" onclick="zoomOut()">🔍-</button>
+                        </div>
+                        <div class="pdf-viewer-container">
+                            <canvas id="pdfCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konu Düzenleme Modal -->
+            <div id="editLessonModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>✏️ Konu Düzenle</h3>
+                        <button class="close-btn" onclick="closeEditLessonModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Konu Başlığı</label>
+                            <input type="text" id="editLessonTitle" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Konu Özeti</label>
+                            <textarea id="editLessonSummary" class="form-control" rows="10" placeholder="Enter tuşu ile yeni satıra geçebilirsiniz..."></textarea>
+                            <small>📝 Enter tuşu ile satır atlatabilirsiniz. Yazınız olduğu gibi gösterilecektir.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Yeni PDF Yükle (Opsiyonel)</label>
+                            <input type="file" id="editLessonPdf" class="form-control" accept=".pdf">
+                            <small>Mevcut PDF'i değiştirmek için yeni dosya seçin</small>
+                        </div>
+                        <div class="modal-actions">
+                            <button class="btn btn-danger" onclick="deleteLessonFromModal()">🗑️ Konuyu Sil</button>
+                            <button class="btn btn-secondary" onclick="closeEditLessonModal()">İptal</button>
+                            <button class="btn btn-primary" onclick="updateLesson()">💾 Güncelle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sınavlar Sayfası -->
+    <div id="exams" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>📝 Sınavlar</h2>
+                <p>Dersi seç, sonra üniteyi aç ve sınava başla</p>
+            </div>
+
+            <div id="examsAccordion" class="accordion-container">
+                <!-- Sınavlar buraya eklenecek -->
+            </div>
+
+            <!-- Konu Özeti Modal -->
+<div id="summaryModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="summaryTitle">📝 Konu Özeti</h3>
+      <button class="close-btn" onclick="closeSummaryModal()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="summaryContent" class="summary-content"></div>
+    </div>
+  </div>
+</div>
+
+            <!-- Sınav Çözme Modal -->
+            <div id="examModal" class="modal">
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h3 id="examTitle">Deneme Sınavı</h3>
+                        <div class="timer" id="examTimer">
+                            <span class="timer-icon">⏱️</span>
+                            <span id="timerDisplay">00:00</span>
+                        </div>
+                        <button class="close-btn" onclick="closeExamModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="questionsContainer"></div>
+                        <button class="btn btn-primary btn-block" id="submitExamBtn" onclick="submitExam()">
+                            Sınavı Bitir
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sonuç Modal -->
+            <div id="resultModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>🎉 Sınav Sonucu</h3>
+                        <button class="close-btn" onclick="closeResultModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="result-display">
+                            <div class="result-score" id="resultScore">0</div>
+                            <div class="result-details" id="resultDetails"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soru Düzenleme Modal -->
+            <div id="editQuestionModal" class="modal">
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h3>✏️ Soru Düzenle</h3>
+                        <button class="close-btn" onclick="closeEditQuestionModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Soru Metni</label>
+                            <textarea id="editQuestionText" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>A Şıkkı</label>
+                            <input type="text" id="editOptionA" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>B Şıkkı</label>
+                            <input type="text" id="editOptionB" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>C Şıkkı</label>
+                            <input type="text" id="editOptionC" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>D Şıkkı</label>
+                            <input type="text" id="editOptionD" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>E Şıkkı</label>
+                            <input type="text" id="editOptionE" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Doğru Cevap</label>
+                            <select id="editCorrectAnswer" class="form-control">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                        </div>
+                        <div class="modal-actions">
+                            <button class="btn btn-danger" onclick="deleteQuestion()">🗑️ Soruyu Sil</button>
+                            <button class="btn btn-secondary" onclick="closeEditQuestionModal()">İptal</button>
+                            <button class="btn btn-primary" onclick="updateQuestion()">💾 Güncelle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İçerik Ekleme Sayfası -->
+    <div id="add-content" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>➕ İçerik Ekle</h2>
+                <p>Yeni konu ve soru ekle</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('add-lesson')">📖 Konu Ekle</button>
+                <button class="tab-btn" onclick="showTab('add-question')">❓ Soru Ekle</button>
+                <button class="tab-btn" onclick="showTab('manage-subjects')">📚 Konu Yönetimi</button>
+            </div>
+
+            <!-- Konu Ekleme Formu -->
+            <div id="add-lesson" class="tab-content active">
+                <div class="form-card">
+                    <h3>📚 Yeni Ders Konusu Ekle</h3>
+                    
+                    <div class="form-group">
+                        <label>Ders Seçin</label>
+                        <select id="lessonSubject" class="form-control" onchange="updateLessonUnits()">
+                            <option value="">Seçiniz...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ünite Seçin</label>
+                        <select id="lessonUnit" class="form-control">
+                            <option value="">Önce ders seçin...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Konu Başlığı</label>
+                        <input type="text" id="lessonTitle" class="form-control" placeholder="Örn: Türev ve Uygulamaları">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Konu Özeti</label>
+                        <textarea id="lessonSummary" class="form-control" rows="12" placeholder="Konu özetini buraya yazın...&#10;&#10;Enter tuşu ile yeni satıra geçebilirsiniz.&#10;&#10;Örnek:&#10;• Önemli formüller&#10;• Ana kavramlar&#10;• İpuçları"></textarea>
+                        <small>📝 Enter tuşu ile satır atlatabilirsiniz. Yazınız olduğu gibi gösterilecektir.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>PDF Dosyası (Opsiyonel)</label>
+                        <input type="file" id="lessonPdf" class="form-control" accept=".pdf">
+                        <small>İsterseniz detaylı konu anlatımı PDF'i ekleyebilirsiniz</small>
+                    </div>
+
+                    <button onclick="addLesson()" class="btn btn-primary">
+                        <span>➕</span> Konu Ekle
+                    </button>
+                </div>
+            </div>
+
+            <!-- Soru Ekleme Formu -->
+            <div id="add-question" class="tab-content">
+                <div class="form-card">
+                    <h3>❓ Yeni Soru Ekle</h3>
+                    
+                    <div class="form-group">
+                        <label>Ders Seçin</label>
+                        <select id="questionSubject" class="form-control" onchange="updateQuestionUnits()">
+                            <option value="">Seçiniz...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ünite Seçin</label>
+                        <select id="questionUnit" class="form-control">
+                            <option value="">Önce ders seçin...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sınav Adı</label>
+                        <input type="text" id="examName" class="form-control" placeholder="Örn: Deneme Sınavı 1">
+                        <small>⚡ Aynı sınav adı ile birden fazla soru ekleyebilirsiniz. Her eklemeden sonra form temizlenecek.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Soru Metni</label>
+                        <textarea id="questionText" class="form-control" rows="3" placeholder="Sorunuzu buraya yazın..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>A Şıkkı</label>
+                        <input type="text" id="optionA" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>B Şıkkı</label>
+                        <input type="text" id="optionB" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>C Şıkkı</label>
+                        <input type="text" id="optionC" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>D Şıkkı</label>
+                        <input type="text" id="optionD" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>E Şıkkı</label>
+                        <input type="text" id="optionE" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Doğru Cevap</label>
+                        <select id="correctAnswer" class="form-control">
+                            <option value="">Seçiniz...</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </div>
+
+                    <button onclick="addQuestion()" class="btn btn-primary">
+                        <span>➕</span> Soru Ekle ve Devam Et
+                    </button>
+                    
+                    <div id="questionAddedMessage" class="success-message" style="display: none;">
+                        ✅ Soru eklendi! Bir sonraki soruyu girebilirsin.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konu Yönetimi -->
+            <div id="manage-subjects" class="tab-content">
+                <div class="form-card">
+                    <h3>📚 Yeni Ders Ekle</h3>
+                    
+                    <div class="form-group">
+                        <label>Ders Adı</label>
+                        <input type="text" id="newSubject" class="form-control" placeholder="Örn: Matematik">
+                    </div>
+                    <button onclick="addSubject()" class="btn btn-primary">
+                        <span>➕</span> Ders Ekle
+                    </button>
+
+                    <hr style="margin: 2rem 0; border-color: var(--border-color);">
+
+                    <h3>📖 Yeni Ünite Ekle</h3>
+                    
+                    <div class="form-group">
+                        <label>Ders Seçin</label>
+                        <select id="unitSubject" class="form-control">
+                            <option value="">Seçiniz...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ünite Adı</label>
+                        <input type="text" id="newUnit" class="form-control" placeholder="Örn: Ünite 1 - Sayılar">
+                    </div>
+                    <button onclick="addUnit()" class="btn btn-primary">
+                        <span>➕</span> Ünite Ekle
+                    </button>
+
+                    <hr style="margin: 2rem 0; border-color: var(--border-color);">
+
+                    <h3>📋 Mevcut Dersler ve Üniteler</h3>
+                    <div id="subjectsList" class="subjects-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sonuçlarım Sayfası -->
+    <div id="results" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>📊 Sınav Sonuçlarım</h2>
+                <p>Geçmiş sınav performansların</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container">
+                <!-- Sonuçlar buraya eklenecek -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Ayarlar Sayfası -->
+    <div id="settings" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>⚙️ Ayarlar</h2>
+                <p>Platform ayarlarını yönet</p>
+            </div>
+
+            <div class="form-card">
+                <h3>🗄️ Veri Yönetimi</h3>
+                
+                <div class="settings-section">
+                    <h4>📤 Verileri Dışa Aktar</h4>
+                    <p class="settings-desc">Tüm verilerinizi JSON dosyası olarak indirebilirsiniz</p>
+                    <button class="btn btn-secondary" onclick="exportData()">
+                        <span>💾</span> data.json İndir
+                    </button>
+                </div>
+
+                <div class="settings-section">
+                    <h4>📥 Verileri İçe Aktar</h4>
+                    <p class="settings-desc">Önceden dışa aktardığınız JSON dosyasını yükleyin</p>
+                    <input type="file" id="importFile" class="form-control" accept=".json">
+                    <button class="btn btn-secondary" onclick="importData()" style="margin-top: 1rem;">
+                        <span>📥</span> JSON Yükle
+                    </button>
+                </div>
+
+                <div class="settings-section">
+                    <h4>🔄 data.txt'den Yeniden Yükle</h4>
+                    <p class="settings-desc">public/data.txt dosyasından verileri yeniden yükleyin</p>
+                    <button class="btn btn-secondary" onclick="reloadFromDataTxt()">
+                        <span>🔄</span> Yeniden Yükle
+                    </button>
+                </div>
+
+                <div class="settings-section">
+                    <h4>🗑️ Tüm Verileri Sil</h4>
+                    <p class="settings-desc" style="color: var(--accent-danger);">
+                        ⚠️ Bu işlem geri alınamaz! Tüm yerel veriler silinecek ve sayfa yenilendiğinde public/data.txt'den veriler geri yüklenecektir.
+                    </p>
+                    <button class="btn btn-danger" onclick="resetAllData()">
+                        <span>🗑️</span> Verileri Sıfırla
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
