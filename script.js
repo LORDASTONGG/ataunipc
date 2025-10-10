@@ -210,7 +210,7 @@ async function loadAndSaveFromDataTxt() {
     try {
         console.log('🔍 public/data.txt yükleniyor...');
         // fetch yolunu projenizin yapısına göre ayarlayın. Genelde public/data.txt kökten erişilebilir.
-        const response = await fetch('public/data.txt');
+        const response = await fetch('public/data.txt?' + new Date().getTime());
 
         if (!response.ok) {
             console.warn(`⚠️ public/data.txt bulunamadı veya erişilemiyor (HTTP ${response.status}).`);
@@ -259,10 +259,10 @@ async function loadData() {
         
         console.log('💾 LocalStorage yüklendi');
         
-        // Her zaman data.txt'den güncel veriyi yükle (F5 için)
+        // Her zaman data.txt'den güncel veriyi yükle (F5 için) - cache busting ile
         if (typeof fetch === 'function') {
             try {
-                const response = await fetch('public/data.txt');
+                const response = await fetch('public/data.txt?' + new Date().getTime());
                 if (response.ok) {
                     const responseText = await response.text();
                     if (responseText.trim() !== '') {
