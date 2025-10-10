@@ -78,9 +78,9 @@
     }
   ],
   "exams": {
-    "Grafik Tasarımı - 1. Ünite : Grafik Tasarımıyla İlgili Temel Kavramlar - 1.ünite özet soruları": [
+    "Grafik Tasarımı - 1. Ünite : Grafik Tasarımıyla İlgili Temel Kavramlar - Ünite 1 Özet Soruları": [
       {
-        "id": 1760133003368,
+        "id": 1760133348775,
         "text": "Aşağıdakilerden hangisi profesyonel bir grafik tasarım programıdır?",
         "options": {
           "A": "Word",
@@ -90,6 +90,114 @@
           "E": "Powerpoint"
         },
         "correctAnswer": "D"
+      },
+      {
+        "id": 1760133385260,
+        "text": "Aşağıdakilerden hangisi Piksel’in tanımıdır?",
+        "options": {
+          "A": "Geometrik formüller içeren, görüntü noktaları ve eğrileri tanımlayarak oluşturulan grafiktir.",
+          "B": "Grafik tasarım yazılımlarında görüntülerin oluşması için yan yana ve üst üste dizilen renk kutucuklarına verilen isimdir.",
+          "C": "Dijital görüntünün en büyük yapı taşıdır.",
+          "D": "Farklı boyut ve renklerde görüntü kalitesini yitirmemesi istenilen çalışmalarda kullanılan grafiğe verilen isimdir.",
+          "E": "Görsel detayların boyutlandırma sonucu kaybolmadığı, görüntü kalitesinin bozulmadığı grafiğe verilen isimdir."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760133418358,
+        "text": "Aşağıdakilerden hangisinde Piksel ile Bitmap arasındaki ilişki doğru\nbelirtilmiştir?",
+        "options": {
+          "A": "Pikseller Bitmap resmi oluşturur",
+          "B": "Bitmap Piksel’i oluşturur",
+          "C": "Piksel Bitmap’ten üstündür.",
+          "D": "Bitmap ve Piksel, Vektör ile aynıdır",
+          "E": "İkisinin birleşimi vektörü oluşturur."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760133454973,
+        "text": "Aşağıdakilerden hangisi dijital medya ortamında grafik tasarımın temel\nözelliklerinden biri değildir?",
+        "options": {
+          "A": "Etkileşimli içerik üretimi",
+          "B": "Gerçek zamanlı iletişim imkânı",
+          "C": "Sadece basılı materyaller için tasarım yapılması",
+          "D": "Farklı dijital platformlara uyarlanabilir içerikler",
+          "E": "Çoklu ortam bileşenlerinin entegrasyonu"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760133497612,
+        "text": "………..… görüntüdeki diğer tüm renkleri oluşturmak için çeşitli miktarlarda\nbirleştirilen renkler kümesidir.\n\nCümlede boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?",
+        "options": {
+          "A": "Renk derinliği",
+          "B": "Ton",
+          "C": "Doygunluk",
+          "D": "Renk",
+          "E": "Renk modu"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760133528813,
+        "text": "RGB renk modunun renkleri aşağıdakilerden hangisinde doğru verilmiştir?",
+        "options": {
+          "A": "Gri, Mavi, Kırmızı",
+          "B": "Sarı, Mavi, Yeşil",
+          "C": "Kırmızı, Yeşil, Mavi",
+          "D": "Cam göbeği, Macenta, Sarı",
+          "E": "Sarı, Siyah, Yeşil"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760133558136,
+        "text": "……………dosya boyutunu küçültmek için görüntü verisini daha verimli bir\nşekilde düzenleyen bir sistemdir.\n\nCümlede boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?",
+        "options": {
+          "A": "Boyut",
+          "B": "Sıkıştırma",
+          "C": "Biçim",
+          "D": "Küçültme",
+          "E": "Düzen"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760133581074,
+        "text": "Aşağıdakilerden hangisi resim biçimlerinden biri değildir?",
+        "options": {
+          "A": "JPG",
+          "B": "GIF",
+          "C": "TIFF",
+          "D": "PDF",
+          "E": "PNG"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760133611161,
+        "text": "Grafik tasarımda yapay zekâ destekli üretken araçlar kullanılırken \"komut\n(prompt)\" kavramı neyi ifade eder?",
+        "options": {
+          "A": "Yapay zekânın ne üreteceğini belirleyen metin açıklamalarıdır.",
+          "B": "Grafik tasarımda kullanılan hazır şablonların genel adıdır.",
+          "C": "Görselin boyutunu değiştirme komutudur.",
+          "D": "Görselin çözünürlüğünü belirleyen ayardır.",
+          "E": "Görselde kullanılacak renk paletinin tanımıdır"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760133646731,
+        "text": "Aşağıdakilerden hangisi yapay zekâ destekli grafik tasarım araçlarının\nsağladığı olanaklardan biri değildir?",
+        "options": {
+          "A": "Metinden görsel üretimi",
+          "B": "Renk paleti önerilerinde bulunma",
+          "C": "Tasarım sürecini hızlandırma",
+          "D": "Yaratıcı fikirler için görsel öneriler sunma",
+          "E": "Görsellerin otomatik olarak metne dönüştürülmesi"
+        },
+        "correctAnswer": "E"
       }
     ]
   },
