@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
     <title>Bilgisayar Programcılığı(ataüni)</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -80,7 +84,7 @@
                     <div class="stat-card">
                         <div class="stat-icon">📝</div>
                         <div class="stat-number" id="totalQuestions">0</div>
-                        <div class="stat-label">Toplam Soru Sayısı</div>
+                        <div class="stat-label">Tüm Sorular</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">✅</div>
@@ -333,7 +337,6 @@
                         <select id="lessonUnit" class="form-control">
                             <option value="">Önce ders seçin...</option>
                         </select>
-
                     </div>
                     
                     <div class="form-group">
@@ -527,53 +530,16 @@
                 </div>
 
                 <div class="settings-section">
-                    <h4>🗑️ Tüm Verileri Sil</h4>
-                    <p class="settings-desc" style="color: var(--accent-danger);">
-                        ⚠️ Bu işlem geri alınamaz! Tüm yerel veriler silinecek ve sayfa yenilendiğinde public/data.txt'den veriler geri yüklenecektir.
-                    </p>
-                    <button class="btn btn-danger" onclick="resetAllData()">
-                        <span>🗑️</span> Verileri Sıfırla
+                    <h4>🧹 Cache Temizle</h4>
+                    <p class="settings-desc">Tarayıcı cache'ini temizleyip sayfayı yenileyin</p>
+                    <button class="btn btn-secondary" onclick="clearAllCache()">
+                        <span>🔄</span> Cache Temizle
+                    </button>
+                    <button class="btn btn-secondary" onclick="clearAllTabsCache()" style="margin-left: 0.5rem;">
+                        <span>🌐</span> Tüm Sekmelerde Temizle
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        // Sayfa yüklendiğinde gerekli ayarları yap
-        document.addEventListener('DOMContentLoaded', function () {
-            // Sağ tık menüsünü devre dışı bırak
-            document.addEventListener('contextmenu', function (e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // Geliştirici araçları kısayollarını engelleme
-            document.addEventListener('keydown', function (e) {
-                // F11 (tam ekran)
-                if (e.key === 'F11') {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // F12 (geliştirici araçları)
-                if (e.key === 'F12') {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+Shift+I (geliştirici araçları)
-                if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+U (kaynak kodu görüntüle)
-                if (e.ctrlKey && e.key === 'u') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-        });
-    </script>
 </body>
-
