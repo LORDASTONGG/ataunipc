@@ -41,24 +41,65 @@
         </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation - GÜNCELLENEN KISIM -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-icon">📚</span>
                 <span class="logo-text">Bilgisayar Programcılığı(ataüni)</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="javascript:void(0)" onclick="showPage('home')" class="nav-link active">Ana Sayfa</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('lessons')" class="nav-link">Konu Anlatımı</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('exams')" class="nav-link">Sınavlar</a></li>
-                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content')" class="nav-link">İçerik Ekle</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('results')" class="nav-link">Sonuçlarım</a></li>
-                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings')" class="nav-link">⚙️</a></li>
-                <li><a href="javascript:void(0)" onclick="logout()" class="nav-link">🚪 Çıkış</a></li>
+            <!-- Hamburger Menu Button -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span>☰</span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('lessons'); closeMobileMenu()" class="nav-link">Konu Anlatımı</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('exams'); closeMobileMenu()" class="nav-link">Sınavlar</a></li>
+                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content'); closeMobileMenu()" class="nav-link">İçerik Ekle</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('results'); closeMobileMenu()" class="nav-link">Sonuçlarım</a></li>
+                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings'); closeMobileMenu()" class="nav-link">⚙️</a></li>
+                <li><a href="javascript:void(0)" onclick="logout(); closeMobileMenu()" class="nav-link">🚪 Çıkış</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
+    <script>
+        // Mobile menu toggle functions
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = '<span>☰</span>';
+            } else {
+                navMenu.classList.add('active');
+                menuToggle.innerHTML = '<span>✕</span>';
+            }
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '<span>☰</span>';
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            
+            if (navMenu && navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            }
+        });
+    </script>
 
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
@@ -543,3 +584,4 @@
         </div>
     </div>
 </body>
+</html>
