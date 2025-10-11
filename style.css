@@ -27,7 +27,6 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -330,6 +329,7 @@ body {
     animation: slideUp 0.3s ease;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .modal-large {
@@ -357,9 +357,6 @@ body {
     flex-wrap: wrap;
     background: var(--bg-secondary);
     flex-shrink: 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
 .modal-header h3 {
@@ -396,7 +393,30 @@ body {
     padding: 1.5rem;
     overflow-y: auto;
     flex: 1;
-    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+/* Exam Modal Special Styles */
+#examModal .modal-body {
+    padding-bottom: 100px; /* Buton için alan */
+}
+
+#questionsContainer {
+    margin-bottom: 20px;
+}
+
+#submitExamBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 560px;
+    z-index: 2010;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+    background: var(--gold-gradient);
+    color: var(--bg-primary);
+    margin: 0;
 }
 
 .modal-actions {
@@ -489,10 +509,6 @@ body {
 }
 
 /* Questions */
-#questionsContainer {
-    margin-bottom: 1rem;
-}
-
 .question-item {
     background: var(--bg-secondary);
     border-radius: 12px;
@@ -1289,11 +1305,6 @@ textarea.form-control {
 /* ==================== MOBILE RESPONSIVE ==================== */
 
 @media screen and (max-width: 768px) {
-    /* Genel body ayarı */
-    body {
-        overflow-x: hidden;
-    }
-
     /* Container */
     .container {
         padding: 1rem;
@@ -1410,18 +1421,32 @@ textarea.form-control {
         font-size: 0.95rem;
     }
 
-    /* Modal - Mobil İçin Özel Düzenleme */
+    /* Modal Mobile Styles */
     .modal {
         padding: 0;
-        align-items: stretch;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .modal.active {
+        display: block;
+        overflow: hidden;
     }
 
     .modal-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
         max-width: 100%;
         max-height: 100vh;
-        height: 100vh;
         border-radius: 0;
         margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .modal-large {
@@ -1434,6 +1459,7 @@ textarea.form-control {
         position: sticky;
         top: 0;
         z-index: 10;
+        flex-shrink: 0;
     }
 
     .modal-header h3 {
@@ -1442,14 +1468,30 @@ textarea.form-control {
         min-width: 0;
     }
 
-    /* Modal Body - Scroll Sorunu Çözümü */
     .modal-body {
-        padding: 1rem;
-        padding-bottom: 8rem; /* Önemli: Butonu görmek için alt boşluk */
+        flex: 1;
         overflow-y: auto;
-        overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
-        max-height: none;
+        padding: 1rem;
+        padding-bottom: 100px;
+    }
+
+    /* Exam Modal Mobile Special */
+    #examModal .modal-body {
+        padding-bottom: 120px; /* Buton için daha fazla alan */
+    }
+
+    #submitExamBtn {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+        max-width: none;
+        transform: none;
+        z-index: 2100;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.9);
+        padding: 1.2rem;
     }
 
     .close-btn {
@@ -1463,10 +1505,6 @@ textarea.form-control {
     .timer {
         padding: 0.4rem 0.7rem;
         font-size: 0.85rem;
-        order: -1;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 0.5rem;
     }
 
     .timer-icon {
@@ -1498,9 +1536,9 @@ textarea.form-control {
         padding: 0.5rem;
     }
 
-    /* Questions */
+    /* Questions Mobile */
     #questionsContainer {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .question-item {
@@ -1531,40 +1569,34 @@ textarea.form-control {
         font-size: 0.9rem;
     }
 
+    /* Modal Actions Mobile */
+    .modal-actions {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-tertiary);
+        padding: 1rem;
+        margin: 1rem -1rem -1rem -1rem;
+        border-top: 2px solid var(--border-color);
+        flex-direction: column;
+        gap: 0.8rem;
+        z-index: 100;
+    }
+
+    .modal-actions .btn {
+        width: 100%;
+        margin: 0;
+    }
+
     /* Buttons */
     .btn {
         padding: 0.9rem 1.5rem;
         font-size: 0.95rem;
     }
 
-    /* Sınavı Bitir Butonu - SORUN ÇÖZÜMÜ */
-    #submitExamBtn {
-        width: 100%;
-        margin-top: 2rem;
-        padding: 1.2rem;
-        font-size: 1.1rem;
-        position: relative; /* sticky değil, normal akışta */
-        bottom: auto;
-        left: auto;
-        right: auto;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
-    }
-
-    /* Modal Actions - Düzenleme Modal'ları İçin */
-    .modal-actions {
-        flex-direction: column;
-        position: relative; /* sticky kaldırıldı */
-        background: transparent;
-        padding: 0;
-        margin: 2rem 0 0 0;
-        border: none;
-        gap: 0.8rem;
-    }
-
-    .modal-actions .btn {
-        width: 100%;
-        margin: 0;
+    .btn-block {
+        margin-top: 1rem;
     }
 
     /* Result Display */
@@ -1608,7 +1640,7 @@ textarea.form-control {
 
     .form-control {
         padding: 0.7rem 0.9rem;
-        font-size: 16px;
+        font-size: 16px; /* Prevents iOS zoom */
     }
 
     /* Accordion */
@@ -1853,22 +1885,16 @@ textarea.form-control {
         padding: 0.8rem 1.2rem;
         font-size: 0.9rem;
     }
-
-    #submitExamBtn {
-        font-size: 1rem;
-        padding: 1.1rem;
-    }
 }
 
 /* Landscape Mobile */
 @media screen and (max-height: 600px) and (orientation: landscape) {
-    .modal-content {
-        max-height: 100vh;
-        height: 100vh;
+    .modal-body {
+        padding-bottom: 100px;
     }
 
-    .modal-body {
-        padding-bottom: 8rem;
+    #examModal .modal-body {
+        padding-bottom: 100px;
     }
 
     .pdf-viewer-container {
@@ -1917,7 +1943,7 @@ textarea.form-control {
     input,
     textarea,
     select {
-        font-size: 16px !important;
+        font-size: 16px !important; /* Prevents iOS zoom */
     }
 }
 
