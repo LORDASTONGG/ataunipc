@@ -2,17 +2,15 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Last-Modified" content="0">
+    <meta name="theme-color" content="#0a0a0a">
     <title>Bilgisayar Programcılığı(ataüni)</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
-<!-- Ana script dosyası -->
-<script src="script.js"></script>
 <body>
     <!-- Login Screen -->
     <div id="loginScreen" class="login-screen">
@@ -41,15 +39,14 @@
         </div>
     </div>
 
-    <!-- Navigation - GÜNCELLENEN KISIM -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-icon">📚</span>
                 <span class="logo-text">Bilgisayar Programcılığı(ataüni)</span>
             </div>
-            <!-- Hamburger Menu Button -->
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
                 <span>☰</span>
             </button>
             <ul class="nav-menu" id="navMenu">
@@ -63,43 +60,6 @@
             </ul>
         </div>
     </nav>
-
-    <!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
-    <script>
-        // Mobile menu toggle functions
-        function toggleMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                menuToggle.innerHTML = '<span>☰</span>';
-            } else {
-                navMenu.classList.add('active');
-                menuToggle.innerHTML = '<span>✕</span>';
-            }
-        }
-
-        function closeMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            navMenu.classList.remove('active');
-            menuToggle.innerHTML = '<span>☰</span>';
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            
-            if (navMenu && navMenu.classList.contains('active')) {
-                if (!navbar.contains(event.target)) {
-                    closeMobileMenu();
-                }
-            }
-        });
-    </script>
 
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
@@ -115,7 +75,7 @@
             <div class="hero">
                 <h1 class="hero-title">Hoş Geldin! 🎓</h1>
                 <p class="hero-subtitle">Ders çalış, sınavlara hazırlan, başarıya ulaş!</p>
-                
+
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-icon">📖</div>
@@ -158,7 +118,7 @@
                 <h2>📖 Konu Anlatımı</h2>
                 <p>Öğrenmek istediğin dersi seç, sonra üniteyi aç ve çalışmaya başla</p>
             </div>
-            
+
             <div id="lessonsAccordion" class="accordion-container">
                 <!-- Dersler buraya eklenecek -->
             </div>
@@ -244,19 +204,6 @@
             <div id="examsAccordion" class="accordion-container">
                 <!-- Sınavlar buraya eklenecek -->
             </div>
-
-            <!-- Konu Özeti Modal -->
-<div id="summaryModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="summaryTitle">📝 Konu Özeti</h3>
-      <button class="close-btn" onclick="closeSummaryModal()">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div id="summaryContent" class="summary-content"></div>
-    </div>
-  </div>
-</div>
 
             <!-- Sınav Çözme Modal -->
             <div id="examModal" class="modal">
@@ -365,7 +312,7 @@
             <div id="add-lesson" class="tab-content active">
                 <div class="form-card">
                     <h3>📚 Yeni Ders Konusu Ekle</h3>
-                    
+
                     <div class="form-group">
                         <label>Ders Seçin</label>
                         <select id="lessonSubject" class="form-control" onchange="updateLessonUnits()">
@@ -379,7 +326,7 @@
                             <option value="">Önce ders seçin...</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Konu Başlığı</label>
                         <input type="text" id="lessonTitle" class="form-control" placeholder="Örn: Türev ve Uygulamaları">
@@ -407,7 +354,7 @@
             <div id="add-question" class="tab-content">
                 <div class="form-card">
                     <h3>❓ Yeni Soru Ekle</h3>
-                    
+
                     <div class="form-group">
                         <label>Ders Seçin</label>
                         <select id="questionSubject" class="form-control" onchange="updateQuestionUnits()">
@@ -473,7 +420,7 @@
                     <button onclick="addQuestion()" class="btn btn-primary">
                         <span>➕</span> Soru Ekle ve Devam Et
                     </button>
-                    
+
                     <div id="questionAddedMessage" class="success-message" style="display: none;">
                         ✅ Soru eklendi! Bir sonraki soruyu girebilirsin.
                     </div>
@@ -484,7 +431,7 @@
             <div id="manage-subjects" class="tab-content">
                 <div class="form-card">
                     <h3>📚 Yeni Ders Ekle</h3>
-                    
+
                     <div class="form-group">
                         <label>Ders Adı</label>
                         <input type="text" id="newSubject" class="form-control" placeholder="Örn: Matematik">
@@ -496,7 +443,7 @@
                     <hr style="margin: 2rem 0; border-color: var(--border-color);">
 
                     <h3>📖 Yeni Ünite Ekle</h3>
-                    
+
                     <div class="form-group">
                         <label>Ders Seçin</label>
                         <select id="unitSubject" class="form-control">
@@ -544,7 +491,7 @@
 
             <div class="form-card">
                 <h3>🗄️ Veri Yönetimi</h3>
-                
+
                 <div class="settings-section">
                     <h4>📤 Verileri Dışa Aktar</h4>
                     <p class="settings-desc">Tüm verilerinizi JSON dosyası olarak indirebilirsiniz</p>
@@ -583,5 +530,55 @@
             </div>
         </div>
     </div>
+
+    <!-- Ana script dosyası -->
+    <script src="script.js"></script>
+
+    <!-- Mobile menu script -->
+    <script>
+        // Mobile menu toggle functions
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.getElementById('mobileMenuToggle');
+
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = '<span>☰</span>';
+                document.body.style.overflow = 'auto';
+            } else {
+                navMenu.classList.add('active');
+                menuToggle.innerHTML = '<span>✕</span>';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.getElementById('mobileMenuToggle');
+            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '<span>☰</span>';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.getElementById('mobileMenuToggle');
+            const navbar = document.querySelector('.navbar');
+
+            if (navMenu && navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target) && event.target !== menuToggle) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Prevent scrolling when menu is open
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+    </script>
 </body>
 </html>
