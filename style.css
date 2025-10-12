@@ -48,6 +48,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -56,6 +57,7 @@ body {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
+    z-index: 1001;
 }
 
 .logo-icon {
@@ -100,6 +102,7 @@ body {
     padding: 0.5rem 0.8rem;
     border-radius: 8px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* Container */
@@ -326,6 +329,7 @@ body {
     animation: slideUp 0.3s ease;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .modal-large {
@@ -344,20 +348,22 @@ body {
 }
 
 .modal-header {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     border-bottom: 2px solid var(--accent-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
     background: var(--bg-secondary);
     flex-shrink: 0;
 }
 
 .modal-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--accent-primary);
     margin: 0;
+    flex: 1;
 }
 
 .close-btn {
@@ -387,11 +393,12 @@ body {
     padding: 1.5rem;
     overflow-y: auto;
     flex: 1;
+    position: relative;
 }
 
 /* Exam Modal Special Styles */
 #examModal .modal-body {
-    padding-bottom: 100px;
+    padding-bottom: 100px; /* Buton için alan */
 }
 
 #questionsContainer {
@@ -1259,6 +1266,7 @@ textarea.form-control {
     max-height: 70vh;
     overflow-y: auto;
     border: 1px solid var(--border-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Success Message */
@@ -1282,6 +1290,18 @@ textarea.form-control {
     display: flex;
 }
 
+/* Initial States */
+.navbar,
+.loading-screen {
+    display: none;
+}
+
+.login-screen.active ~ .navbar,
+.login-screen.active ~ #loadingScreen,
+.login-screen.active ~ .page {
+    display: none !important;
+}
+
 /* ==================== MOBILE RESPONSIVE ==================== */
 
 @media screen and (max-width: 768px) {
@@ -1293,6 +1313,7 @@ textarea.form-control {
     /* Navbar Mobile */
     .nav-container {
         padding: 0 1rem;
+        flex-wrap: wrap;
     }
 
     .logo {
@@ -1305,10 +1326,6 @@ textarea.form-control {
 
     .logo-text {
         font-size: 0.85rem;
-    }
-
-    .mobile-menu-toggle {
-        display: block;
     }
 
     .nav-menu {
@@ -1342,6 +1359,10 @@ textarea.form-control {
         text-align: center;
         padding: 1rem;
         font-size: 1.1rem;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
     }
 
     /* Hero */
@@ -1400,48 +1421,98 @@ textarea.form-control {
         font-size: 0.95rem;
     }
 
-    /* Modal */
+    /* Modal Mobile Styles */
     .modal {
         padding: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .modal.active {
         display: block;
+        overflow: hidden;
     }
 
     .modal-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
-        max-width: 100%;
         height: 100vh;
+        max-width: 100%;
         max-height: 100vh;
         border-radius: 0;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-large {
+        max-width: 100%;
     }
 
     .modal-header {
         padding: 1rem;
+        flex-wrap: nowrap;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        flex-shrink: 0;
     }
 
     .modal-header h3 {
         font-size: 1.1rem;
+        flex: 1;
+        min-width: 0;
     }
 
     .modal-body {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         padding: 1rem;
-        padding-bottom: 120px;
+        padding-bottom: 100px;
     }
 
+    /* Exam Modal Mobile Special */
     #examModal .modal-body {
-        padding-bottom: 120px;
+        padding-bottom: 120px; /* Buton için daha fazla alan */
     }
 
     #submitExamBtn {
+        position: fixed;
         bottom: 10px;
         left: 10px;
         right: 10px;
         width: calc(100% - 20px);
         max-width: none;
         transform: none;
+        z-index: 2100;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.9);
+        padding: 1.2rem;
+    }
+
+    .close-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+    }
+
+    /* Timer in Modal Header */
+    .timer {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .timer-icon {
+        font-size: 1rem;
+    }
+
+    #timerDisplay {
+        font-size: 0.9rem;
     }
 
     /* PDF Controls */
@@ -1457,29 +1528,65 @@ textarea.form-control {
 
     .pdf-page-info {
         font-size: 0.75rem;
+        padding: 0.5rem 0.7rem;
     }
 
     .pdf-viewer-container {
         max-height: 50vh;
+        padding: 0.5rem;
     }
 
-    /* Questions */
+    /* Questions Mobile */
+    #questionsContainer {
+        margin-bottom: 20px;
+    }
+
     .question-item {
         padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .question-number {
+        font-size: 0.95rem;
     }
 
     .question-text {
         font-size: 0.95rem;
+        margin-bottom: 1rem;
     }
 
     .option {
         padding: 0.8rem;
     }
 
-    /* Timer */
-    .timer {
-        padding: 0.4rem 0.7rem;
-        font-size: 0.85rem;
+    .option input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 0.8rem;
+    }
+
+    .option label {
+        font-size: 0.9rem;
+    }
+
+    /* Modal Actions Mobile */
+    .modal-actions {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-tertiary);
+        padding: 1rem;
+        margin: 1rem -1rem -1rem -1rem;
+        border-top: 2px solid var(--border-color);
+        flex-direction: column;
+        gap: 0.8rem;
+        z-index: 100;
+    }
+
+    .modal-actions .btn {
+        width: 100%;
+        margin: 0;
     }
 
     /* Buttons */
@@ -1488,13 +1595,8 @@ textarea.form-control {
         font-size: 0.95rem;
     }
 
-    /* Modal Actions */
-    .modal-actions {
-        flex-direction: column;
-    }
-
-    .modal-actions .btn {
-        width: 100%;
+    .btn-block {
+        margin-top: 1rem;
     }
 
     /* Result Display */
@@ -1506,9 +1608,15 @@ textarea.form-control {
         font-size: 3.5rem;
     }
 
+    .result-details {
+        font-size: 1rem;
+    }
+
     /* Tabs */
     .tabs {
+        gap: 0.5rem;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .tab-btn {
@@ -1521,8 +1629,18 @@ textarea.form-control {
         padding: 1.5rem;
     }
 
+    .form-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+
     .form-control {
-        font-size: 16px;
+        padding: 0.7rem 0.9rem;
+        font-size: 16px; /* Prevents iOS zoom */
     }
 
     /* Accordion */
@@ -1530,33 +1648,115 @@ textarea.form-control {
         padding: 1rem;
     }
 
+    .subject-accordion-title {
+        gap: 0.7rem;
+    }
+
+    .subject-icon {
+        font-size: 1.5rem;
+    }
+
     .subject-name-text {
         font-size: 1.1rem;
+    }
+
+    .subject-count {
+        font-size: 0.8rem;
+    }
+
+    .accordion-arrow {
+        font-size: 1.2rem;
     }
 
     .unit-accordion-header {
         padding: 0.9rem 1rem;
     }
 
+    .unit-icon {
+        font-size: 1.2rem;
+    }
+
+    .unit-name-text {
+        font-size: 1rem;
+    }
+
+    .unit-count {
+        font-size: 0.75rem;
+    }
+
     /* Unit Items Grid */
     .unit-items-grid {
         grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .unit-lesson-card, .unit-exam-card {
+        padding: 1rem;
+    }
+
+    .unit-lesson-title, .unit-exam-title {
+        font-size: 1rem;
+    }
+
+    .lesson-btn-small {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
     }
 
     /* Subjects List */
+    .subject-item {
+        padding: 1rem;
+    }
+
     .subject-header {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .subject-name {
+        font-size: 1.1rem;
+    }
+
     .delete-btn {
         width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+    }
+
+    .units-list {
+        padding-left: 0.5rem;
+    }
+
+    .unit-item {
+        padding: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* Results */
     .result-card {
         flex-direction: column;
+        padding: 1.5rem;
         text-align: center;
+    }
+
+    .result-info {
+        width: 100%;
+    }
+
+    .result-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .result-meta {
+        font-size: 0.85rem;
+    }
+
+    .score-circle {
+        width: 70px;
+        height: 70px;
+        font-size: 1.3rem;
+        margin: 1rem auto 0.5rem;
     }
 
     /* Settings */
@@ -1564,24 +1764,54 @@ textarea.form-control {
         padding: 1.5rem;
     }
 
+    .settings-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .settings-desc {
+        font-size: 0.9rem;
+    }
+
     .settings-section .btn {
         width: 100%;
-        margin: 0.5rem 0;
     }
 
     /* Login */
     .login-container {
         padding: 2rem 1.5rem;
+        width: 95%;
     }
 
     .login-logo {
         font-size: 3rem;
     }
 
+    .login-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .login-header p {
+        font-size: 0.95rem;
+    }
+
     /* Summary Content */
     .summary-content {
         padding: 1rem;
         font-size: 0.95rem;
+        max-height: 60vh;
+    }
+
+    /* Empty State */
+    .empty-state {
+        padding: 3rem 1rem;
+    }
+
+    .empty-icon {
+        font-size: 3.5rem;
+    }
+
+    .empty-text {
+        font-size: 1rem;
     }
 
     /* Custom Alert */
@@ -1590,6 +1820,13 @@ textarea.form-control {
         right: 10px;
         left: 10px;
         max-width: calc(100% - 20px);
+        font-size: 0.9rem;
+    }
+
+    /* Exam Info */
+    .exam-info-small {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
 
@@ -1597,6 +1834,10 @@ textarea.form-control {
 @media screen and (max-width: 480px) {
     .hero-title {
         font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
     }
 
     .stat-number {
@@ -1607,16 +1848,106 @@ textarea.form-control {
         font-size: 1.5rem;
     }
 
+    .modal-header h3 {
+        font-size: 1rem;
+    }
+
     .result-score {
         font-size: 3rem;
+    }
+
+    .subject-name-text {
+        font-size: 1rem;
+    }
+
+    .form-card {
+        padding: 1rem;
+    }
+
+    .login-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .pdf-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .pdf-page-info {
+        font-size: 0.7rem;
     }
 
     .logo-text {
         font-size: 0.75rem;
     }
+
+    .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
 }
 
-/* Scrollbar */
+/* Landscape Mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .modal-body {
+        padding-bottom: 100px;
+    }
+
+    #examModal .modal-body {
+        padding-bottom: 100px;
+    }
+
+    .pdf-viewer-container {
+        max-height: 40vh;
+    }
+
+    .summary-content {
+        max-height: 40vh;
+    }
+
+    .hero {
+        padding: 1rem 0;
+    }
+
+    .stats-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .nav-link,
+    .option,
+    .subject-accordion-header,
+    .unit-accordion-header,
+    .lesson-btn-small {
+        min-height: 44px;
+    }
+
+    .close-btn {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .option {
+        padding: 1rem;
+    }
+
+    .form-control,
+    input,
+    textarea,
+    select {
+        font-size: 16px !important; /* Prevents iOS zoom */
+    }
+}
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
