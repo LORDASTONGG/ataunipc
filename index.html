@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
-<!-- Ana script dosyası -->
-<script src="script.js"></script>
 <body>
+    <!-- Ana script dosyası -->
+    <script src="script.js"></script>
+
     <!-- Login Screen -->
     <div id="loginScreen" class="login-screen">
         <div class="login-container">
@@ -49,8 +50,8 @@
                 <span class="logo-text">Bilgisayar Programcılığı(ataüni)</span>
             </div>
             <!-- Hamburger Menu Button -->
-            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menu">
-                <span id="menuIcon">☰</span>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span>☰</span>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">Ana Sayfa</a></li>
@@ -536,57 +537,59 @@
 
     <!-- MOBILE MENU SCRIPT -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        const menuIcon = document.getElementById('menuIcon');
-        const navbar = document.querySelector('.navbar');
-        
-        if (menuBtn && navMenu) {
-            // Hamburger tıklama
-            menuBtn.onclick = function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    menuIcon.textContent = '☰';
-                } else {
-                    navMenu.classList.add('active');
-                    menuIcon.textContent = '✕';
-                }
-            };
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
             
-            // Menü linklerine tıklayınca kapat
-            const navLinks = navMenu.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.onclick = function() {
-                    setTimeout(function() {
-                        navMenu.classList.remove('active');
-                        menuIcon.textContent = '☰';
-                    }, 100);
-                };
-            });
+            if (!navMenu || !menuToggle) return;
             
-            // Dışarı tıklayınca kapat
-            document.onclick = function(e) {
-                if (navMenu.classList.contains('active') && !navbar.contains(e.target)) {
-                    navMenu.classList.remove('active');
-                    menuIcon.textContent = '☰';
-                }
-            };
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = '<span>☰</span>';
+            } else {
+                navMenu.classList.add('active');
+                menuToggle.innerHTML = '<span>✕</span>';
+            }
         }
-    });
 
-    // Global fonksiyon (diğer yerlerden çağrılabilmesi için)
-    function closeMobileMenu() {
-        const navMenu = document.getElementById('navMenu');
-        const menuIcon = document.getElementById('menuIcon');
-        if (navMenu) {
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!navMenu || !menuToggle) return;
+            
             navMenu.classList.remove('active');
-            if (menuIcon) menuIcon.textContent = '☰';
+            menuToggle.innerHTML = '<span>☰</span>';
         }
-    }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            
+            if (!navMenu || !menuToggle || !navbar) return;
+            
+            if (navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Touch event support
+        document.addEventListener('touchstart', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navbar = document.querySelector('.navbar');
+            
+            if (!navMenu || !navbar) return;
+            
+            if (navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            }
+        }, { passive: true });
     </script>
 </body>
 </html>
