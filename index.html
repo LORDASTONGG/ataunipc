@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
+<!-- Ana script dosyası -->
+<script src="script.js"></script>
 <body>
     <!-- Login Screen -->
     <div id="loginScreen" class="login-screen">
@@ -39,8 +41,8 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar" style="display: none;">
+    <!-- Navigation - GÜNCELLENEN KISIM -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-icon">📚</span>
@@ -54,16 +56,96 @@
                 <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">Ana Sayfa</a></li>
                 <li><a href="javascript:void(0)" onclick="showPage('lessons'); closeMobileMenu()" class="nav-link">Konu Anlatımı</a></li>
                 <li><a href="javascript:void(0)" onclick="showPage('exams'); closeMobileMenu()" class="nav-link">Sınavlar</a></li>
-                <li id="navAddContent" style="display: none;"><a href="javascript:void(0)" onclick="showPage('add-content'); closeMobileMenu()" class="nav-link">İçerik Ekle</a></li>
+                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content'); closeMobileMenu()" class="nav-link">İçerik Ekle</a></li>
                 <li><a href="javascript:void(0)" onclick="showPage('results'); closeMobileMenu()" class="nav-link">Sonuçlarım</a></li>
-                <li id="navSettings" style="display: none;"><a href="javascript:void(0)" onclick="showPage('settings'); closeMobileMenu()" class="nav-link">⚙️</a></li>
+                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings'); closeMobileMenu()" class="nav-link">⚙️</a></li>
                 <li><a href="javascript:void(0)" onclick="logout(); closeMobileMenu()" class="nav-link">🚪 Çıkış</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
+<!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
+<script>
+    // Mobile menu toggle functions - İyileştirilmiş versiyon
+    function toggleMobileMenu() {
+        const navMenu = document.getElementById('navMenu');
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        
+        if (!navMenu || !menuToggle) return;
+        
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '<span>☰</span>';
+        } else {
+            navMenu.classList.add('active');
+            menuToggle.innerHTML = '<span>✕</span>';
+        }
+    }
+
+    function closeMobileMenu() {
+        const navMenu = document.getElementById('navMenu');
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        
+        if (!navMenu || !menuToggle) return;
+        
+        navMenu.classList.remove('active');
+        menuToggle.innerHTML = '<span>☰</span>';
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const navMenu = document.getElementById('navMenu');
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navbar = document.querySelector('.navbar');
+        
+        if (!navMenu || !menuToggle || !navbar) return;
+        
+        if (navMenu.classList.contains('active')) {
+            if (!navbar.contains(event.target)) {
+                closeMobileMenu();
+            }
+        }
+    });
+
+    // Touch event support
+    document.addEventListener('touchstart', function(event) {
+        const navMenu = document.getElementById('navMenu');
+        const navbar = document.querySelector('.navbar');
+        
+        if (!navMenu || !navbar) return;
+        
+        if (navMenu.classList.contains('active')) {
+            if (!navbar.contains(event.target)) {
+                closeMobileMenu();
+            }
+        }
+    }, { passive: true });
+
+    // Prevent body scroll when menu is open
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                const navMenu = document.getElementById('navMenu');
+                if (navMenu && mutation.target === navMenu) {
+                    if (navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+        });
+        
+        const navMenu = document.getElementById('navMenu');
+        if (navMenu) {
+            observer.observe(navMenu, { attributes: true, attributeFilter: ['class'] });
+        }
+    });
+</script>
+
     <!-- Loading Screen -->
-    <div id="loadingScreen" class="loading-screen" style="display: none;">
+    <div id="loadingScreen" class="loading-screen">
         <div class="loading-content">
             <div class="loading-spinner"></div>
             <p class="loading-text">Veriler yükleniyor...</p>
@@ -71,7 +153,7 @@
     </div>
 
     <!-- Ana Sayfa -->
-    <div id="home" class="page" style="display: none;">
+    <div id="home" class="page active">
         <div class="container">
             <div class="hero">
                 <h1 class="hero-title">Hoş Geldin! 🎓</h1>
@@ -113,7 +195,7 @@
     </div>
 
     <!-- Konu Anlatımı Sayfası -->
-    <div id="lessons" class="page" style="display: none;">
+    <div id="lessons" class="page">
         <div class="container">
             <div class="page-header">
                 <h2>📖 Konu Anlatımı</h2>
@@ -195,7 +277,7 @@
     </div>
 
     <!-- Sınavlar Sayfası -->
-    <div id="exams" class="page" style="display: none;">
+    <div id="exams" class="page">
         <div class="container">
             <div class="page-header">
                 <h2>📝 Sınavlar</h2>
@@ -205,6 +287,19 @@
             <div id="examsAccordion" class="accordion-container">
                 <!-- Sınavlar buraya eklenecek -->
             </div>
+
+            <!-- Konu Özeti Modal -->
+<div id="summaryModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="summaryTitle">📝 Konu Özeti</h3>
+      <button class="close-btn" onclick="closeSummaryModal()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="summaryContent" class="summary-content"></div>
+    </div>
+  </div>
+</div>
 
             <!-- Sınav Çözme Modal -->
             <div id="examModal" class="modal">
@@ -296,7 +391,7 @@
     </div>
 
     <!-- İçerik Ekleme Sayfası -->
-    <div id="add-content" class="page" style="display: none;">
+    <div id="add-content" class="page">
         <div class="container">
             <div class="page-header">
                 <h2>➕ İçerik Ekle</h2>
@@ -335,7 +430,7 @@
 
                     <div class="form-group">
                         <label>Konu Özeti</label>
-                        <textarea id="lessonSummary" class="form-control" rows="12" placeholder="Konu özetini buraya yazın...&#10;&#10;Enter tuşu ile yeni satıra geçebilirsiniz."></textarea>
+                        <textarea id="lessonSummary" class="form-control" rows="12" placeholder="Konu özetini buraya yazın...&#10;&#10;Enter tuşu ile yeni satıra geçebilirsiniz.&#10;&#10;Örnek:&#10;• Önemli formüller&#10;• Ana kavramlar&#10;• İpuçları"></textarea>
                         <small>📝 Enter tuşu ile satır atlatabilirsiniz. Yazınız olduğu gibi gösterilecektir.</small>
                     </div>
 
@@ -373,7 +468,7 @@
                     <div class="form-group">
                         <label>Sınav Adı</label>
                         <input type="text" id="examName" class="form-control" placeholder="Örn: Deneme Sınavı 1">
-                        <small>⚡ Aynı sınav adı ile birden fazla soru ekleyebilirsiniz.</small>
+                        <small>⚡ Aynı sınav adı ile birden fazla soru ekleyebilirsiniz. Her eklemeden sonra form temizlenecek.</small>
                     </div>
 
                     <div class="form-group">
@@ -469,7 +564,7 @@
     </div>
 
     <!-- Sonuçlarım Sayfası -->
-    <div id="results" class="page" style="display: none;">
+    <div id="results" class="page">
         <div class="container">
             <div class="page-header">
                 <h2>📊 Sınav Sonuçlarım</h2>
@@ -483,7 +578,7 @@
     </div>
 
     <!-- Ayarlar Sayfası -->
-    <div id="settings" class="page" style="display: none;">
+    <div id="settings" class="page">
         <div class="container">
             <div class="page-header">
                 <h2>⚙️ Ayarlar</h2>
@@ -531,121 +626,5 @@
             </div>
         </div>
     </div>
-
-    <!-- NAVIGATION SCRIPTS -->
-    <script>
-        // Sayfa geçiş fonksiyonu
-        function showPage(pageId) {
-            // Tüm sayfaları gizle
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.style.display = 'none';
-                page.classList.remove('active');
-            });
-            
-            // Seçilen sayfayı göster
-            const selectedPage = document.getElementById(pageId);
-            if (selectedPage) {
-                selectedPage.style.display = 'block';
-                selectedPage.classList.add('active');
-            }
-            
-            // Nav linklerini güncelle
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            
-            // Aktif linki işaretle
-            const activeLink = document.querySelector(`[onclick*="showPage('${pageId}')"]`);
-            if (activeLink) {
-                activeLink.classList.add('active');
-            }
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (!navMenu || !menuToggle) return;
-            
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                menuToggle.innerHTML = '<span>☰</span>';
-            } else {
-                navMenu.classList.add('active');
-                menuToggle.innerHTML = '<span>✕</span>';
-            }
-        }
-
-        function closeMobileMenu() {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (!navMenu || !menuToggle) return;
-            
-            navMenu.classList.remove('active');
-            menuToggle.innerHTML = '<span>☰</span>';
-        }
-
-        // Login fonksiyonu
-        function skipLogin() {
-            document.getElementById('loginScreen').style.display = 'none';
-            document.getElementById('navbar').style.display = 'block';
-            showPage('home');
-        }
-
-        // Logout fonksiyonu
-        function logout() {
-            document.getElementById('navbar').style.display = 'none';
-            document.getElementById('loginScreen').style.display = 'flex';
-            
-            // Tüm sayfaları gizle
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.style.display = 'none';
-                page.classList.remove('active');
-            });
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            
-            if (!navMenu || !menuToggle || !navbar) return;
-            
-            if (navMenu.classList.contains('active')) {
-                if (!navbar.contains(event.target)) {
-                    closeMobileMenu();
-                }
-            }
-        });
-
-        // Touch event support
-        document.addEventListener('touchstart', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const navbar = document.querySelector('.navbar');
-            
-            if (!navMenu || !navbar) return;
-            
-            if (navMenu.classList.contains('active')) {
-                if (!navbar.contains(event.target)) {
-                    closeMobileMenu();
-                }
-            }
-        }, { passive: true });
-
-        // Sayfa yüklendiğinde
-        document.addEventListener('DOMContentLoaded', function() {
-            // Login ekranını göster
-            document.getElementById('loginScreen').style.display = 'flex';
-        });
-    </script>
-
-    <!-- Ana script dosyası (diğer fonksiyonlar için) -->
-    <script src="script.js"></script>
 </body>
 </html>
