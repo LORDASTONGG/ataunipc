@@ -27,6 +27,7 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -1343,6 +1344,7 @@ textarea.form-control {
         gap: 0.5rem;
         transition: left 0.3s ease;
         overflow-y: auto;
+        z-index: 1000;
     }
 
     .nav-menu.active {
@@ -1363,6 +1365,7 @@ textarea.form-control {
 
     .mobile-menu-toggle {
         display: block;
+        margin-left: auto;
     }
 
     /* Hero */
