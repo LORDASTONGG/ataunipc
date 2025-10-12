@@ -27,7 +27,6 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -399,7 +398,7 @@ body {
 
 /* Exam Modal Special Styles */
 #examModal .modal-body {
-    padding-bottom: 100px; /* Buton için alan */
+    padding-bottom: 100px;
 }
 
 #questionsContainer {
@@ -1332,7 +1331,7 @@ textarea.form-control {
     .nav-menu {
         position: fixed;
         top: 65px;
-        left: -100%;
+        left: 0;
         width: 100%;
         height: calc(100vh - 65px);
         background: rgba(26, 26, 26, 0.98);
@@ -1342,13 +1341,13 @@ textarea.form-control {
         justify-content: flex-start;
         padding: 2rem 0;
         gap: 0.5rem;
-        transition: left 0.3s ease;
         overflow-y: auto;
-        z-index: 1000;
+        display: none;
+        z-index: 999;
     }
 
     .nav-menu.active {
-        left: 0;
+        display: flex;
     }
 
     .nav-menu li {
@@ -1365,7 +1364,6 @@ textarea.form-control {
 
     .mobile-menu-toggle {
         display: block;
-        margin-left: auto;
     }
 
     /* Hero */
@@ -1481,7 +1479,7 @@ textarea.form-control {
 
     /* Exam Modal Mobile Special */
     #examModal .modal-body {
-        padding-bottom: 120px; /* Buton için daha fazla alan */
+        padding-bottom: 120px;
     }
 
     #submitExamBtn {
@@ -1643,7 +1641,7 @@ textarea.form-control {
 
     .form-control {
         padding: 0.7rem 0.9rem;
-        font-size: 16px; /* Prevents iOS zoom */
+        font-size: 16px;
     }
 
     /* Accordion */
@@ -1946,7 +1944,7 @@ textarea.form-control {
     input,
     textarea,
     select {
-        font-size: 16px !important; /* Prevents iOS zoom */
+        font-size: 16px !important;
     }
 }
 
