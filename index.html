@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
-<!-- Ana script dosyası -->
-<script src="script.js"></script>
 <body>
     <!-- Login Screen -->
     <div id="loginScreen" class="login-screen">
@@ -41,108 +39,27 @@
         </div>
     </div>
 
-    <!-- Navigation - GÜNCELLENEN KISIM -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-icon">📚</span>
-                <span class="logo-text">Bilgisayar Programcılığı(ataüni)</span>
+                <span class="logo-text">Bilgisayar Programcılığı</span>
             </div>
-            <!-- Hamburger Menu Button -->
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
                 <span>☰</span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">Ana Sayfa</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('lessons'); closeMobileMenu()" class="nav-link">Konu Anlatımı</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('exams'); closeMobileMenu()" class="nav-link">Sınavlar</a></li>
-                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content'); closeMobileMenu()" class="nav-link">İçerik Ekle</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('results'); closeMobileMenu()" class="nav-link">Sonuçlarım</a></li>
-                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings'); closeMobileMenu()" class="nav-link">⚙️</a></li>
-                <li><a href="javascript:void(0)" onclick="logout(); closeMobileMenu()" class="nav-link">🚪 Çıkış</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">🏠 Ana Sayfa</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('lessons'); closeMobileMenu()" class="nav-link">📖 Konu Anlatımı</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('exams'); closeMobileMenu()" class="nav-link">📝 Sınavlar</a></li>
+                <li id="navAddContent"><a href="javascript:void(0)" onclick="showPage('add-content'); closeMobileMenu()" class="nav-link">➕ İçerik Ekle</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('results'); closeMobileMenu()" class="nav-link">📊 Sonuçlarım</a></li>
+                <li id="navSettings"><a href="javascript:void(0)" onclick="showPage('settings'); closeMobileMenu()" class="nav-link">⚙️ Ayarlar</a></li>
+                <li><a href="javascript:void(0)" onclick="logout(); closeMobileMenu()" class="nav-link logout-link">🚪 Çıkış</a></li>
             </ul>
         </div>
     </nav>
-
-    <!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
-<!-- MOBILE MENU SCRIPT - BODY'NİN EN SONUNA EKLE -->
-<script>
-    // Mobile menu toggle functions - İyileştirilmiş versiyon
-    function toggleMobileMenu() {
-        const navMenu = document.getElementById('navMenu');
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        
-        if (!navMenu || !menuToggle) return;
-        
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            menuToggle.innerHTML = '<span>☰</span>';
-        } else {
-            navMenu.classList.add('active');
-            menuToggle.innerHTML = '<span>✕</span>';
-        }
-    }
-
-    function closeMobileMenu() {
-        const navMenu = document.getElementById('navMenu');
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        
-        if (!navMenu || !menuToggle) return;
-        
-        navMenu.classList.remove('active');
-        menuToggle.innerHTML = '<span>☰</span>';
-    }
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        const navMenu = document.getElementById('navMenu');
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const navbar = document.querySelector('.navbar');
-        
-        if (!navMenu || !menuToggle || !navbar) return;
-        
-        if (navMenu.classList.contains('active')) {
-            if (!navbar.contains(event.target)) {
-                closeMobileMenu();
-            }
-        }
-    });
-
-    // Touch event support
-    document.addEventListener('touchstart', function(event) {
-        const navMenu = document.getElementById('navMenu');
-        const navbar = document.querySelector('.navbar');
-        
-        if (!navMenu || !navbar) return;
-        
-        if (navMenu.classList.contains('active')) {
-            if (!navbar.contains(event.target)) {
-                closeMobileMenu();
-            }
-        }
-    }, { passive: true });
-
-    // Prevent body scroll when menu is open
-    document.addEventListener('DOMContentLoaded', function() {
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                const navMenu = document.getElementById('navMenu');
-                if (navMenu && mutation.target === navMenu) {
-                    if (navMenu.classList.contains('active')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                }
-            });
-        });
-        
-        const navMenu = document.getElementById('navMenu');
-        if (navMenu) {
-            observer.observe(navMenu, { attributes: true, attributeFilter: ['class'] });
-        }
-    });
-</script>
 
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
@@ -183,10 +100,10 @@
                 </div>
 
                 <div class="quick-actions">
-                    <button class="btn btn-primary" onclick="showPage('lessons')">
+                    <button class="btn btn-primary btn-large" onclick="showPage('lessons')">
                         <span>📚</span> Konulara Başla
                     </button>
-                    <button class="btn btn-secondary" onclick="showPage('exams')">
+                    <button class="btn btn-secondary btn-large" onclick="showPage('exams')">
                         <span>🎯</span> Sınava Gir
                     </button>
                 </div>
@@ -199,7 +116,7 @@
         <div class="container">
             <div class="page-header">
                 <h2>📖 Konu Anlatımı</h2>
-                <p>Öğrenmek istediğin dersi seç, sonra üniteyi aç ve çalışmaya başla</p>
+                <p>Öğrenmek istediğin dersi seç</p>
             </div>
             
             <div id="lessonsAccordion" class="accordion-container">
@@ -223,18 +140,20 @@
             <div id="pdfModal" class="modal">
                 <div class="modal-content modal-large">
                     <div class="modal-header">
-                        <h3 id="pdfTitle">Konu Anlatımı PDF</h3>
+                        <h3 id="pdfTitle">PDF</h3>
+                        <div class="pdf-controls-header">
+                            <button class="pdf-btn-small" onclick="previousPage()">◀</button>
+                            <span class="pdf-page-info">
+                                <span id="currentPage">1</span>/<span id="totalPages">1</span>
+                            </span>
+                            <button class="pdf-btn-small" onclick="nextPage()">▶</button>
+                        </div>
                         <button class="close-btn" onclick="closePdfModal()">&times;</button>
                     </div>
-                    <div class="modal-body">
-                        <div class="pdf-controls">
-                            <button class="pdf-btn" onclick="previousPage()">◀ Önceki</button>
-                            <span class="pdf-page-info">
-                                Sayfa <span id="currentPage">1</span> / <span id="totalPages">1</span>
-                            </span>
-                            <button class="pdf-btn" onclick="nextPage()">Sonraki ▶</button>
-                            <button class="pdf-btn" onclick="zoomIn()">🔍+</button>
+                    <div class="modal-body modal-body-pdf">
+                        <div class="pdf-zoom-controls">
                             <button class="pdf-btn" onclick="zoomOut()">🔍-</button>
+                            <button class="pdf-btn" onclick="zoomIn()">🔍+</button>
                         </div>
                         <div class="pdf-viewer-container">
                             <canvas id="pdfCanvas"></canvas>
@@ -258,7 +177,7 @@
                         <div class="form-group">
                             <label>Konu Özeti</label>
                             <textarea id="editLessonSummary" class="form-control" rows="10" placeholder="Enter tuşu ile yeni satıra geçebilirsiniz..."></textarea>
-                            <small>📝 Enter tuşu ile satır atlatabilirsiniz. Yazınız olduğu gibi gösterilecektir.</small>
+                            <small>📝 Enter tuşu ile satır atlatabilirsiniz.</small>
                         </div>
                         <div class="form-group">
                             <label>Yeni PDF Yükle (Opsiyonel)</label>
@@ -266,7 +185,7 @@
                             <small>Mevcut PDF'i değiştirmek için yeni dosya seçin</small>
                         </div>
                         <div class="modal-actions">
-                            <button class="btn btn-danger" onclick="deleteLessonFromModal()">🗑️ Konuyu Sil</button>
+                            <button class="btn btn-danger" onclick="deleteLessonFromModal()">🗑️ Sil</button>
                             <button class="btn btn-secondary" onclick="closeEditLessonModal()">İptal</button>
                             <button class="btn btn-primary" onclick="updateLesson()">💾 Güncelle</button>
                         </div>
@@ -281,31 +200,18 @@
         <div class="container">
             <div class="page-header">
                 <h2>📝 Sınavlar</h2>
-                <p>Dersi seç, sonra üniteyi aç ve sınava başla</p>
+                <p>Dersi seç ve sınava başla</p>
             </div>
 
             <div id="examsAccordion" class="accordion-container">
                 <!-- Sınavlar buraya eklenecek -->
             </div>
 
-            <!-- Konu Özeti Modal -->
-<div id="summaryModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="summaryTitle">📝 Konu Özeti</h3>
-      <button class="close-btn" onclick="closeSummaryModal()">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div id="summaryContent" class="summary-content"></div>
-    </div>
-  </div>
-</div>
-
             <!-- Sınav Çözme Modal -->
             <div id="examModal" class="modal">
                 <div class="modal-content modal-large">
                     <div class="modal-header">
-                        <h3 id="examTitle">Deneme Sınavı</h3>
+                        <h3 id="examTitle">Sınav</h3>
                         <div class="timer" id="examTimer">
                             <span class="timer-icon">⏱️</span>
                             <span id="timerDisplay">00:00</span>
@@ -314,8 +220,10 @@
                     </div>
                     <div class="modal-body">
                         <div id="questionsContainer"></div>
+                    </div>
+                    <div class="exam-submit-container">
                         <button class="btn btn-primary btn-block" id="submitExamBtn" onclick="submitExam()">
-                            Sınavı Bitir
+                            ✅ Sınavı Bitir
                         </button>
                     </div>
                 </div>
@@ -380,7 +288,7 @@
                             </select>
                         </div>
                         <div class="modal-actions">
-                            <button class="btn btn-danger" onclick="deleteQuestion()">🗑️ Soruyu Sil</button>
+                            <button class="btn btn-danger" onclick="deleteQuestion()">🗑️ Sil</button>
                             <button class="btn btn-secondary" onclick="closeEditQuestionModal()">İptal</button>
                             <button class="btn btn-primary" onclick="updateQuestion()">💾 Güncelle</button>
                         </div>
@@ -399,15 +307,15 @@
             </div>
 
             <div class="tabs">
-                <button class="tab-btn active" onclick="showTab('add-lesson')">📖 Konu Ekle</button>
-                <button class="tab-btn" onclick="showTab('add-question')">❓ Soru Ekle</button>
-                <button class="tab-btn" onclick="showTab('manage-subjects')">📚 Konu Yönetimi</button>
+                <button class="tab-btn active" onclick="showTab('add-lesson')">📖 Konu</button>
+                <button class="tab-btn" onclick="showTab('add-question')">❓ Soru</button>
+                <button class="tab-btn" onclick="showTab('manage-subjects')">📚 Yönetim</button>
             </div>
 
             <!-- Konu Ekleme Formu -->
             <div id="add-lesson" class="tab-content active">
                 <div class="form-card">
-                    <h3>📚 Yeni Ders Konusu Ekle</h3>
+                    <h3>📚 Yeni Konu Ekle</h3>
                     
                     <div class="form-group">
                         <label>Ders Seçin</label>
@@ -430,17 +338,17 @@
 
                     <div class="form-group">
                         <label>Konu Özeti</label>
-                        <textarea id="lessonSummary" class="form-control" rows="12" placeholder="Konu özetini buraya yazın...&#10;&#10;Enter tuşu ile yeni satıra geçebilirsiniz.&#10;&#10;Örnek:&#10;• Önemli formüller&#10;• Ana kavramlar&#10;• İpuçları"></textarea>
-                        <small>📝 Enter tuşu ile satır atlatabilirsiniz. Yazınız olduğu gibi gösterilecektir.</small>
+                        <textarea id="lessonSummary" class="form-control" rows="12" placeholder="Konu özetini buraya yazın..."></textarea>
+                        <small>📝 Enter ile satır atlayabilirsiniz</small>
                     </div>
 
                     <div class="form-group">
                         <label>PDF Dosyası (Opsiyonel)</label>
                         <input type="file" id="lessonPdf" class="form-control" accept=".pdf">
-                        <small>İsterseniz detaylı konu anlatımı PDF'i ekleyebilirsiniz</small>
+                        <small>İsterseniz PDF ekleyebilirsiniz</small>
                     </div>
 
-                    <button onclick="addLesson()" class="btn btn-primary">
+                    <button onclick="addLesson()" class="btn btn-primary btn-block">
                         <span>➕</span> Konu Ekle
                     </button>
                 </div>
@@ -468,7 +376,7 @@
                     <div class="form-group">
                         <label>Sınav Adı</label>
                         <input type="text" id="examName" class="form-control" placeholder="Örn: Deneme Sınavı 1">
-                        <small>⚡ Aynı sınav adı ile birden fazla soru ekleyebilirsiniz. Her eklemeden sonra form temizlenecek.</small>
+                        <small>⚡ Aynı sınav adı ile birden fazla soru ekleyebilirsiniz</small>
                     </div>
 
                     <div class="form-group">
@@ -513,12 +421,12 @@
                         </select>
                     </div>
 
-                    <button onclick="addQuestion()" class="btn btn-primary">
-                        <span>➕</span> Soru Ekle ve Devam Et
+                    <button onclick="addQuestion()" class="btn btn-primary btn-block">
+                        <span>➕</span> Soru Ekle
                     </button>
                     
                     <div id="questionAddedMessage" class="success-message" style="display: none;">
-                        ✅ Soru eklendi! Bir sonraki soruyu girebilirsin.
+                        ✅ Soru eklendi!
                     </div>
                 </div>
             </div>
@@ -532,7 +440,7 @@
                         <label>Ders Adı</label>
                         <input type="text" id="newSubject" class="form-control" placeholder="Örn: Matematik">
                     </div>
-                    <button onclick="addSubject()" class="btn btn-primary">
+                    <button onclick="addSubject()" class="btn btn-primary btn-block">
                         <span>➕</span> Ders Ekle
                     </button>
 
@@ -550,13 +458,13 @@
                         <label>Ünite Adı</label>
                         <input type="text" id="newUnit" class="form-control" placeholder="Örn: Ünite 1 - Sayılar">
                     </div>
-                    <button onclick="addUnit()" class="btn btn-primary">
+                    <button onclick="addUnit()" class="btn btn-primary btn-block">
                         <span>➕</span> Ünite Ekle
                     </button>
 
                     <hr style="margin: 2rem 0; border-color: var(--border-color);">
 
-                    <h3>📋 Mevcut Dersler ve Üniteler</h3>
+                    <h3>📋 Mevcut Dersler</h3>
                     <div id="subjectsList" class="subjects-list"></div>
                 </div>
             </div>
@@ -567,7 +475,7 @@
     <div id="results" class="page">
         <div class="container">
             <div class="page-header">
-                <h2>📊 Sınav Sonuçlarım</h2>
+                <h2>📊 Sonuçlarım</h2>
                 <p>Geçmiş sınav performansların</p>
             </div>
 
@@ -590,41 +498,101 @@
                 
                 <div class="settings-section">
                     <h4>📤 Verileri Dışa Aktar</h4>
-                    <p class="settings-desc">Tüm verilerinizi JSON dosyası olarak indirebilirsiniz</p>
-                    <button class="btn btn-secondary" onclick="exportData()">
+                    <p class="settings-desc">Tüm verilerinizi JSON dosyası olarak indirin</p>
+                    <button class="btn btn-secondary btn-block" onclick="exportData()">
                         <span>💾</span> data.json İndir
                     </button>
                 </div>
 
                 <div class="settings-section">
                     <h4>📥 Verileri İçe Aktar</h4>
-                    <p class="settings-desc">Önceden dışa aktardığınız JSON dosyasını yükleyin</p>
+                    <p class="settings-desc">JSON dosyasını yükleyin</p>
                     <input type="file" id="importFile" class="form-control" accept=".json">
-                    <button class="btn btn-secondary" onclick="importData()" style="margin-top: 1rem;">
+                    <button class="btn btn-secondary btn-block" onclick="importData()" style="margin-top: 1rem;">
                         <span>📥</span> JSON Yükle
                     </button>
                 </div>
 
                 <div class="settings-section">
                     <h4>🔄 data.txt'den Yeniden Yükle</h4>
-                    <p class="settings-desc">public/data.txt dosyasından verileri yeniden yükleyin</p>
-                    <button class="btn btn-secondary" onclick="reloadFromDataTxt()">
+                    <p class="settings-desc">data.txt dosyasından yeniden yükle</p>
+                    <button class="btn btn-secondary btn-block" onclick="reloadFromDataTxt()">
                         <span>🔄</span> Yeniden Yükle
                     </button>
                 </div>
 
                 <div class="settings-section">
                     <h4>🧹 Cache Temizle</h4>
-                    <p class="settings-desc">Tarayıcı cache'ini temizleyip sayfayı yenileyin</p>
-                    <button class="btn btn-secondary" onclick="clearAllCache()">
+                    <p class="settings-desc">Tarayıcı cache'ini temizle</p>
+                    <button class="btn btn-secondary btn-block" onclick="clearAllCache()">
                         <span>🔄</span> Cache Temizle
-                    </button>
-                    <button class="btn btn-secondary" onclick="clearAllTabsCache()" style="margin-left: 0.5rem;">
-                        <span>🌐</span> Tüm Sekmelerde Temizle
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Ana script dosyası -->
+    <script src="script.js"></script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!navMenu || !menuToggle) return;
+            
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = '<span>☰</span>';
+                document.body.style.overflow = '';
+            } else {
+                navMenu.classList.add('active');
+                menuToggle.innerHTML = '<span>✕</span>';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!navMenu || !menuToggle) return;
+            
+            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '<span>☰</span>';
+            document.body.style.overflow = '';
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            
+            if (!navMenu || !menuToggle || !navbar) return;
+            
+            if (navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Touch support
+        document.addEventListener('touchstart', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navbar = document.querySelector('.navbar');
+            
+            if (!navMenu || !navbar) return;
+            
+            if (navMenu.classList.contains('active')) {
+                if (!navbar.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            }
+        }, { passive: true });
+    </script>
 </body>
 </html>
