@@ -46,9 +46,10 @@
                 <span class="logo-icon">📚</span>
                 <span class="logo-text">Bilgisayar Programcılığı</span>
             </div>
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
-                <span>☰</span>
+            <button class="mobile-menu-toggle" id="menuToggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span class="menu-icon">☰</span>
             </button>
+            <div class="nav-menu-overlay" id="navOverlay" onclick="closeMobileMenu()"></div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="javascript:void(0)" onclick="showPage('home'); closeMobileMenu()" class="nav-link active">🏠 Ana Sayfa</a></li>
                 <li><a href="javascript:void(0)" onclick="showPage('lessons'); closeMobileMenu()" class="nav-link">📖 Konu Anlatımı</a></li>
@@ -535,64 +536,48 @@
     <!-- Ana script dosyası -->
     <script src="script.js"></script>
 
-    <!-- Mobile Menu Script -->
+    <!-- Mobile Menu Script - YENİ VE GELİŞTİRİLMİŞ -->
     <script>
         function toggleMobileMenu() {
             const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            
-            if (!navMenu || !menuToggle) return;
+            const navOverlay = document.getElementById('navOverlay');
+            const menuToggle = document.getElementById('menuToggle');
+            const menuIcon = menuToggle.querySelector('.menu-icon');
             
             if (navMenu.classList.contains('active')) {
+                // Kapat
                 navMenu.classList.remove('active');
-                menuToggle.innerHTML = '<span>☰</span>';
+                navOverlay.classList.remove('active');
+                menuIcon.textContent = '☰';
                 document.body.style.overflow = '';
             } else {
+                // Aç
                 navMenu.classList.add('active');
-                menuToggle.innerHTML = '<span>✕</span>';
+                navOverlay.classList.add('active');
+                menuIcon.textContent = '✕';
                 document.body.style.overflow = 'hidden';
             }
         }
 
         function closeMobileMenu() {
             const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navOverlay = document.getElementById('navOverlay');
+            const menuToggle = document.getElementById('menuToggle');
+            const menuIcon = menuToggle ? menuToggle.querySelector('.menu-icon') : null;
             
-            if (!navMenu || !menuToggle) return;
-            
-            navMenu.classList.remove('active');
-            menuToggle.innerHTML = '<span>☰</span>';
+            if (navMenu) navMenu.classList.remove('active');
+            if (navOverlay) navOverlay.classList.remove('active');
+            if (menuIcon) menuIcon.textContent = '☰';
             document.body.style.overflow = '';
         }
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            
-            if (!navMenu || !menuToggle || !navbar) return;
-            
-            if (navMenu.classList.contains('active')) {
-                if (!navbar.contains(event.target)) {
-                    closeMobileMenu();
-                }
+        // Overlay tıklamasında menüyü kapat
+        document.addEventListener('DOMContentLoaded', function() {
+            const navOverlay = document.getElementById('navOverlay');
+            if (navOverlay) {
+                navOverlay.addEventListener('click', closeMobileMenu);
             }
         });
-
-        // Touch support
-        document.addEventListener('touchstart', function(event) {
-            const navMenu = document.getElementById('navMenu');
-            const navbar = document.querySelector('.navbar');
-            
-            if (!navMenu || !navbar) return;
-            
-            if (navMenu.classList.contains('active')) {
-                if (!navbar.contains(event.target)) {
-                    closeMobileMenu();
-                }
-            }
-        }, { passive: true });
     </script>
 </body>
 </html>
