@@ -1085,13 +1085,67 @@ function deleteExam(examKey) {
 
 // Sınav Çözme
 function startExam(examKey) {
-    currentExam = { key: examKey, questions: exams[examKey], answers: {} };
+    // Try to find the exam with the exact key first
+    if (!exams[examKey]) {
+        // If not found, try to find a matching exam by checking all keys
+        const keyParts = examKey.split(' - ');
+        if (keyParts.length >= 3) {
+            const matchingKey = Object.keys(exams).find(key => 
+                key.includes(keyParts[0]) &&  // Match subject
+                key.includes(keyParts[1]) &&  // Match unit
+                key.includes(keyParts[2])     // Match exam name
+            );
+            
+            if (matchingKey) {
+                console.log(`Found matching exam with key: ${matchingKey}`);
+                examKey = matchingKey;  // Use the found key
+            }
+        }
+        
+        if (!exams[examKey]) {
+            alert('Sınav bulunamadı. Lütfen tekrar deneyin veya yöneticiye başvurun.');
+            console.error('Exam not found:', examKey);
+            console.log('Available exam keys:', Object.keys(exams));
+            return;
+        }
+    }
+    
+    currentExam = { 
+        key: examKey, 
+        questions: Array.isArray(exams[examKey]) ? exams[examKey] : [], 
+        answers: {} 
+    };
+    
+    if (currentExam.questions.length === 0) {
+        alert('Bu sınavda henüz soru bulunmuyor.');
+        return;
+    }
+    
     examStartTime = Date.now();
     startTimer();
     document.getElementById('examTitle').textContent = examKey;
     renderQuestions();
     document.getElementById('submitExamBtn').style.display = 'flex';
     document.getElementById('examModal').classList.add('active');
+}
+
+// Sınav verilerini kontrol etmek için yardımcı fonksiyon
+function checkExamData() {
+    console.log("Mevcut sınav anahtarları:", Object.keys(exams));
+    Object.entries(exams).forEach(([key, value]) => {
+        console.log(`Sınav: ${key}`);
+        console.log(`Soru sayısı: ${Array.isArray(value) ? value.length : 'Geçersiz format (dizi değil)'}`);
+        if (Array.isArray(value) && value.length > 0) {
+            console.log('İlk soru örneği:', JSON.stringify(value[0], null, 2));
+        }
+    });
+    
+    // Tüm sınav anahtarlarını ve soru sayılarını gösteren bir uyarı
+    const examInfo = Object.entries(exams).map(([key, value]) => {
+        return `${key}: ${Array.isArray(value) ? value.length : '0'} soru`;
+    }).join('\n');
+    
+    alert(`Sınav Bilgileri:\n\n${examInfo || 'Hiç sınav bulunamadı.'}\n\nDetaylar için konsolu kontrol edin.`);
 }
 
 function startTimer() {
