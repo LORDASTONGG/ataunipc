@@ -199,6 +199,128 @@
         },
         "correctAnswer": "E"
       }
+    ],
+    "Grafik Tasarımı - 2. Ünite: Grafik Tasarım Programları - 2. Ünite: Grafik Tasarım Programları - Önemli Notlar": [
+      {
+        "id": 1760283123208,
+        "text": "Aşağıdakilerden hangisi ücretsiz bir grafik tasarım yazılımıdır?",
+        "options": {
+          "A": "Adobe Photoshop",
+          "B": "Adobe InDesign",
+          "C": "GIMP",
+          "D": "Corel Draw",
+          "E": "Adobe Illustrator"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760283172096,
+        "text": "Aşağıdakilerden hangisi satın alınmak yerine kiralanarak kullanılabilir?",
+        "options": {
+          "A": "Adobe Photoshop 2025",
+          "B": "Adobe Photoshop CS6",
+          "C": "GIMP",
+          "D": "CorelDRAW Standard",
+          "E": "Inkspace"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760283209202,
+        "text": "Adobe Photoshop kurulumu için öncelikle hangi uygulama kurulmalıdır?",
+        "options": {
+          "A": "Adobe Acrobat",
+          "B": "Adobe InDesign",
+          "C": "Adobe Illustrator",
+          "D": "Image-Pro",
+          "E": "Adobe Creative Cloud"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760283246537,
+        "text": "Adobe Photoshop’un kendi dosyalama biçimi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "PDF",
+          "B": "PSD",
+          "C": "SVG",
+          "D": "JPG",
+          "E": "DOCX"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760283277862,
+        "text": "CorelDRAW ve Adobe Illustrator’ın birbirine rakip olmalarını sağlayan\nözellikler aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Aynı anda birden fazla resim açabilme",
+          "B": "Hem Windows hem de Macintosh bilgisayarlarda kullanılabilme",
+          "C": "Ücretsiz olma",
+          "D": "Vektör tabanlı resim işleme",
+          "E": "Farklı ebatlarda resim yazdırabilme"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760283318026,
+        "text": "Aşağıdakilerden hangisi Adobe Photoshop’un açabileceği dosyalardan\ndeğildir?",
+        "options": {
+          "A": "JPG",
+          "B": "PSD",
+          "C": "PDF",
+          "D": "DOCX",
+          "E": "GIF"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760283341212,
+        "text": "Vektör tabanlı grafiklerin standart haline gelmiş dosya biçimi hangisidir?",
+        "options": {
+          "A": "PSD",
+          "B": "SVG",
+          "C": "PDF",
+          "D": "XVT",
+          "E": "AI"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760283378994,
+        "text": "Aşağıdakilerden hangisi web uygulaması olarak çalışan grafik tasarım\nyazılımıdır?\nI. Photoshop Online\nII. Adobe Express\nIII. Canva\nIV. Adobe InDesign",
+        "options": {
+          "A": "I ve II",
+          "B": "! ve III",
+          "C": "Sadece I",
+          "D": "I, II ve III",
+          "E": "III ve IV"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760283406846,
+        "text": "Ebatları değiştirildiğinde netliğini kaybetmeyen bir poster hazırlamak\nisteyen birisi için en uygun program aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Adobe Photoshop",
+          "B": "Adobe InDesign",
+          "C": "Adobe Illustrator",
+          "D": "GIMP",
+          "E": "Adobe Acrobat"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760283432359,
+        "text": "Kendi dergisini tasarlamak isteyen birisi için en uygun yazılım\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Adobe Photoshop",
+          "B": "Adobe InDesign",
+          "C": "Adobe Illustrator",
+          "D": "GIMP",
+          "E": "Adobe Acrobat"
+        },
+        "correctAnswer": "B"
+      }
     ]
   },
   "results": []
