@@ -443,6 +443,128 @@
         },
         "correctAnswer": "C"
       }
+    ],
+    "Grafik Tasarımı - 4. Ünite : Çalışma Alanı, Çizim Araçları ve Paneller - 4.Ünite Deneme Sınavı": [
+      {
+        "id": 1760354165398,
+        "text": "Adobe Photoshop programının ekranında yer alan paneller, pencereler ve\nçubukların düzenlendiği bölüme “……………..” denir.\nCümlede boş bırakılan yere aşağıdakilerden hangisi gelmelidir?",
+        "options": {
+          "A": "Çalışma alanı",
+          "B": "Çoklu panel",
+          "C": "Seçim araçları",
+          "D": "Seçenekler çubuğu",
+          "E": "Çalışma çubuğu"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760354196076,
+        "text": "Çalışma çubuğu",
+        "options": {
+          "A": "Seçim paneli alanı",
+          "B": "Gezinme paneli alanı",
+          "C": "Başlangıç çalışma alanı",
+          "D": "Çizim alanı",
+          "E": "Araç çubukları paneli"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354230062,
+        "text": "Aşağıdakilerden hangisi Adobe Photoshop programında çalışma alanı\nüzerinde yer almaz?",
+        "options": {
+          "A": "Uygulama çerçevesi",
+          "B": "Görev çubuğu",
+          "C": "Paneller",
+          "D": "Araçlar paneli",
+          "E": "Belge penceresi"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760354263441,
+        "text": "Adobe Photoshop programında kullanıcıların görseller hazırlamasını ve\nhazırladıkları görseller üzerinde düzenlemeler yapmasını sağlayan\naraçların yer aldığı panel aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Katmanlar paneli",
+          "B": "Araçlar panel",
+          "C": "Seçenekler paneli",
+          "D": "Geçmiş paneli",
+          "E": "Renk paneli"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760354301697,
+        "text": "Aşağıdakilerden hangisi Adobe Photoshop programında araçlar panelinde\nyer alan araç gruplarından değildir?",
+        "options": {
+          "A": "Seçim araçları",
+          "B": "Rötuş araçları",
+          "C": "Kayıt araçları",
+          "D": "Boyama araçları",
+          "E": "Çizme araçları"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354334105,
+        "text": "Adobe Photoshop programında dikdörtgen, oval, tek satır ve tek sütun\nseçimleri yapmaya olanak tanıyan araç aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Kement araçları",
+          "B": "İşaretleme araçları",
+          "C": "Hızlı seçim araçları",
+          "D": "Kırpma araçları",
+          "E": "Dilimleme araçları"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760354368534,
+        "text": "Aşağıdakilerden hangisi Adobe Photoshop programında yer alan rötuş\naraçlarından değildir?",
+        "options": {
+          "A": "Nokta düzeltme fırçası",
+          "B": "Düzeltme fırçası",
+          "C": "Dilim aracı",
+          "D": "yama aracı",
+          "E": "Kırmızı Göz aracı"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354392064,
+        "text": "Adobe Photoshop programında görsel üzerindeki istenilen bölgelerin\nrengini açık hale getirmeyi sağlayan araç aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Soldurma Aracı",
+          "B": "Yakma Aracı",
+          "C": "Hızlı Seçim aracı",
+          "D": "Sünger Aracı",
+          "E": "Leke aracı"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760354419391,
+        "text": "Aşağıdakilerden hangisi Adobe Photoshop programında yer alan boyama\naraçlarından değildir?",
+        "options": {
+          "A": "Fırça aracı",
+          "B": "Kurşun kalem aracı",
+          "C": "Renk değiştirme aracı",
+          "D": "Silgi aracı",
+          "E": "Karıştırıc Fırça aracı"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760354466185,
+        "text": "I. Panellerle ilgili seçenekleri görmek için, panel menüsü simgesi\nkullanılır.\nII. Paneller taşınarak yerleri değiştirilebilir.\nIII. Paneller taşınırken paneli yerleştireceğiniz alan maviyle vurgulanır.\n10. Adobe Photoshop programında yer alan panellerle ilgili yukarıdakilerden\nhangisi ya da hangileri doğrudur?",
+        "options": {
+          "A": "Yalnız I",
+          "B": "II ve III",
+          "C": "I ve III",
+          "D": "Yalnız II",
+          "E": "I,II ve III"
+        },
+        "correctAnswer": "E"
+      }
     ]
   },
   "results": []
