@@ -321,6 +321,128 @@
         },
         "correctAnswer": "B"
       }
+    ],
+    "Grafik Tasarımı - 3. Ünite : Renk, Renk Seçimi, Alan Seçimi ve Renk Paleti (RGB-CMYK Renk Skalası) - 3.Ünite Deneme Sınavı": [
+      {
+        "id": 1760353742752,
+        "text": "Kırmızının daha yumuşak tonlarını oluşturmak için, hangi değerinde\ndeğişiklik yapılması gerekir?",
+        "options": {
+          "A": "Hue (Ton)",
+          "B": "Shade (Gölge)",
+          "C": "Tint (Tonlama)",
+          "D": "Tone (Ton)",
+          "E": "Brigtness (Parklaklık)"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760353769668,
+        "text": "Daha uyumlu veya huzurlu bir görünüm elde etmek için kullanılan renk\nşeması aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Triadic",
+          "B": "Split-complementary",
+          "C": "Tamamlayıcı (Complementary)",
+          "D": "Benzer renkler (Analogous)",
+          "E": "Tek renkli (Monochromatic)"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760353793224,
+        "text": "Dikkat çekici, çarpıcı tasarımlarda kullanılan renk şeması aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Tek renkli (Monochromatic)",
+          "B": "Triadic",
+          "C": "Tetradic",
+          "D": "Split-complementary",
+          "E": "Tamamlayıcı (Complementary)"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760353816575,
+        "text": "Kullanılan renkler soluk ya da doygun olmasa da canlı bir görünüm\nsağlayan renk şeması aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Tek renkli (Monochromatic)",
+          "B": "Triadic",
+          "C": "Tetradic",
+          "D": "Tamamlayıcı (Complementary)",
+          "E": "Split-complementary"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760353844628,
+        "text": "Aşağıdakilerden hangisi renk çemberinin işlevlerinden değildir?",
+        "options": {
+          "A": "Renkler arasındaki ilişkileri göstermek",
+          "B": "Renk uyumlarını oluşturmaya yardımcı olmak",
+          "C": "Renk sınıflamalarını göstermek",
+          "D": "Birincil, ikincil ve üçüncül renklerden oluşmak",
+          "E": "RGB CMYK renk modlarının sonuçlarını göstermek"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760353872619,
+        "text": "Aşağıdakilerden hangisi renk psikolojisiyle ilgili yanlış bir ifadedir?",
+        "options": {
+          "A": "Renkler belirli hisleri temsil eder.",
+          "B": "Renk psikolojisi renklerin bireyler üzerinde oluşturduğu zihinsel etkilerdir.",
+          "C": "Renkler farklı kültürlerde, anlam ve algıda farklılıklar oluşturmaz.",
+          "D": "Renk psikolojisi renklerin bireyler üzerinde oluşturduğu duygusal etkilerdir",
+          "E": "Renklerin psikolojisi dikkate alınarak hedef kitleye uygun etkili bir görsel iletişim kurabilirsiniz."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760353929203,
+        "text": "Yandaki şekil neyi temsil etmektedir? (Üçgen üst kırmızı sağ mavi sol sarı aralık onları tamamlayan alt renkler)",
+        "options": {
+          "A": "Üçüncül renkleri",
+          "B": "İkincil renkleri",
+          "C": "Birincil renkleri",
+          "D": "Sıcak renkleri",
+          "E": "Soğuk renkleri"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760353952430,
+        "text": "Tasarımlarda üstün renk kalitesi elde etmek için aşağıdaki hangi renk\nmodu kullanılmalıdır?",
+        "options": {
+          "A": "RGB",
+          "B": "CMYK",
+          "C": "HSB",
+          "D": "LAB",
+          "E": "HSV"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760353985148,
+        "text": "Aşağıdakilerden hangisi CMYK renk skalası ile ilgili değildir?",
+        "options": {
+          "A": "Bir rengi elde etmek için başka renkleri eklemek yerine beyaz renkteki parlaklığı azalmak için mürekkep kullanmaktadır.",
+          "B": "Toplamsal (additive) renk modelidir",
+          "C": "Çıkarımsal bir renk modelidir",
+          "D": "Camgöbeği, pembe, sarı ve siyah olmak üzere 4 renkten oluşur.",
+          "E": "Poster, broşür, kartvizit, kitap, dergi basımında kullanılır."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354056188,
+        "text": "Yandaki şekil hangi renk şemasını temsil etmektedir?  □ Köşelerinde yuvarlaklar var",
+        "options": {
+          "A": "Tek renkli (Monochromatic)",
+          "B": "Triadic",
+          "C": "Square",
+          "D": "Tamamlayıcı (Complementary)",
+          "E": "Split-complementary"
+        },
+        "correctAnswer": "C"
+      }
     ]
   },
   "results": []
