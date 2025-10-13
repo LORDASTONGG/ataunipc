@@ -10,6 +10,11 @@
         "6. Ünite : Hizalama, Cetveller, Birimler ve Kılavuz Çizgileri Kullanma, Yazdırma Seçenekleri": true,
         "7. Ünite : Filtreler ve Değişimler": true
       }
+    },
+    "Programlama Temelleri": {
+      "units": {
+        "1. Ünite: Temel Kavramlar": true
+      }
     }
   },
   "lessons": [
@@ -75,6 +80,15 @@
       "summary": "**1. Filtrelerin Temel Mantığı ve Kullanımı**\nNedir? Bir fotoğrafa karakalem çizim, sulu boya, bulanıklık gibi efektler vermek veya lens bozulmaları gibi teknik sorunları düzeltmek için kullanılan hazır araçlardır.\nNerede Bulunur? Ana menüdeki Filtre sekmesinin altında yer alırlar.\nFiltre Galerisi (Filtre > Filtre Galerisi): Birçok sanatsal filtrenin canlı önizlemeyle denenebildiği ve ayarlarının yapılabildiği merkezi bir penceredir. Tüm filtreler burada yer almaz ama en yaratıcı olanlar buradadır.\nGeri Alma: Uygulanan bir filtreyi geri almak için en basit yol CTRL + Z kısayoludur.\n\n**2. \"Tahribatsız\" Filtre Kullanımı: Akıllı Filtreler (Smart Filters)**\nBu, filtre kullanmanın en profesyonel ve en önemli yoludur.\n\nProblem: Normalde bir katmana filtre uyguladığınızda, bu değişiklik piksellere kalıcı olarak işlenir ve sonradan filtrenin ayarlarını değiştiremezsiniz.\nÇözüm: Akıllı Nesneler (Smart Objects):\nFiltre uygulamadan önce, katmanınıza sağ tıklayıp \"Akıllı Nesneye Dönüştür\" seçeneğini seçin.\nArtık bu katmana uyguladığınız her filtre, \"Akıllı Filtre\" olarak katmanın altına eklenir.\nBu sayede, istediğiniz zaman filtreye çift tıklayarak ayarlarını yeniden düzenleyebilir, filtreyi gizleyebilir veya silebilirsiniz.\nAltın Kural: Geriye dönük düzenleme esnekliği için filtreleri her zaman Akıllı Nesne'ye dönüştürülmüş katmanlara uygulayın.\n\n**3. En Önemli Filtre Kategorileri ve Araçlar**\nFırça Darbesi Filtreleri: Görüntüye çeşitli fırça ve mürekkep efektleri verir.\n\nPüskürtülmüş Konturlar: Görüntüyü sprey boya ile yapılmış gibi gösterir.\nSumi-e: Görüntüye Japon fırça sanatı stili verir.\nSanatsal Filtreler: Görüntüye geleneksel sanat teknikleri (sulu boya, pastel vb.) efekti katar.\n\nTaslak Filtreleri: Görüntüye karakalem, fotokopi gibi elle çizilmiş bir görünüm kazandırır.\n\nTeknik Düzeltme Filtreleri (En Güçlü Araçlar):\n\nSıvılaştırma Filtresi (Liquify Filter - Shift+Ctrl+X):\n\nNe İşe Yarar? Bir görüntüyü sanki sıvıymış gibi itme, çekme, büzme, şişirme ve döndürme işlemleri yapmanızı sağlar.\nKullanım Alanı: Portre rötuşlamada (örneğin, yüz hatlarını inceltme, gülümseme ekleme) ve sanatsal deformasyonlar yaratmada kullanılır. Çok güçlü bir araçtır.\nUyarlanabilir Geniş Açı Filtresi (Adaptive Wide Angle):\n\nNe İşe Yarar? Özellikle geniş açılı lensler veya balıkgözü (fisheye) lensler ile çekilen fotoğraflarda oluşan kavisli ve bükülmüş çizgileri düzeltir.\nKullanım Alanı: Mimari fotoğrafçılık veya panoramik çekimlerdeki perspektif bozulmalarını düzeltmek için idealdir.\nUfuk Noktası Filtresi (Vanishing Point):\n\nNe İşe Yarar? Görüntüdeki perspektif düzlemlerini (örneğin bir binanın duvarları) tanımlamanızı sağlar. Bu sayede, bu düzlemlere klonlama veya yapıştırma yaptığınızda, eklediğiniz öğe otomatik olarak doğru perspektife uyar.\nKullanım Alanı: Bir duvara yazı veya desen eklemek gibi, perspektifin önemli olduğu düzenlemelerde kullanılır.\n\n\n**4. Filtre Kullanımında Dikkat Edilmesi Gerekenler**\nPerformans: Filtreler, özellikle yüksek çözünürlüklü görsellerde bilgisayarın RAM'ini yoğun olarak kullanabilir.\nUyumsuzluk: Bitmap veya Dizinlenmiş Renk modundaki görsellere filtre uygulanamaz. Genellikle filtreler 8-bit RGB görsellerde en iyi şekilde çalışır.\nDışarıdan Eklentiler (Plugins): Photoshop, üçüncü parti firmaların ürettiği filtreleri (plugins) de destekler. Bu eklentiler, Filtre menüsünün en altında görünür.\nProgramcı için Özet: Filtreleri, bir kütüphanedeki (Photoshop) hazır fonksiyonlar (filtreler) gibi düşünebilirsin. Girdi olarak bir görüntü (katman) alırlar ve belirli bir algoritmayı uygulayarak çıktı olarak işlenmiş bir görüntü verirler. Akıllı Filtreler ise, bu fonksiyonları \"non-destructive\" (tahribatsız) bir şekilde çağırmanı sağlar; yani orijinal veriyi (pikselleri) bozmadan, istediğin zaman parametreleri (filtre ayarları) değiştirebileceğin bir \"wrapper\" (sarmalayıcı) içinde çalıştırırsın. Sıvılaştırma ve Ufuk Noktası gibi filtreler ise en karmaşık ve en güçlü fonksiyonlardır.",
       "pdfData": null,
       "createdAt": "2025-10-10T21:45:01.772Z"
+    },
+    {
+      "id": 1760356434449,
+      "subject": "Programlama Temelleri",
+      "unit": "1. Ünite: Temel Kavramlar",
+      "title": "1.Ünite Temelleri",
+      "summary": "🧠 1. Bilgisayarın temel bilgi işleme modeli\n\nModel: Girdi → İşlem → Çıktı (Depolama süreç boyunca kullanılır)\n\nAçıklama: Girdi aygıtları (klavye, fare) → CPU (işler, RAM’i kullanır) → Çıktı aygıtları (ekran, yazıcı).\nDepolama (disk/RAM) bu aşamalar arasında veriyi geçici veya kalıcı tutar.\n\n💾 2. RAM (Bellek)\n\nRAM geçici bellektir; elektrik kesilince veri silinir.\n\nYüksek hızlıdır ve CPU ile sürekli veri alışverişi yapar.\n\nİkincil depolama (HDD/SSD)’den çok daha hızlıdır.\n➡️ Doğru ifade: Geçicidir ve yüksek hızlıdır.\n\n⚙️ 3. CPU’nun alt birimleri\n\nCU (Control Unit): Komutları çözer, yönlendirir.\n\nALU (Arithmetic Logic Unit): Matematiksel ve mantıksal işlemleri yapar.\n➡️ CPU = CU + ALU\n\n🔢 4. Sayı sistemleri (İkilik → Onluk)\n\n(100101)₂ = 37₁₀\nHesap: (1×32) + (0×16) + (0×8) + (1×4) + (0×2) + (1×1) = 37\n\n🔣 5. Sekizlik → İkilik dönüşüm\n\nHer sekizlik basamak 3 bit ile gösterilir:\n547₈ = 101 100 111₂ → 101100111₂\n\n🧮 6. Onaltılık → Onluk dönüşüm\n\n(2F)₁₆ = (2×16) + 15 = 47₁₀\nF = 15 değerindedir.\n\n💻 7. Program vs Yazılım\n\nProgram: Tek bir görevi yapan yürütülebilir dosya.\n\nYazılım: Bir veya birden fazla program + kütüphane + yapılandırma + belge.\n➡️ Yani program, yazılımın parçasıdır.\n\n🧩 8. Yüksek seviyeli diller\n\nMakine dili < Assembly < Yüksek seviyeli diller (C, C++, Java, Python...)\n\nAssembly yüksek seviyeli değildir.\n\n🛠️ 9. C++ program geliştirme aşamaları\n\nDoğru sıra:\nDüzenleme → Önişleme → Derleme → Birleştirme → Yükleme → Çalıştırma → Hata Ayıklama\n🧭 Açıklama kısa:\n1️⃣ Kaynak kod yazılır (.cpp, .h)\n2️⃣ Makrolar genişletilir (önişleme)\n3️⃣ Derlenir (nesne dosyaları oluşur)\n4️⃣ Bağlanır (yürütülebilir oluşturulur)\n5️⃣ Yüklenir (belleğe alınır)\n6️⃣ Çalıştırılır (main başlar)\n7️⃣ Hata ayıklama yapılır.\n\n🚀 10. C++11 yeniliği\n\nC++11 ile gelenler:\n\nTaşınma semantiği (move semantics)\n\nr-değer başvuruları\n\nauto tür çıkarımı\n\nlambda ifadeleri\n\nconstexpr\n\nçok iş parçacığı desteği\n➡️ Doğru cevap: Taşınma semantiği (move semantics)\n\n🎯 Genel Kısa Özet\n\nBilgisayar, girdi–işlem–çıktı–depolama döngüsüyle çalışır.\n\nRAM geçici, CPU işlemci, ALU + CU’dan oluşur.\n\nSayı sistemleri: 2’lik, 8’lik, 16’lık → aralarında dönüşüm kuralları vardır.\n\nYazılım, birden fazla program ve yardımcı dosyaları kapsar.\n\nAssembly düşük seviyeli dildir.\n\nC++ geliştirme süreci yedi aşamalıdır.\n\nModern C++ (C++11–23) soyutlama gücü + performansı birleştirir.",
+      "pdfData": null,
+      "createdAt": "2025-10-13T11:53:54.449Z"
     }
   ],
   "exams": {
@@ -928,6 +942,128 @@
           "C": "Shift + Delete tuş kombinasyonu kullanılmalıdır.",
           "D": "Ctrl tuşuna basılmalıdır.",
           "E": "Katmanı sil simgesine tıklanmalıdır."
+        },
+        "correctAnswer": "E"
+      }
+    ],
+    "Programlama Temelleri - 1. Ünite: Temel Kavramlar - 1.Ünite Deneme Sınavı": [
+      {
+        "id": 1760356542295,
+        "text": "Bilgisayarın temel bilgi işleme modelini en doğru biçimde aşağıdakilerden\nhangisi ifade eder?",
+        "options": {
+          "A": "İşlem → Depolama → Girdi → Çıkış",
+          "B": "Girdi → İşlem → Çıkış (Depolama süreç boyunca kullanılır)",
+          "C": "Çıkış → Girdi → İşlem → Depolama",
+          "D": "İşlem → Girdi → Depolama → Çıkış",
+          "E": "Girdi → Depolama → Çıkış (İşlem yok)"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760356560645,
+        "text": "RAM ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "options": {
+          "A": "Kalıcıdır; elektrik kesilse de veri korunur",
+          "B": "İkincil depolamadan yavaştır",
+          "C": "Geçicidir ve yüksek hızlıdır",
+          "D": "Sadece çıktı üretiminde kullanılır",
+          "E": "Yalnızca işletim sistemi çekirdeği tarafından kullanılabilir"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760356581406,
+        "text": "CPU’nun iki temel alt birimi hangileridir?",
+        "options": {
+          "A": "CU (Denetim Birimi) ve ALU (Aritmetik-Mantıksal Birim)",
+          "B": "ALU ve FPU",
+          "C": "CU ve GPU",
+          "D": "BIOS ve DMA",
+          "E": "MMU ve NIC"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760356599343,
+        "text": "(100101)₂ sayısının onluk karşılığı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "25",
+          "B": "37",
+          "C": "41",
+          "D": "45",
+          "E": "53"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760356618214,
+        "text": "547₈ sayısının ikili karşılığı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "110010111",
+          "B": "101100111",
+          "C": "101010111",
+          "D": "100111011",
+          "E": "111001101"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760356640092,
+        "text": "(2F)₁₆ sayısının onluk karşılığı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "31",
+          "B": "32",
+          "C": "45",
+          "D": "47",
+          "E": "52"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760356707517,
+        "text": "Aşağıdakilerden hangisi program ile yazılım arasındaki farkı doğru açıklar?",
+        "options": {
+          "A": "Program, yazılımın bir parçası olabilir; yazılım çoğu zaman birden fazla program + kütüphane + belge içerir",
+          "B": "Program ve yazılım tamamen eşanlamlıdır",
+          "C": "Yazılım yalnızca sürücülerden oluşur",
+          "D": "Program her zaman kalıcı depolamada çalışır",
+          "E": "Yazılım sadece işletim sistemi çekirdeğidir"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760356730239,
+        "text": "Aşağıdakilerden hangisi yüksek seviyeli dil değildir?",
+        "options": {
+          "A": "Java",
+          "B": "Python",
+          "C": "C",
+          "D": "C#",
+          "E": "Assembly"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760356751052,
+        "text": "Tipik bir C++ geliştirme hattında doğru sıralama aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Derleme → Önişleme → Düzenleme → Birleştirme → Yükleme → Çalıştırma → Hata Ayıklama",
+          "B": "Düzenleme → Önişleme → Derleme → Birleştirme → Yükleme → Çalıştırma → Hata Ayıklama",
+          "C": "Önişleme → Derleme → Düzenleme → Birleştirme → Çalıştırma → Yükleme → Hata Ayıklama",
+          "D": "Düzenleme → Derleme → Önişleme → Birleştirme → Yükleme → Hata Ayıklama → Çalıştırma",
+          "E": "Düzenleme → Önişleme → Birleştirme → Derleme → Yükleme → Çalıştırma → Hata Ayıklama"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760356769232,
+        "text": "Aşağıdakilerden hangisi C++11 ile gelen bir yeniliktir?",
+        "options": {
+          "A": "Modüller (modules)",
+          "B": "Kavramlar (concepts)",
+          "C": "Eş yordamlar (coroutines)",
+          "D": "std::expected",
+          "E": "Taşınma semantiği (move semantics)"
         },
         "correctAnswer": "E"
       }
