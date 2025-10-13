@@ -15,7 +15,8 @@
       "units": {
         "1. Ünite: Temel Kavramlar": true,
         "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true,
-        "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true
+        "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true,
+        "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"": true
       }
     }
   },
@@ -109,6 +110,15 @@
       "summary": "🎯 Konu Özeti: İlk C++ Programı (Merhaba Dünya)\n🔹 1. C++’ın Temel Yapısı\n\nC++ 1979’da “C with Classes” adıyla geliştirilmiş, daha sonra nesne yönelimli (OOP) özellikleriyle güçlendirilmiştir.\n\nGünümüzde C++11, C++17, C++23 standartlarıyla modernleştirilmiştir.\n\nHem düşük seviyeli sistem programlamada hem de büyük ölçekli yazılımlarda kullanılır.\n\n🔹 2. İlk C++ Programının Temel Yapısı\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Merhaba Dünya\";\n    return 0;\n}\n\n\n#include <iostream> → Giriş/çıkış işlemleri için kütüphane ekler.\n\nusing namespace std; → std:: yazmadan cout, cin kullanılmasını sağlar.\n\nmain() → Programın başlangıç noktasıdır.\n\n{ } → Kod bloğunu tanımlar.\n\nreturn 0; → Programın başarılı şekilde bittiğini bildirir.\n\n🔹 3. Giriş / Çıkış İşlemleri\n\ncout → ekrana yazı yazar.\n\ncin → kullanıcıdan veri alır.\n\nendl veya \\n → yeni satıra geçer.\n\nZincirleme yazım mümkündür:\n\ncout << \"Ad: \" << ad << \"\\nSoyad: \" << soyad;\n\n🔹 4. Yorum Satırları\n\nKodu açıklamak için kullanılır, derleyici bunları yok sayar:\n\nTek satır: // Bu bir yorumdur\n\nÇok satır: /* Bu birden fazla satırlık yorumdur */\n\n🔹 5. Kaçış Karakterleri\nKaçış Dizisi\tAnlamı\tÖrnek\tÇıktı\n\\n\tYeni satır\t\"Merhaba\\nDünya\"\tMerhaba\nDünya\n\\t\tSekme\t\"Ad\\tSoyad\"\tAd   Soyad\n\\\\\tTers eğik çizgi\t\"\\\\\"\t\\\n\\\"\tÇift tırnak\t\"\\\"C++\\\"\"\t\"C++\"\n\\0\tNull karakter\t\"Merhaba\\0Dünya\"\tMerhaba\n\\a\tBip sesi\t\"\\a\"\t🔊\n\\b\tGeri silme\t\"Merhaba\\b!\"\tMerhab!\n🔹 6. Temel Sözdizimi Kuralları\n\nC++ büyük/küçük harf duyarlıdır:\nsayi, Sayi, SAYI farklı değişkenlerdir.\n\nHer ifade (statement) ; ile biter.\nUnutulursa derleyici hata verir.\n\nBloklar { } ile tanımlanır.\n\nİç içe bloklar kullanılabilir.\n\nBlok sonunda ; konmaz.\n\nGirintileme (indentation) zorunlu değil ama okunabilirlik için önemlidir.\n\n🔹 7. Anahtar Kelimeler (Keywords)\n\nÖzel anlamı olan kelimelerdir, değişken/fonksiyon adı olarak kullanılamaz.\nÖrnek:\n\nVeri tipleri: int, float, double, char, bool\n\nKontrol yapıları: if, else, switch, for, while, break, continue\n\nFonksiyon: void, return\n\nNesne yönelimli: class, public, private, this\n\nBellek: new, delete, sizeof\n\nDiğer: namespace, using, try, catch, throw\n\n🚫 Hatalı: int for = 5; → ❌ for anahtar kelimedir.\n\n🔹 8. Sık Yapılan Hatalar ve Çözümleri\n❌ Noktalı Virgül Eksikliği\nint sayi = 10 // yanlış\nstd::cout << sayi;\n\n\n✅ Doğru:\n\nint sayi = 10;\nstd::cout << sayi;\n\n❌ Yanlış Anahtar Kelime Yazımı\n\nInt, Main, Retrun → ❌ Hata verir.\n\nC++ case-sensitive olduğundan int küçük yazılmalıdır.\n\n❌ Eksik veya Hatalı Kütüphane\n\n#include <iosteam> → yazım hatası\n\n#include <iostream> → ✅ doğru\n\nKullanılmayan kütüphaneler kodu yavaşlatır.\n\n🧩 En çok kullanılan kütüphaneler:\n\n<iostream> → Giriş/çıkış\n\n<string> → Metin işlemleri\n\n<cmath> → Matematik fonksiyonları\n\n<vector> → Dinamik diziler\n\n<iomanip> → Biçimlendirilmiş çıktı\n\n🧠 Konu Sonu Ders Çıkarımı\n\nHer C++ programı main() fonksiyonundan başlar.\n\n#include ile kütüphane eklenmezse cout veya cin tanınmaz.\n\n; ifadenin sonunu belirtir, unutulursa hata oluşur.\n\nC++ büyük/küçük harfe duyarlıdır.\n\nAnahtar kelimeler özel anlam taşır, değişken adı olamaz.\n\nendl ve \\n yeni satır oluşturur.\n\nKod blokları { } ile tanımlanır, blok sonuna ; konmaz.\n\nKaçış karakterleri özel semboller yazdırmak için kullanılır.\n\nYorum satırları derleyici tarafından yok sayılır.\n\nHataların çoğu noktalı virgül veya kütüphane eksikliğinden kaynaklanır.",
       "pdfData": null,
       "createdAt": "2025-10-13T12:18:09.158Z"
+    },
+    {
+      "id": 1760358493458,
+      "subject": "Programlama Temelleri",
+      "unit": "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"",
+      "title": "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"",
+      "summary": "⚙️ 1. C++ Geliştirme Ortamı (IDE)\n\nIDE (Bütünleşik Geliştirme Ortamı): Kod düzenleyici, derleyici, bağlayıcı ve hata ayıklayıcıyı bir arada sunar.\n\nBu ünitede Microsoft Visual Studio 2022 Community kullanılmıştır.\n\nZorunlu İş Yükü (Workload):\n\nDesktop development with C++ ✅ (Soru 1)\n\n📂 2. Solution (Çözüm) ve Project (Proje)\n\nProject (Proje): Tek bir program (.exe) oluşturmak için kaynak dosyaları içerir.\n\nSolution (Çözüm): Birden fazla projeyi bir araya getiren kapsayıcıdır.\n\n“Solution” → birden fazla projeyi yönetir. ✅ (Soru 2)\n\n📄 3. Dosya Türleri ve Uzantılar\n\nKaynak kod dosyası: .cpp\n\nBaşlık dosyası: .h\n\nÇözüm dosyası: .sln\n\nÇalıştırılabilir dosya: .exe\n\nC++ kaynak dosya uzantısı → .cpp ✅ (Soru 3)\n\n▶️ 4. Programı Çalıştırma Şekilleri\n\nF5 → Start Debugging: Hata ayıklama modunda çalıştırır, program bitince pencere kapanır.\n\nCtrl + F5 → Start Without Debugging:\nProgram hata ayıklayıcı olmadan çalışır, çıktı ekranda kalır.\n\nDoğru kısayol: Ctrl + F5 ✅ (Soru 4)\n\n🚫 5. Hata Türleri\nHata Türü\t                  Tanım\t                                 Tespit Eden                 \tÖrnek\nSözdizimi (Syntax Error)\tYazım kurallarının ihlali\tDerleyici\tstd::cout << \"Hi\" (noktalı virgül eksik)\nMantıksal (Logical Error)\tKod çalışır ama yanlış sonuç verir\tİnsan\twhile (i < 5) → 5 dahil değil\nBağlayıcı (Linker Error)\tTanımsız fonksiyon/değişken\tDerleyici sonrası\tYanlış fonksiyon adı\nÇalışma Zamanı (Runtime) Program çalışırken hata\tSistem\tSıfıra bölme\n\nSözdizimi hatası (Syntax Error) → Derleyici bulur. ✅ (Soru 5)\n\n🧩 6. Hata Ayıklama (Debugging)\n\nAmaç: Program çalışırken değişken değerlerini ve akışı izlemek.\n\nKesme Noktası (Breakpoint):\nKırmızı daire ile işaretlenen satır → program burada durur.\n\nDoğru cevap: Breakpoint (Kesme Noktası) ✅ (Soru 6)\n\n⏱️ 7. Kodda Adım Adım İlerleme (Stepping)\nKomut\tKısayol\tAçıklama\nStep Over\tF10\tSatırı çalıştırır ama fonksiyonun içine girmez. ✅ (Soru 7)\nStep Into\tF11\tFonksiyonun içine girer.\nStep Out\tShift+F11\tFonksiyondan çıkar.\nF5\tBaşlat (debug ile)\t\nCtrl+Shift+F5\tYeniden başlat\t\n🔍 8. Kullanıcıdan Veri Alma (cin ve getline)\n\ncin >> → İlk boşlukta durur.\n🔸 Örnek: “Ali Veli” → sadece “Ali” okunur.\n\nBoşluk içeren metin için:\n\n#include <string>\nstd::getline(std::cin, isim);\n\n\nDoğru fonksiyon: getline() ✅ (Soru 8)\n\n🖥️ 9. Ekrana Yazı Yazdırma\n\nstd::cout → Konsola veri yazar.\n\nstd::cout << \"Merhaba Dünya\";\n\n\nStandart çıkış nesnesi: std::cout ✅ (Soru 9)\n\n⚙️ 10. Programın Derlenme Süreci\n\nC++ Derleme Aşamaları:\n\nÖnişleme (Preprocessing) → #include, #define işlemleri.\n\nDerleme (Compilation) → .cpp → .obj (makine kodu). ✅ (Soru 10)\n\nBağlama (Linking) → .obj → .exe\n\nYürütme (Execution) → Programın çalıştırılması.\n\nSoru 10’un cevabı: Compilation (Derleme)\n\n📘 Kısaca Öğrenilmesi Gerekenler (Tam Test Özeti)\nKonu\tBilinmesi Gereken\tSoru\nZorunlu iş yükü\tDesktop development with C++\t1\nÇözüm (Solution)\tBirden fazla projeyi içerir\t2\nDosya uzantısı\t.cpp\t3\nKonsol kapanmasın\tCtrl + F5\t4\nHata türü\tSyntax Error\t5\nKesme noktası\tBreakpoint\t6\nStep Over\tF10\t7\nBoşluklu giriş\tgetline()\t8\nEkrana yazı\tstd::cout\t9\nDerleme aşaması\tCompilation\t10",
+      "pdfData": null,
+      "createdAt": "2025-10-13T12:28:13.458Z"
     }
   ],
   "exams": {
@@ -1330,6 +1340,128 @@
           "E": "Sayi: 25\\n"
         },
         "correctAnswer": "A"
+      }
+    ],
+    "Programlama Temelleri - 4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\" - 4.Ünite Deneme Sınavı": [
+      {
+        "id": 1760358635903,
+        "text": "Visual Studio kurulumunda C++ ile masaüstü konsol uygulamaları geliştirmek için\nseçilmesi zorunlu olan \"İş Yükü\" (Workload) aşağıdakilerden hangisidir?",
+        "options": {
+          "A": ".NET desktop development",
+          "B": "Python development",
+          "C": "Game development with Unity",
+          "D": "Desktop development with C++",
+          "E": "Azure development"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358660248,
+        "text": "Visual Studio'da bir veya daha fazla ilgili projeyi bir araya getiren ve mantıksal bir\nbütün olarak yönetmeyi sağlayan kapsayıcıya ne ad verilir?",
+        "options": {
+          "A": "Proje (Project)",
+          "B": "Çözüm (Solution)",
+          "C": "Kaynak Dosyası (Source File)",
+          "D": "Kütüphane (Library)",
+          "E": "Hata Ayıklayıcı (Debugger)"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760358687402,
+        "text": "Bir C++ kaynak kod dosyasını tanımlayan dosya uzantısı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": ".h",
+          "B": ".exe",
+          "C": ".sln",
+          "D": ".cs",
+          "E": ".cpp"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760358720832,
+        "text": "Yazılan bir programı, çalıştıktan sonra konsol penceresinin hemen kapanmasını\nengelleyerek çıktıyı rahatça görebilmek için kullanılan klavye kısayolu hangisidir?",
+        "options": {
+          "A": "F5",
+          "B": "F9",
+          "C": "F10",
+          "D": "Ctrl+F5",
+          "E": "Ctrl+S"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358741392,
+        "text": "C++ dilinin yazım kurallarının ihlal edilmesi durumunda ortaya çıkan, derleyici\ntarafından tespit edilen ve programın oluşturulmasını engelleyen hata türü\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Mantıksal Hata (Logical Error)",
+          "B": "Çalışma Zamanı Hatası (Runtime Error)",
+          "C": "Bağlayıcı Hatası (Linker Error)",
+          "D": "Sözdizimi Hatası (Syntax Error)",
+          "E": "Anlamsal Hata (Semantic Error)"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358763712,
+        "text": "Visual Studio Hata Ayıklayıcısı'nda (Debugger), programın yürütülmesini belirli bir\nkod satırında geçici olarak duraklatmak için kullanılan işarete ne ad verilir?",
+        "options": {
+          "A": "Durdurma İşareti",
+          "B": "İzleme Noktası",
+          "C": "Kesme Noktası (Breakpoint)",
+          "D": "Adım Komutu",
+          "E": "Sarı Ok"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760358781208,
+        "text": "Hata ayıklama sırasında, imlecin bulunduğu satırı çalıştıran ancak bu satır bir\nfonksiyon çağrısı içeriyorsa fonksiyonun içine girmeyen \"Step Over\" komutunun\nklavye kısayolu nedir?",
+        "options": {
+          "A": "F5",
+          "B": "F9",
+          "C": "F11",
+          "D": "Shift+F11",
+          "E": "F10"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760358807066,
+        "text": "Kullanıcıdan \"Ali Veli\" gibi boşluk içeren bir metin satırının tamamını okumak için\ncin >> yerine kullanılması gereken fonksiyon hangisidir?",
+        "options": {
+          "A": "cin.read()",
+          "B": "cout",
+          "C": "gets()",
+          "D": "getline",
+          "E": "read_line()"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358824951,
+        "text": "Bir C++ programında ekrana \"Merhaba Dünya\" gibi bir metin yazdırmak için\nkullanılan standart çıkış nesnesi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "std::cin",
+          "B": "#include",
+          "C": "return",
+          "D": "int main",
+          "E": "std::cout"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760358841738,
+        "text": "Yazılan C++ kodunun, derleyici tarafından bilgisayarın anlayabileceği makine\nkoduna (.obj dosyalarına) çevrildiği aşamaya ne ad verilir?",
+        "options": {
+          "A": "Önişleme (Preprocessing)",
+          "B": "Bağlama (Linking)",
+          "C": "Derleme (Compilation)",
+          "D": "Hata Ayıklama (Debugging)",
+          "E": "Yürütme (Execution)"
+        },
+        "correctAnswer": "C"
       }
     ]
   },
