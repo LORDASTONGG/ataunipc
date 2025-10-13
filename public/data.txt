@@ -13,7 +13,8 @@
     },
     "Programlama Temelleri": {
       "units": {
-        "1. Ünite: Temel Kavramlar": true
+        "1. Ünite: Temel Kavramlar": true,
+        "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true
       }
     }
   },
@@ -89,6 +90,15 @@
       "summary": "🧠 1. Bilgisayarın temel bilgi işleme modeli\n\nModel: Girdi → İşlem → Çıktı (Depolama süreç boyunca kullanılır)\n\nAçıklama: Girdi aygıtları (klavye, fare) → CPU (işler, RAM’i kullanır) → Çıktı aygıtları (ekran, yazıcı).\nDepolama (disk/RAM) bu aşamalar arasında veriyi geçici veya kalıcı tutar.\n\n💾 2. RAM (Bellek)\n\nRAM geçici bellektir; elektrik kesilince veri silinir.\n\nYüksek hızlıdır ve CPU ile sürekli veri alışverişi yapar.\n\nİkincil depolama (HDD/SSD)’den çok daha hızlıdır.\n➡️ Doğru ifade: Geçicidir ve yüksek hızlıdır.\n\n⚙️ 3. CPU’nun alt birimleri\n\nCU (Control Unit): Komutları çözer, yönlendirir.\n\nALU (Arithmetic Logic Unit): Matematiksel ve mantıksal işlemleri yapar.\n➡️ CPU = CU + ALU\n\n🔢 4. Sayı sistemleri (İkilik → Onluk)\n\n(100101)₂ = 37₁₀\nHesap: (1×32) + (0×16) + (0×8) + (1×4) + (0×2) + (1×1) = 37\n\n🔣 5. Sekizlik → İkilik dönüşüm\n\nHer sekizlik basamak 3 bit ile gösterilir:\n547₈ = 101 100 111₂ → 101100111₂\n\n🧮 6. Onaltılık → Onluk dönüşüm\n\n(2F)₁₆ = (2×16) + 15 = 47₁₀\nF = 15 değerindedir.\n\n💻 7. Program vs Yazılım\n\nProgram: Tek bir görevi yapan yürütülebilir dosya.\n\nYazılım: Bir veya birden fazla program + kütüphane + yapılandırma + belge.\n➡️ Yani program, yazılımın parçasıdır.\n\n🧩 8. Yüksek seviyeli diller\n\nMakine dili < Assembly < Yüksek seviyeli diller (C, C++, Java, Python...)\n\nAssembly yüksek seviyeli değildir.\n\n🛠️ 9. C++ program geliştirme aşamaları\n\nDoğru sıra:\nDüzenleme → Önişleme → Derleme → Birleştirme → Yükleme → Çalıştırma → Hata Ayıklama\n🧭 Açıklama kısa:\n1️⃣ Kaynak kod yazılır (.cpp, .h)\n2️⃣ Makrolar genişletilir (önişleme)\n3️⃣ Derlenir (nesne dosyaları oluşur)\n4️⃣ Bağlanır (yürütülebilir oluşturulur)\n5️⃣ Yüklenir (belleğe alınır)\n6️⃣ Çalıştırılır (main başlar)\n7️⃣ Hata ayıklama yapılır.\n\n🚀 10. C++11 yeniliği\n\nC++11 ile gelenler:\n\nTaşınma semantiği (move semantics)\n\nr-değer başvuruları\n\nauto tür çıkarımı\n\nlambda ifadeleri\n\nconstexpr\n\nçok iş parçacığı desteği\n➡️ Doğru cevap: Taşınma semantiği (move semantics)\n\n🎯 Genel Kısa Özet\n\nBilgisayar, girdi–işlem–çıktı–depolama döngüsüyle çalışır.\n\nRAM geçici, CPU işlemci, ALU + CU’dan oluşur.\n\nSayı sistemleri: 2’lik, 8’lik, 16’lık → aralarında dönüşüm kuralları vardır.\n\nYazılım, birden fazla program ve yardımcı dosyaları kapsar.\n\nAssembly düşük seviyeli dildir.\n\nC++ geliştirme süreci yedi aşamalıdır.\n\nModern C++ (C++11–23) soyutlama gücü + performansı birleştirir.",
       "pdfData": null,
       "createdAt": "2025-10-13T11:53:54.449Z"
+    },
+    {
+      "id": 1760357382728,
+      "subject": "Programlama Temelleri",
+      "unit": "2.Ünite \"Algoritmalar ve Akış Diyagramları\"",
+      "title": "2.Ünite \"Algoritmalar ve Akış Diyagramları\"",
+      "summary": "🧠 Genel Konu Özeti (Soruların Ortak Öğrettikleri)\n\nAlgoritmanın Özellikleri:\n\nSonlu, kesin, uygulanabilir, doğru ve verimli olmalıdır.\n\nHer adım tek anlamlı olmalı (Soru 1).\n\nSözde Kodun Rolü:\n\nAlgoritma mantığını, programlama diline bağlı kalmadan anlatır.\n\nOkunabilirlik ve mantıksal düzen ön planda (Soru 2, 8).\n\nAkış Diyagramları:\n\nAlgoritmanın görsel temsili.\n\nHer sembolün anlamı farklıdır:\n\nOval: Başla/Bitir\n\nDikdörtgen: İşlem\n\nParalelkenar: Girdi/Çıktı\n\nElmas: Karar\n\n(Soru 3, 7, 9).\n\nDöngüler ve Karar Yapıları:\n\nDöngüler işlemleri tekrar eder (Soru 4, 10).\n\nKarar yapıları koşula göre akışı değiştirir (Soru 7).\n\nSıra ve Süre (Zamanlama):\n\nBazı adımlar ancak belirli koşul gerçekleşince yapılabilir.\n\nBu, algoritmanın güvenilirliğini sağlar (Soru 6).\n\nEğitim ve Mühendislikte Akış Diyagramı Kullanımı:\n\nTest kapsamı, hata tespiti, ekip iletişimi kolaylaşır (Soru 5).\n\n🧩 Kısaca Öğrenilmesi Gerekenler\n\nAlgoritma belirsizlikten uzak, sonlu ve doğru olmalı.\n\nSözde kod: dil bağımsız, sade, girintili ve mantıklı.\n\nAkış diyagramı: sembollerle süreci görselleştirir.\n\nTemel yapılar: Sıralama, Karar, Döngü.\n\nZamanlama ve koşullar: doğru sırada yürütülmeli.\n\nİç içe döngüler işlem sayısını katlar.",
+      "pdfData": null,
+      "createdAt": "2025-10-13T12:09:42.728Z"
     }
   ],
   "exams": {
@@ -1066,6 +1076,128 @@
           "E": "Taşınma semantiği (move semantics)"
         },
         "correctAnswer": "E"
+      }
+    ],
+    "Programlama Temelleri - 2.Ünite \"Algoritmalar ve Akış Diyagramları\" - 2.Ünite Deneme sınavı": [
+      {
+        "id": 1760357430366,
+        "text": "Algoritmanın “kesinlik” niteliği en iyi nasıl ifade edilir?",
+        "options": {
+          "A": "Her girdi için en az bir çıktı üretmesi",
+          "B": "Adımların yoruma kapalı ve tek-anlamlı tanımlanması",
+          "C": "En kısa sürede sonuç üretmesi",
+          "D": "Bellek kullanımının minimum olması",
+          "E": "Girdilerin her zaman kullanıcıdan okunması"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760357446819,
+        "text": "Aşağıdaki amaçlardan hangisi sözde kod kullanımının birincil gerekçesidir?",
+        "options": {
+          "A": "Dil bağımsız biçimde algoritma mantığını açık ve izlenebilir kılmak",
+          "B": "Her platformda aynı hızda çalıştırmak",
+          "C": "Bellek yönetimini otomatik yapmak",
+          "D": "Donanım sürücülerini doğrudan yönetmek",
+          "E": "Derleyici optimizasyonlarını kontrol etmek"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760357465758,
+        "text": "Aşağıdaki sembol–işlev eşleştirmelerinden hangisi akış diyagramı için\ndoğru bir kullanımdır?",
+        "options": {
+          "A": "Karar (elmas) → Dosya okuma/yazma",
+          "B": "Girdi/Çıktı (paralelkenar) → Koşul değerlendirme",
+          "C": "Başla/Bitir (oval) → Alt süreç çağrısı",
+          "D": "İşlem (dikdörtgen) → Atama/hesaplama adımları",
+          "E": "Bağlayıcı (daire) → Ekrana yazdırma"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760357491893,
+        "text": "Yukarıdaki sözde kod çalıştırıldığında, n = 4 girdisi için ekrana hangi değer\nyazdırılır?\n\nBAŞLA\nOKU n\nATA toplam ← 0\nİÇİN i ← 1'DEN n'E KADAR(n de dahil)\nATA toplam ← toplam + i\nDÖNGÜ BİTTİ\nYAZ toplam\nBİTİR",
+        "options": {
+          "A": "6",
+          "B": "4",
+          "C": "16",
+          "D": "12",
+          "E": "10"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760357513216,
+        "text": "Aşağıdakilerden hangisi program akış diyagramının eğitim ve geliştirmede\nöne çıkan katkılarından biridir?",
+        "options": {
+          "A": "Karar ve yineleme yapılarının görsel olarak izlenmesini sağlayarak test kapsamını planlamayı kolaylaştırır.",
+          "B": "Donanım saat frekansını artırır.",
+          "C": "Derleyicinin ürettiği makine kodunu kısaltır.",
+          "D": "Bellek sızıntılarını otomatik onarır.",
+          "E": "Veritabanı normalizasyonunu garanti eder."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760357532951,
+        "text": "Aşağıdaki durumlardan hangisi sıra ve süre kavrayışının uygun kullanımına\nörnektir?",
+        "options": {
+          "A": "Girdi doğrulaması başarısız olsa da işlemi sürdürmek",
+          "B": "Kaynak açılmadan okuma yapmak",
+          "C": "Isı eşiği sağlanana kadar sonraki adıma geçmemek için bekleme/koşul bloğu kullanmak",
+          "D": "Sonsuz döngüyle süreçte beklemek",
+          "E": "Paralel iki işi aynı kilidi paylaşmadan güncellemek"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760357566015,
+        "text": "Yukarıdaki sözde koda göre akış diyagramında ilk üç sembolün doğru\nsıralaması hangisidir?\nBAŞLA\nOKU parola\nEĞER parola = \"1234\" İSE\nYAZ \"Giriş başarılı\"\nDEĞİLSE\nYAZ \"Tekrar deneyin\"\nEĞER BİTTİ\nBİTİR",
+        "options": {
+          "A": "Oval → Paralelkenar → Elmas",
+          "B": "Oval → Dikdörtgen → Elmas",
+          "C": "Oval → Elmas → Paralelkenar",
+          "D": "Paralelkenar → Oval → Elmas",
+          "E": "Oval → Silindir → Dikdörtgen"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760357584765,
+        "text": "Aşağıdakilerden hangisi sözde kodun okunabilirliğini artıran temel bir\nkonvansiyondur?",
+        "options": {
+          "A": "Tüm adımları tek satırda yazmak",
+          "B": "Değişken adlarını tek harfle sınırlamak",
+          "C": "Girintileme ile blokları hiyerarşik göstermek",
+          "D": "Girdi/çıktıları yorum satırlarına taşımak",
+          "E": "Atamaları doğal dilde, hesaplamaları sembolle karışık yazmak"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760357606098,
+        "text": "Aşağıdaki eşleştirmelerden hangisi doğrudur?",
+        "options": {
+          "A": "Karar → Dikdörtgen",
+          "B": "Girdi/Çıktı → Paralelkenar",
+          "C": "Başla/Bitir → Elmas",
+          "D": "İşlem → Silindir",
+          "E": "Bağlayıcı (sayfa içi) → Beşgen"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760357630561,
+        "text": "Yukarıdaki sözde kod çalıştırıldığında, n = 3 için ekrana hangi değer\nyazdırılır?\n\nBAŞLA\nOKU n\nATA say ← 0\nİÇİN i ← 1'DEN n'E KADAR\nİÇİN j ← 1'DEN n'E KADAR\nATA say ← say + 1\nDÖNGÜ BİTTİ\nDÖNGÜ BİTTİ\nYAZ say\nBİTİR",
+        "options": {
+          "A": "3",
+          "B": "6",
+          "C": "9",
+          "D": "12",
+          "E": "18"
+        },
+        "correctAnswer": "C"
       }
     ]
   },
