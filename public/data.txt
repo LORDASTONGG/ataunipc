@@ -16,7 +16,8 @@
         "1. Ünite: Temel Kavramlar": true,
         "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true,
         "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true,
-        "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"": true
+        "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"": true,
+        "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"": true
       }
     }
   },
@@ -119,6 +120,15 @@
       "summary": "⚙️ 1. C++ Geliştirme Ortamı (IDE)\n\nIDE (Bütünleşik Geliştirme Ortamı): Kod düzenleyici, derleyici, bağlayıcı ve hata ayıklayıcıyı bir arada sunar.\n\nBu ünitede Microsoft Visual Studio 2022 Community kullanılmıştır.\n\nZorunlu İş Yükü (Workload):\n\nDesktop development with C++ ✅ (Soru 1)\n\n📂 2. Solution (Çözüm) ve Project (Proje)\n\nProject (Proje): Tek bir program (.exe) oluşturmak için kaynak dosyaları içerir.\n\nSolution (Çözüm): Birden fazla projeyi bir araya getiren kapsayıcıdır.\n\n“Solution” → birden fazla projeyi yönetir. ✅ (Soru 2)\n\n📄 3. Dosya Türleri ve Uzantılar\n\nKaynak kod dosyası: .cpp\n\nBaşlık dosyası: .h\n\nÇözüm dosyası: .sln\n\nÇalıştırılabilir dosya: .exe\n\nC++ kaynak dosya uzantısı → .cpp ✅ (Soru 3)\n\n▶️ 4. Programı Çalıştırma Şekilleri\n\nF5 → Start Debugging: Hata ayıklama modunda çalıştırır, program bitince pencere kapanır.\n\nCtrl + F5 → Start Without Debugging:\nProgram hata ayıklayıcı olmadan çalışır, çıktı ekranda kalır.\n\nDoğru kısayol: Ctrl + F5 ✅ (Soru 4)\n\n🚫 5. Hata Türleri\nHata Türü\t                  Tanım\t                                 Tespit Eden                 \tÖrnek\nSözdizimi (Syntax Error)\tYazım kurallarının ihlali\tDerleyici\tstd::cout << \"Hi\" (noktalı virgül eksik)\nMantıksal (Logical Error)\tKod çalışır ama yanlış sonuç verir\tİnsan\twhile (i < 5) → 5 dahil değil\nBağlayıcı (Linker Error)\tTanımsız fonksiyon/değişken\tDerleyici sonrası\tYanlış fonksiyon adı\nÇalışma Zamanı (Runtime) Program çalışırken hata\tSistem\tSıfıra bölme\n\nSözdizimi hatası (Syntax Error) → Derleyici bulur. ✅ (Soru 5)\n\n🧩 6. Hata Ayıklama (Debugging)\n\nAmaç: Program çalışırken değişken değerlerini ve akışı izlemek.\n\nKesme Noktası (Breakpoint):\nKırmızı daire ile işaretlenen satır → program burada durur.\n\nDoğru cevap: Breakpoint (Kesme Noktası) ✅ (Soru 6)\n\n⏱️ 7. Kodda Adım Adım İlerleme (Stepping)\nKomut\tKısayol\tAçıklama\nStep Over\tF10\tSatırı çalıştırır ama fonksiyonun içine girmez. ✅ (Soru 7)\nStep Into\tF11\tFonksiyonun içine girer.\nStep Out\tShift+F11\tFonksiyondan çıkar.\nF5\tBaşlat (debug ile)\t\nCtrl+Shift+F5\tYeniden başlat\t\n🔍 8. Kullanıcıdan Veri Alma (cin ve getline)\n\ncin >> → İlk boşlukta durur.\n🔸 Örnek: “Ali Veli” → sadece “Ali” okunur.\n\nBoşluk içeren metin için:\n\n#include <string>\nstd::getline(std::cin, isim);\n\n\nDoğru fonksiyon: getline() ✅ (Soru 8)\n\n🖥️ 9. Ekrana Yazı Yazdırma\n\nstd::cout → Konsola veri yazar.\n\nstd::cout << \"Merhaba Dünya\";\n\n\nStandart çıkış nesnesi: std::cout ✅ (Soru 9)\n\n⚙️ 10. Programın Derlenme Süreci\n\nC++ Derleme Aşamaları:\n\nÖnişleme (Preprocessing) → #include, #define işlemleri.\n\nDerleme (Compilation) → .cpp → .obj (makine kodu). ✅ (Soru 10)\n\nBağlama (Linking) → .obj → .exe\n\nYürütme (Execution) → Programın çalıştırılması.\n\nSoru 10’un cevabı: Compilation (Derleme)\n\n📘 Kısaca Öğrenilmesi Gerekenler (Tam Test Özeti)\nKonu\tBilinmesi Gereken\tSoru\nZorunlu iş yükü\tDesktop development with C++\t1\nÇözüm (Solution)\tBirden fazla projeyi içerir\t2\nDosya uzantısı\t.cpp\t3\nKonsol kapanmasın\tCtrl + F5\t4\nHata türü\tSyntax Error\t5\nKesme noktası\tBreakpoint\t6\nStep Over\tF10\t7\nBoşluklu giriş\tgetline()\t8\nEkrana yazı\tstd::cout\t9\nDerleme aşaması\tCompilation\t10",
       "pdfData": null,
       "createdAt": "2025-10-13T12:28:13.458Z"
+    },
+    {
+      "id": 1760359234948,
+      "subject": "Programlama Temelleri",
+      "unit": "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"",
+      "title": "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"",
+      "summary": "🔹 1. Veri Türleri (Data Types)\n\nC++’ta değişkenin bellekte ne kadar yer kaplayacağını ve hangi tür veriyi tutacağını belirler.\n\nTemel Veri Türleri:\n\nTür\t                Açıklama\t                                                    Örnek\nint              \tTamsayı\t                                                       10\nfloat      \t        Ondalıklı sayı (tek duyarlık)\t                     3.14f\ndouble           \tOndalıklı sayı (çift duyarlık)\t                   3.141592\nchar\t                Tek karakter (ASCII değer saklar)\t                 'A'\nbool\t                 Doğru/Yanlış\t                                       true / false\n\nTüretilmiş (Derived) Türler:\n👉 Dizi (array), İşaretçi (pointer), Fonksiyon, Referans\nKullanıcı tanımlı türler: struct, union, enum\n\n🔹 2. Değişkenler (Variables)\n\nBellekte veri saklamak için kullanılır.\nTanımlama:\n\nint sayi = 10;\n\n\nKurallar:\n\nHarf veya _ ile başlamalı\n\nRakamla başlayamaz (❌ 2sayi)\n\nBüyük/küçük harfe duyarlıdır (sayi ≠ Sayi)\n✅ Örnek: ortalama, _puan, sayi_2\n\n🔹 3. Sabitler (Constants)\n\nProgram çalışırken değeri değişmeyen verilerdir.\n\nTanımlama Yöntemleri:\n\nconst anahtar kelimesi\n\nconst int yas = 18;\n\n\n➤ Değeri program boyunca değişmez. ✅ (Soru 6, 9)\n\n#define direktifi\n\n#define PI 3.14\n\n🔹 4. Operatörler (Operators)\n\nDeğişken ve sabitler üzerinde işlem yapan sembollerdir. ✅ (Soru 10)\n\n🧮 Aritmetik Operatörler\n\n+ - * / %\nÖrnek: a + b, a % b (mod alma)\n➡ % sadece tamsayılar ile kullanılır.\n❌ && aritmetik değildir. (Soru 5)\n\n🟩 Atama Operatörleri\nOperatör\tAnlamı\n=\tAtama\n+=\tTopla ve ata\n-=\tÇıkar ve ata\n*=\tÇarp ve ata\n/=\tBöl ve ata\n🔼 Arttırma / Azaltma Operatörleri\n\n++a → Önce arttır, sonra kullan\n\na++ → Önce kullan, sonra arttır\n\n--a, a-- aynı mantıkla azaltır.\n\n❓ Üçlü (Koşullu) Operatör\nsonuc = (a < b) ? b : a;\n\n\n➡ a < b doğruysa b, değilse a döner.\n\n⚙️ Diğer Operatörler\nOperatör\tAçıklama\nsizeof\tBellekte kapladığı alanı verir\n&\tAdresini verir\n.\tSınıf veya yapı üyesine erişim\n->\tİşaretçi ile erişim\n,\tVirgül, ifadeleri ayırır\n🔹 5. Operatör Önceliği (Priority)\n\nİşlemlerin yapılma sırasını belirler:\n\n( ) Parantez\n\n++, --\n\n*, /, %\n\n+, -\n\n<, >, <=, >=\n\n==, !=\n\n&&, ||\n\n=\n\nÖrnek:\n\n3 * 2 + 8 → (3 * 2) + 8 = 14\n\n🔹 6. Kısa Özetle Öğrenilmesi Gerekenler\nKonu\t                      Kısa Bilgi\t                                                            Soru\nTam sayı türü\t                   int\t                                                                       1\nSabit tanımlama\t          #define veya const\t                                      2, 6\nKarakter türü\t                   char\t                                                                3\n3.14 sabiti\t               Ondalık sayı (float/double)\t                                4\n&&\t                               Aritmetik değil, mantıksal\t                                5\nconst değişken\t       Değeri değişmez\t                                               6, 9\nGeçersiz değişken adı\t 2sayi\t                                                                 7\nTüretilmiş olmayan tür\t int\t                                                                         8\nOperatör tanımı\t       Değişken/sabit üzerinde işlem yapan semboller\t10\n\n✅ Sonuç:\nBu özetle;\n\nVeri türlerini (int, float, char, double, bool),\n\nSabit tanımlama yöntemlerini,\n\nOperatör çeşitlerini ve önceliklerini,\n\nArtırma/azaltma farklarını\ntam olarak öğrenmiş olursun.\n\n👉 Bu sayede 10 değerlendirme sorusunun tamamını rahatlıkla çözebilirsin.",
+      "pdfData": null,
+      "createdAt": "2025-10-13T12:40:34.948Z"
     }
   ],
   "exams": {
@@ -1462,6 +1472,128 @@
           "E": "Yürütme (Execution)"
         },
         "correctAnswer": "C"
+      }
+    ],
+    "Programlama Temelleri - 5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\" - 5.Ünite Deneme Sınavı": [
+      {
+        "id": 1760359330580,
+        "text": "C++ dilinde tamsayı değerlerini saklamak için hangi veri türü kullanılır?",
+        "options": {
+          "A": "char",
+          "B": "float",
+          "C": "int",
+          "D": "double",
+          "E": "long double"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760359348479,
+        "text": "C++ dilinde aşağıdakilerden hangisi main fonksiyonu dışında sabit\ntanımlamak için kullanılan bir yöntemdir?",
+        "options": {
+          "A": "#define",
+          "B": "#value",
+          "C": "#const",
+          "D": "#var",
+          "E": "#static"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760359366260,
+        "text": "C++ programlama dilinde bir karakterin ASCII değerini depolamak için\nhangi veri türü uygundur?",
+        "options": {
+          "A": "int",
+          "B": "float",
+          "C": "char",
+          "D": "double",
+          "E": "bool"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760359383784,
+        "text": "3.14 değeri hangi türde bir sabittir?",
+        "options": {
+          "A": "Karakter Sabiti",
+          "B": "Ondalık Sayı Sabiti",
+          "C": "Tam Sayı Sabiti",
+          "D": "Boolean Sabiti",
+          "E": "İlişkisel Sabit"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760359408097,
+        "text": "Aşağıdaki operatörlerden hangisi aritmetik bir operatör değildir?",
+        "options": {
+          "A": "+",
+          "B": "-",
+          "C": "*",
+          "D": "%",
+          "E": "&&"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760359425725,
+        "text": "C++ dilinde sabit tanımlamak için kullanılan const anahtar sözcüğü ile ilgili\nhangisi doğrudur?",
+        "options": {
+          "A": "Değeri program boyunca değiştirilebilir.",
+          "B": "Yalnızca karakter veri türleriyle kullanılabilir.",
+          "C": "Programın çalışması sırasında değeri değişmez.",
+          "D": "Bellekte yer kaplamaz.",
+          "E": "Sadece #define ile birlikte kullanılır."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760359444543,
+        "text": "Aşağıdaki değişken isimlerinden hangisi geçerli değildir?",
+        "options": {
+          "A": "sayi1",
+          "B": "_ortalama",
+          "C": "toplamDeger",
+          "D": "2sayi",
+          "E": "sayi_2"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760359464236,
+        "text": "Aşağıdakilerden hangisi türetilmiş bir veri türü değildir?",
+        "options": {
+          "A": "Dizi",
+          "B": "İşaretçi (pointer)",
+          "C": "Fonksiyon",
+          "D": "Yapı (struct)",
+          "E": "İnt"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760359484131,
+        "text": "Aşağıdaki ifadelerden hangisi doğrudur?",
+        "options": {
+          "A": "Aritmetik operatörler yalnızca tamsayılar ile kullanılabilir.",
+          "B": "Değişkenler bellek adresi tutar, veri tutmaz.",
+          "C": "const anahtar sözcüğü ile tanımlanan bir değişkenin değeri değiştirilemez.",
+          "D": "Operatörler sadece sayısal değerler üzerinde işlem yapar.",
+          "E": "Veri türleri yalnızca değişkenler için tanımlanır, sabitler için gerek yoktur."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760359503428,
+        "text": "Aşağıdaki ifadelerden hangisi C++ dilindeki operatörleri en iyi şekilde\naçıklar?",
+        "options": {
+          "A": "Sadece matematiksel işlemleri gerçekleştiren sembollerdir.",
+          "B": "Değişken veya sabitler üzerinde işlem yapan sembollerdir.",
+          "C": "Sadece mantıksal karşılaştırma yaparlar.",
+          "D": "Yalnızca aritmetik hesaplamalarda kullanılırlar.",
+          "E": "Veri türlerini belirlemek için kullanılırlar."
+        },
+        "correctAnswer": "B"
       }
     ]
   },
