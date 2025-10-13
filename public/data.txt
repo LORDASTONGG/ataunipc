@@ -565,6 +565,128 @@
         },
         "correctAnswer": "E"
       }
+    ],
+    "Grafik Tasarımı - 5. Ünite : Katman İşlemleri ve Katman Efektleri - 5.Ünite Deneme Sınavı": [
+      {
+        "id": 1760354619195,
+        "text": "Aşağıdaki dosya biçimlerinin hangisinde birden fazla katman saklanabilir?",
+        "options": {
+          "A": "JPG",
+          "B": "JPEG",
+          "C": "PNG",
+          "D": "BMP",
+          "E": "PSD"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760354664964,
+        "text": "Katmanlar panelinde bir katman hangi sembol gizlenebilir?",
+        "options": {
+          "A": "(T) sembolü şeklindeki düğme",
+          "B": "Göz şeklindeki düğme",
+          "C": "fx düğmesi",
+          "D": "> şeklindeki düğme",
+          "E": "Opaklık düğmesi"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760354691337,
+        "text": "Bir katmanı bir başka katman ile bağladığımızda aşağıdaki işlemlerin\nhangisinde her iki katman aynı anda etkilenir?",
+        "options": {
+          "A": "Bir katmanın silinmesi",
+          "B": "Bir katmana boya fırçası ile yapılan çizim",
+          "C": "Bir katmandaki bir alanın seçilip silinmesi",
+          "D": "Bir katmanın fare ile taşınması",
+          "E": "Bir katmana renk kaplama stili uygulanmas"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760354716710,
+        "text": "Katmanlar panelinde A katmanı, B katmanın üstündedir. Bu durumda\naşağıdakilerden hangisi doğrudur?",
+        "options": {
+          "A": "A katmanı ile B katmanı aynı gruptadır",
+          "B": "A katmanı taşındığında B katmanı da taşınır",
+          "C": "A katmanına bir çizim yapılırsa B katmanına da yapılır",
+          "D": "A katmanı B katmanının önünde gözükür",
+          "E": "A katmanı silinmeden B katmanı silinemez"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760354754982,
+        "text": "Ayarlama katmanı ile aşağıdakilerden hangisi yapılabilir?",
+        "options": {
+          "A": "Bir katmanı 90 derece döndürme",
+          "B": "Tüm katmanları 90 derece döndürme",
+          "C": "Bir katmanın rengini canlandırma",
+          "D": "Bir katmanın boyutunu değiştirme",
+          "E": "Bir katmana mavi çerçeve çizme Katman İşlemleri ve Efektleri"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354782701,
+        "text": "Yazı katmanları hakkında aşağıdakilerden hangisi yanlıştır?",
+        "options": {
+          "A": "Yazının rengi sonradan değiştirilebilir",
+          "B": "Yazıya sonradan ek kelime veya karakter eklenebilir",
+          "C": "Yazıya gölge efekti verilebilir",
+          "D": "Yazılan metnin dilbilgisi denetimi yaptırılabilir",
+          "E": "Yazı 90 derece döndürülebilir"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760354809790,
+        "text": "Bir yazı katmanına “Metni Rasterleştir” işlemi yapılırsa, aşağıdakilerden\nhangisi doğru olur?",
+        "options": {
+          "A": "Yazıya yeni kelime veya harf eklenemez",
+          "B": "Yazı çizim alanında taşınamaz",
+          "C": "Yazı, kayıt aşamasında resme dahil edilmez",
+          "D": "Yazı katmanlar panelinden silinir",
+          "E": "Yazı ayarlama katmanı haline dönüşür"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760354837154,
+        "text": "Bir katmanın tamamen şeffaf olması için hangi değerinin kaç olması\ngerekir?",
+        "options": {
+          "A": "Doygunluk - 0",
+          "B": "Opaklık - %0",
+          "C": "Renk doygunluğu - %0",
+          "D": "Alfa Renk - %100",
+          "E": "Alfa Renk - 255"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760354861112,
+        "text": "Bir katmanı tamamen kilitlediğinizde aşağıdakilerden hangisi yapılamaz?",
+        "options": {
+          "A": "Katmana ayarlama katmanı ekleme",
+          "B": "Katmanın sıralaması Katmanlar panelinde üstte ya da alta taşıma",
+          "C": "Katmanı 90 derece döndürme",
+          "D": "Katmanı bir gruba dahil etme",
+          "E": "Katmanı gizleme"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760354880756,
+        "text": "Aşağıdaki katman stillerinden hangisi, katmanın kenarlarına çerçeve ekler?",
+        "options": {
+          "A": "Gölge",
+          "B": "Renk Kaplama",
+          "C": "Kontur",
+          "D": "Dış Işıma",
+          "E": "Degrade Kaplama"
+        },
+        "correctAnswer": "C"
+      }
     ]
   },
   "results": []
