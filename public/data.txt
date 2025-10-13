@@ -687,6 +687,128 @@
         },
         "correctAnswer": "C"
       }
+    ],
+    "Grafik Tasarımı - 6. Ünite : Hizalama, Cetveller, Birimler ve Kılavuz Çizgileri Kullanma, Yazdırma Seçenekleri - 6.Ünite Deneme Sınavı": [
+      {
+        "id": 1760355051740,
+        "text": "Aşağıdakilerden hangisi grafiksel öğeleri konumlandırmak için kullanılan\nbir araç değildir?",
+        "options": {
+          "A": "Cetveller",
+          "B": "Izgaralar",
+          "C": "Kılavuz çizgileri",
+          "D": "Katmanlar",
+          "E": "Akıllı kılavuzlar"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760355070026,
+        "text": "Aşağıdakilerden hangisi Photoshop CC ile kullanılabilecek bir ölçek birimi\ndeğildir?",
+        "options": {
+          "A": "İnç",
+          "B": "Yüzde",
+          "C": "Santimetre",
+          "D": "Milimetre",
+          "E": "Metre"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760355150315,
+        "text": "Aşağıdaki gibi numaralandırılmış hizalama seçeneklerinden hangisi üst\nkısmı referans noktası alarak grafiksel öğeleri hizalar?\n\n1          2               3 \n                              I\nIı           II               _",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760355180347,
+        "text": "Akıllı kılavuzları aktifleştirmek veya pasifleştirmek için hangi menüden\nyararlanılabilir?",
+        "options": {
+          "A": "Düzen>Göster> Akıllı Kılavuzlar",
+          "B": "Dosya> Akıllı Kılavuzlar",
+          "C": "Görünüm>Göster> Akıllı Kılavuzlar",
+          "D": "Görünüm>Kılavuz ekle>Akıllı Kılavuzlar",
+          "E": "Pencere>Katmanlar>Akıllı Kılavuzlar"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760355201502,
+        "text": "Cetvellerin başlangıç konumunun bulunduğu yer aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Cetvel başlığı",
+          "B": "Yaslama yeri",
+          "C": "Sıfır konumu",
+          "D": "Cetvel boşluğu",
+          "E": "Hizalama boşluğu"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760355222773,
+        "text": "Aşağıdakilerden hangisi Photoshop programında kullanılabilecek bir renk\nmodu değildir?",
+        "options": {
+          "A": "RGB",
+          "B": "CMYK",
+          "C": "Gri tonlamalı",
+          "D": "Katmanlı renkler",
+          "E": "Lab renk"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760355246708,
+        "text": "Aşağıdakilerden hangisi hazırlanan bir tasarımı yatay pozisyondaki bir\nkâğıda bastırmak için kullanılması gereken yazdırma seçeneklerindendir?",
+        "options": {
+          "A": "Ölçeklendirme",
+          "B": "Mizanpaj",
+          "C": "Seçili alanı yazdır",
+          "D": "Kopya sayısı",
+          "E": "Yazdırma işaretleri"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760355268067,
+        "text": "Hazırlanan bir grafiksel öğedeki renklerin, yazıcıdan basılmadan önce\nönizlemesini yapmak için aşağıdakilerden hangisi kullanılabilir?",
+        "options": {
+          "A": "Katmanları çoğalt",
+          "B": "Akıllı renkler",
+          "C": "Prova renkleri",
+          "D": "Katmanlı renkler",
+          "E": "RGB renkler"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760355290427,
+        "text": "Photoshop'ta Akıllı Kılavuzlar özelliği ne işe yarar?",
+        "options": {
+          "A": "Renk ayarlarını otomatik olarak yapar",
+          "B": "Görüntüdeki nesneleri seçer",
+          "C": "Tasarım sürecinde nesnelerin hizalanmasını sağlar",
+          "D": "Filtreleri otomatik olarak uygular",
+          "E": "Katmanları otomatik olarak oluşturur"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760355314951,
+        "text": "Izgaralar arasındaki Alt Bölümler değerini 3 yaptığınızda ızgaralarla ilgili\nolarak aşağıdaki işlemlerden hangisini yapmış olursunuz?",
+        "options": {
+          "A": "Herbir ızgarayı kendi içerisinde 3x3 ölçeğinde alt bölümlere ayırma",
+          "B": "Seçilen ızgarayı kendi içerisinde 2x3 ölçeğinde alt bölümlere ayırma",
+          "C": "Aktif ızgarayı kendi içerisinde 3x3 ölçeğinde alt bölümlere ayırma",
+          "D": "Pasif ızgarayı kendi içerisinde 3 inç ölçeğinde alt bölümlere ayırma",
+          "E": "Kılavuz çizgilerini 3x3 ölçeğinde alt bölümlere ayırma"
+        },
+        "correctAnswer": "A"
+      }
     ]
   },
   "results": []
