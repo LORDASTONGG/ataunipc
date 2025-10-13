@@ -559,10 +559,10 @@ function renderExamsAccordion() {
                                                         <span class="exam-badge-small">${examQuestions.length} Soru</span>
                                                         <div class="exam-info-small"><div class="exam-info-item-small"><span>⏱️</span><span>${examQuestions.length * 2} dk</span></div></div>
                                                         <div class="lesson-card-buttons">
-                                                            <button class="lesson-btn-small" onclick="startExam('${examKey}')">🎯 Sınava Başla</button>
+                                                            <button class="lesson-btn-small" onclick="startExam('${encodeURIComponent(examKey)}')">🎯 Sınava Başla</button>
                                                             ${isAdminLoggedIn ? `
-                                                                <button class="lesson-btn-small btn-edit admin-only" onclick="manageExamQuestions('${examKey}')">✏️ Soruları Düzenle (${examQuestions.length})</button>
-                                                                <button class="lesson-btn-small admin-only" style="background: rgba(244, 67, 54, 0.1); color: var(--accent-danger); border-color: var(--accent-danger);" onclick="deleteExam('${examKey}')">🗑️ Sınavı Sil</button>
+                                                                <button class="lesson-btn-small btn-edit admin-only" onclick="manageExamQuestions('${encodeURIComponent(examKey)}')">✏️ Soruları Düzenle (${examQuestions.length})</button>
+                                                                <button class="lesson-btn-small admin-only" style="background: rgba(244, 67, 54, 0.1); color: var(--accent-danger); border-color: var(--accent-danger);" onclick="deleteExam('${encodeURIComponent(examKey)}')">🗑️ Sınavı Sil</button>
                                                             ` : ''}
                                                         </div>
                                                     </div>`;
@@ -983,23 +983,26 @@ function addQuestion() {
 
 function manageExamQuestions(examKey) {
     if (!isAdminLoggedIn) return;
+    // Decode the exam key if it was encoded
+    examKey = decodeURIComponent(examKey);
+
     const examQuestions = exams[examKey];
     if (!examQuestions || examQuestions.length === 0) return;
-    
+
     let html = '<div style="max-height: 60vh; overflow-y: auto;">';
     examQuestions.forEach((q, index) => {
         html += `
             <div style="background: var(--bg-secondary); padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: 2px solid var(--border-color);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                     <strong style="color: var(--accent-primary);">Soru ${index + 1}</strong>
-                    <button class="btn-edit" onclick="openEditQuestion('${examKey}', ${index})">✏️ Düzenle</button>
+                    <button class="btn-edit" onclick="openEditQuestion('${encodeURIComponent(examKey)}', ${index})">✏️ Düzenle</button>
                 </div>
                 <p style="color: var(--text-secondary); font-size: 0.9rem;">${q.text.substring(0, 100)}${q.text.length > 100 ? '...' : ''}</p>
                 <p style="color: var(--accent-success); font-size: 0.85rem; margin-top: 0.5rem;">Doğru Cevap: ${q.correctAnswer}</p>
             </div>`;
     });
     html += '</div>';
-    
+
     const modal = document.createElement('div');
     modal.className = 'modal active';
     modal.innerHTML = `
@@ -1074,6 +1077,9 @@ function closeEditQuestionModal() {
 
 function deleteExam(examKey) {
     if (!isAdminLoggedIn) return;
+    // Decode the exam key if it was encoded
+    examKey = decodeURIComponent(examKey);
+
     if (confirm(`"${examKey}" sınavını ve tüm sorularını silmek istediğinizden emin misiniz?`)) {
         delete exams[examKey];
         saveData();
@@ -1085,23 +1091,26 @@ function deleteExam(examKey) {
 
 // Sınav Çözme
 function startExam(examKey) {
+    // Decode the exam key if it was encoded
+    examKey = decodeURIComponent(examKey);
+
     // Try to find the exam with the exact key first
     if (!exams[examKey]) {
         // If not found, try to find a matching exam by checking all keys
         const keyParts = examKey.split(' - ');
         if (keyParts.length >= 3) {
-            const matchingKey = Object.keys(exams).find(key => 
+            const matchingKey = Object.keys(exams).find(key =>
                 key.includes(keyParts[0]) &&  // Match subject
                 key.includes(keyParts[1]) &&  // Match unit
                 key.includes(keyParts[2])     // Match exam name
             );
-            
+
             if (matchingKey) {
                 console.log(`Found matching exam with key: ${matchingKey}`);
                 examKey = matchingKey;  // Use the found key
             }
         }
-        
+
         if (!exams[examKey]) {
             alert('Sınav bulunamadı. Lütfen tekrar deneyin veya yöneticiye başvurun.');
             console.error('Exam not found:', examKey);
@@ -1109,18 +1118,18 @@ function startExam(examKey) {
             return;
         }
     }
-    
-    currentExam = { 
-        key: examKey, 
-        questions: Array.isArray(exams[examKey]) ? exams[examKey] : [], 
-        answers: {} 
+
+    currentExam = {
+        key: examKey,
+        questions: Array.isArray(exams[examKey]) ? exams[examKey] : [],
+        answers: {}
     };
-    
+
     if (currentExam.questions.length === 0) {
         alert('Bu sınavda henüz soru bulunmuyor.');
         return;
     }
-    
+
     examStartTime = Date.now();
     startTimer();
     document.getElementById('examTitle').textContent = examKey;
