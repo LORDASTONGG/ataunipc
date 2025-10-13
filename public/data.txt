@@ -809,6 +809,128 @@
         },
         "correctAnswer": "A"
       }
+    ],
+    "Grafik Tasarımı - 7. Ünite : Filtreler ve Değişimler - 7.Ünite Deneme Sınavı": [
+      {
+        "id": 1760355487871,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta resmin bir kısmına ya da tümüne\nçeşitli efektler uygulamayı sağlar?",
+        "options": {
+          "A": "Katman",
+          "B": "Filtre",
+          "C": "Metin",
+          "D": "Araç çubukları",
+          "E": "Görünüm menüsü"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760355512815,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta dışarıdan eklenen filtrelerin yer\naldığı bölümdür?",
+        "options": {
+          "A": "Filtre menüsü alt kısmında",
+          "B": "Filtre galerisi içerisinde",
+          "C": "Araç çubukları içerisinde",
+          "D": "Pencere menüsünde",
+          "E": "Dosya menüsünde"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760355537127,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta eklenen filtreyi geri almak için\nkullanılan kısa yol tuşudur?",
+        "options": {
+          "A": "Ctrl+X",
+          "B": "Ctrl+C",
+          "C": "Ctrl+V",
+          "D": "Ctrl+P",
+          "E": "Ctrl+Z"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760355564801,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta filtre kullanırken dikkat edilmesi\ngereken hususlardan biri değildir?",
+        "options": {
+          "A": "Filtre uygulayabilmek için görüntünün yer aldığı katmanın etkin olması gerekmektedir.",
+          "B": "Bitmap biçimindeki görüntülere filtre uygulanamaz.",
+          "C": "Filtreler sadece Filtre Galerisi kullanılarak eklenebilir.",
+          "D": "Üst üste filtre uygulanabilir.",
+          "E": "Bazı filtreler sadece RGB renk moduna uygulanabilir."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760355590220,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta tüm filtrelerin uygulanabileceği\nresim türüdür?",
+        "options": {
+          "A": "16 bit resimler",
+          "B": "Bitmap resimler",
+          "C": "Png resimler",
+          "D": "8 bit resimler",
+          "E": "RGB modundaki resimler"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760355609667,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta filtrenin sonradan istenildiğinde\ndeğiştirilebilmesini sağlar?",
+        "options": {
+          "A": "Akıllı nesneler",
+          "B": "Filtre galerisi",
+          "C": "Ufuk noktası",
+          "D": "Uyarlanabilir geniş açı",
+          "E": "Mercek düzeltme"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760355629502,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta Filtre Galerisine ulaşmak için\nizlenmesi gereken yoldur?",
+        "options": {
+          "A": "Filtre",
+          "B": "Filtre > Filtre Galerisi",
+          "C": "Filtre > Sıvılaştır",
+          "D": "Filtre > Mercek düzeltme",
+          "E": "Filtre Galerisi"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760355652967,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta Filtre Galerisi için doğru değildir?",
+        "options": {
+          "A": "Filtre galerisinde tüm filtreler yer alır.",
+          "B": "Filtre galerisi kullanılarak üst üste farklı filtreler uygulanabilir.",
+          "C": "Filtre galerisinde yer alan filtrelerin ayarlamaları yapılabilir.",
+          "D": "Filtre galerisi aracılığıyla uygulanan filtrenin ön izlemesi yapılabilir.",
+          "E": "Filtre galerisinde uygulanan filtrenin sırası değiştirilebilir."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760355676479,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta Filtre Galerisi kullanılarak üst üste\nfiltre eklemek için hangisinin yapılması gerekmektedir?",
+        "options": {
+          "A": "Eklenmek istenen filtre doğrudan seçilmelidir.",
+          "B": "Yeni efekt katmanı eklenmelidir.",
+          "C": "Shift tuşuna basılarak birden fazla filtre seçilmelidir.",
+          "D": "Ctrl tuşuna basılarak birden fazla filtre seçilmelidir.",
+          "E": "Shift+Ctrl kısa yolu kullanılmalıdır."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760355699290,
+        "text": "Aşağıdakilerden hangisi Photoshop’ta Filtre Galerisi kullanılarak uygulanan\nfiltreyi silmek için yapılması gereken işlemlendendir?",
+        "options": {
+          "A": "Eklenmek istenen filtre doğrudan seçilerek delete tuşuna basılmalıdır.",
+          "B": "Yeni efekt katmanı simgesine tıklanmalıdır.",
+          "C": "Shift + Delete tuş kombinasyonu kullanılmalıdır.",
+          "D": "Ctrl tuşuna basılmalıdır.",
+          "E": "Katmanı sil simgesine tıklanmalıdır."
+        },
+        "correctAnswer": "E"
+      }
     ]
   },
   "results": []
