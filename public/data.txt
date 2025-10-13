@@ -14,7 +14,8 @@
     "Programlama Temelleri": {
       "units": {
         "1. Ünite: Temel Kavramlar": true,
-        "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true
+        "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true,
+        "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true
       }
     }
   },
@@ -99,6 +100,15 @@
       "summary": "🧠 Genel Konu Özeti (Soruların Ortak Öğrettikleri)\n\nAlgoritmanın Özellikleri:\n\nSonlu, kesin, uygulanabilir, doğru ve verimli olmalıdır.\n\nHer adım tek anlamlı olmalı (Soru 1).\n\nSözde Kodun Rolü:\n\nAlgoritma mantığını, programlama diline bağlı kalmadan anlatır.\n\nOkunabilirlik ve mantıksal düzen ön planda (Soru 2, 8).\n\nAkış Diyagramları:\n\nAlgoritmanın görsel temsili.\n\nHer sembolün anlamı farklıdır:\n\nOval: Başla/Bitir\n\nDikdörtgen: İşlem\n\nParalelkenar: Girdi/Çıktı\n\nElmas: Karar\n\n(Soru 3, 7, 9).\n\nDöngüler ve Karar Yapıları:\n\nDöngüler işlemleri tekrar eder (Soru 4, 10).\n\nKarar yapıları koşula göre akışı değiştirir (Soru 7).\n\nSıra ve Süre (Zamanlama):\n\nBazı adımlar ancak belirli koşul gerçekleşince yapılabilir.\n\nBu, algoritmanın güvenilirliğini sağlar (Soru 6).\n\nEğitim ve Mühendislikte Akış Diyagramı Kullanımı:\n\nTest kapsamı, hata tespiti, ekip iletişimi kolaylaşır (Soru 5).\n\n🧩 Kısaca Öğrenilmesi Gerekenler\n\nAlgoritma belirsizlikten uzak, sonlu ve doğru olmalı.\n\nSözde kod: dil bağımsız, sade, girintili ve mantıklı.\n\nAkış diyagramı: sembollerle süreci görselleştirir.\n\nTemel yapılar: Sıralama, Karar, Döngü.\n\nZamanlama ve koşullar: doğru sırada yürütülmeli.\n\nİç içe döngüler işlem sayısını katlar.",
       "pdfData": null,
       "createdAt": "2025-10-13T12:09:42.728Z"
+    },
+    {
+      "id": 1760357889158,
+      "subject": "Programlama Temelleri",
+      "unit": "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"",
+      "title": "Yazılımın Dünyasına Hoşgeldin (Merhaba Dünya!)",
+      "summary": "🎯 Konu Özeti: İlk C++ Programı (Merhaba Dünya)\n🔹 1. C++’ın Temel Yapısı\n\nC++ 1979’da “C with Classes” adıyla geliştirilmiş, daha sonra nesne yönelimli (OOP) özellikleriyle güçlendirilmiştir.\n\nGünümüzde C++11, C++17, C++23 standartlarıyla modernleştirilmiştir.\n\nHem düşük seviyeli sistem programlamada hem de büyük ölçekli yazılımlarda kullanılır.\n\n🔹 2. İlk C++ Programının Temel Yapısı\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Merhaba Dünya\";\n    return 0;\n}\n\n\n#include <iostream> → Giriş/çıkış işlemleri için kütüphane ekler.\n\nusing namespace std; → std:: yazmadan cout, cin kullanılmasını sağlar.\n\nmain() → Programın başlangıç noktasıdır.\n\n{ } → Kod bloğunu tanımlar.\n\nreturn 0; → Programın başarılı şekilde bittiğini bildirir.\n\n🔹 3. Giriş / Çıkış İşlemleri\n\ncout → ekrana yazı yazar.\n\ncin → kullanıcıdan veri alır.\n\nendl veya \\n → yeni satıra geçer.\n\nZincirleme yazım mümkündür:\n\ncout << \"Ad: \" << ad << \"\\nSoyad: \" << soyad;\n\n🔹 4. Yorum Satırları\n\nKodu açıklamak için kullanılır, derleyici bunları yok sayar:\n\nTek satır: // Bu bir yorumdur\n\nÇok satır: /* Bu birden fazla satırlık yorumdur */\n\n🔹 5. Kaçış Karakterleri\nKaçış Dizisi\tAnlamı\tÖrnek\tÇıktı\n\\n\tYeni satır\t\"Merhaba\\nDünya\"\tMerhaba\nDünya\n\\t\tSekme\t\"Ad\\tSoyad\"\tAd   Soyad\n\\\\\tTers eğik çizgi\t\"\\\\\"\t\\\n\\\"\tÇift tırnak\t\"\\\"C++\\\"\"\t\"C++\"\n\\0\tNull karakter\t\"Merhaba\\0Dünya\"\tMerhaba\n\\a\tBip sesi\t\"\\a\"\t🔊\n\\b\tGeri silme\t\"Merhaba\\b!\"\tMerhab!\n🔹 6. Temel Sözdizimi Kuralları\n\nC++ büyük/küçük harf duyarlıdır:\nsayi, Sayi, SAYI farklı değişkenlerdir.\n\nHer ifade (statement) ; ile biter.\nUnutulursa derleyici hata verir.\n\nBloklar { } ile tanımlanır.\n\nİç içe bloklar kullanılabilir.\n\nBlok sonunda ; konmaz.\n\nGirintileme (indentation) zorunlu değil ama okunabilirlik için önemlidir.\n\n🔹 7. Anahtar Kelimeler (Keywords)\n\nÖzel anlamı olan kelimelerdir, değişken/fonksiyon adı olarak kullanılamaz.\nÖrnek:\n\nVeri tipleri: int, float, double, char, bool\n\nKontrol yapıları: if, else, switch, for, while, break, continue\n\nFonksiyon: void, return\n\nNesne yönelimli: class, public, private, this\n\nBellek: new, delete, sizeof\n\nDiğer: namespace, using, try, catch, throw\n\n🚫 Hatalı: int for = 5; → ❌ for anahtar kelimedir.\n\n🔹 8. Sık Yapılan Hatalar ve Çözümleri\n❌ Noktalı Virgül Eksikliği\nint sayi = 10 // yanlış\nstd::cout << sayi;\n\n\n✅ Doğru:\n\nint sayi = 10;\nstd::cout << sayi;\n\n❌ Yanlış Anahtar Kelime Yazımı\n\nInt, Main, Retrun → ❌ Hata verir.\n\nC++ case-sensitive olduğundan int küçük yazılmalıdır.\n\n❌ Eksik veya Hatalı Kütüphane\n\n#include <iosteam> → yazım hatası\n\n#include <iostream> → ✅ doğru\n\nKullanılmayan kütüphaneler kodu yavaşlatır.\n\n🧩 En çok kullanılan kütüphaneler:\n\n<iostream> → Giriş/çıkış\n\n<string> → Metin işlemleri\n\n<cmath> → Matematik fonksiyonları\n\n<vector> → Dinamik diziler\n\n<iomanip> → Biçimlendirilmiş çıktı\n\n🧠 Konu Sonu Ders Çıkarımı\n\nHer C++ programı main() fonksiyonundan başlar.\n\n#include ile kütüphane eklenmezse cout veya cin tanınmaz.\n\n; ifadenin sonunu belirtir, unutulursa hata oluşur.\n\nC++ büyük/küçük harfe duyarlıdır.\n\nAnahtar kelimeler özel anlam taşır, değişken adı olamaz.\n\nendl ve \\n yeni satır oluşturur.\n\nKod blokları { } ile tanımlanır, blok sonuna ; konmaz.\n\nKaçış karakterleri özel semboller yazdırmak için kullanılır.\n\nYorum satırları derleyici tarafından yok sayılır.\n\nHataların çoğu noktalı virgül veya kütüphane eksikliğinden kaynaklanır.",
+      "pdfData": null,
+      "createdAt": "2025-10-13T12:18:09.158Z"
     }
   ],
   "exams": {
@@ -1198,6 +1208,128 @@
           "E": "18"
         },
         "correctAnswer": "C"
+      }
+    ],
+    "Programlama Temelleri - 3.Ünite \"İlk C++ Programı (Merhaba Dünya)\" - 3.Ünite Deneme sınavı": [
+      {
+        "id": 1760357971613,
+        "text": "Aşağıdaki kodun çıktısı nedir?\n\n#include <iostream>\nusing namespace std;\nint main() {\ncout << \"Merhaba\\nC++\";\nreturn 0;\n}",
+        "options": {
+          "A": "Merhaba C++",
+          "B": "Merhaba boşluk C++",
+          "C": "Merhaba\\nC++",
+          "D": "Merhaba C++\\n",
+          "E": "Hata verir"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760357993625,
+        "text": "C++ programının çalışmaya başladığı nokta aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "#include",
+          "B": "namespace",
+          "C": "return",
+          "D": "cout",
+          "E": "main()"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760358024458,
+        "text": "Aşağıdakilerden hangisi veya hangileri C++’ta yorum satırı olarak\nkullanılır?\n\na. // Bu bir yorumdur\nb. # Bu bir yorumdur\nc. \\ Bu bir yorumdur\nd. /* Bu bir yorumdur */",
+        "options": {
+          "A": "Yalnız I",
+          "B": "Yalnız II",
+          "C": "Yalnız III",
+          "D": "I, IV",
+          "E": "III, IV"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358053414,
+        "text": "Aşağıdaki kod parçasında hangi hata vardır?\n\n#include <iostream>\nint main() {\nstd::cout << \"Merhaba Dünya!\"\nreturn 0;\n}",
+        "options": {
+          "A": "Fazladan return ifadesi vardır.",
+          "B": "std:: ifadesi yanlış kullanılmıştır.",
+          "C": "main fonksiyonunun dönüş tipi int yerine void olmalıdır.",
+          "D": "cout yanlış yazılmıştır.",
+          "E": "Noktalı virgül (;) eksiktir."
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760358071215,
+        "text": "Aşağıdaki ifadelerden hangisi doğrudur?",
+        "options": {
+          "A": "C++ büyük/küçük harf duyarlı değildir.",
+          "B": "main() fonksiyonu olmadan program çalışabilir.",
+          "C": "cin çıktıyı ekrana verir.",
+          "D": "Yorum satırları derleyici tarafından yok sayılır.",
+          "E": "Noktalı virgül yalnızca return ifadesinden sonra yazılır."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760358094580,
+        "text": "Aşağıdakilerden hangisi C++’ta tanımlı anahtar kelime değildir?",
+        "options": {
+          "A": "Int",
+          "B": "cout",
+          "C": "cin",
+          "D": "return",
+          "E": "for"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760358168794,
+        "text": "Aşağıdaki satırlardan hangisi kütüphane eklemek için kullanılır?",
+        "options": {
+          "A": "using namespace std;",
+          "B": "int main()",
+          "C": "#include <iostream>",
+          "D": "cout<<”Merhaba”;",
+          "E": "return 0;"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760358205360,
+        "text": "C++’ta endl ifadesi ne işe yarar?",
+        "options": {
+          "A": "Programı sonlandırır.",
+          "B": "Yorum satırı başlatır.",
+          "C": "Yeni satıra geçer.",
+          "D": "Tab boşluğı bırakır.",
+          "E": "Kullanıcıdan veri alır."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760358231199,
+        "text": "C++’ta süslü parantezler { } ile tanımlanan bloklar için aşağıdaki\nifadelerden hangisi doğrudur?",
+        "options": {
+          "A": "Bloklar yalnızca main() fonksiyonunda kullanılabilir.",
+          "B": "Bloklar birden fazla ifadeyi bir arada tutmak için kullanılır.",
+          "C": "Blokların sonunda noktalı virgül (;) bulunmalıdır.",
+          "D": "Bloklar yalnızca if–else yapılarında kullanılabilir.",
+          "E": "Bloklar derleyici tarafından yok sayılır."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760358261953,
+        "text": "Aşağıdaki kod çalıştırıldığında kullanıcı 25 girerse ekrana ne yazılır?\n\n\n#include <cstdio>\nusing namespace std;\nint main() {\nint sayi;\nscanf(\"%d\", &sayi);\nprintf(\"Sayi: %d\\n\", sayi);\nreturn 0;\n}",
+        "options": {
+          "A": "Sayi: 25",
+          "B": "Sayi: 0",
+          "C": "Sayi: %25",
+          "D": "Sayi: %d",
+          "E": "Sayi: 25\\n"
+        },
+        "correctAnswer": "A"
       }
     ]
   },
