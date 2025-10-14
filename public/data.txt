@@ -35,7 +35,13 @@
     },
     "Web Tasarımının Temelleri": {
       "units": {
-        "1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram": true
+        "1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram": true,
+        "2.Ünite \"WEB TASARIM SÜRECİ VE KULLANICI DENEYİMİ (UX)\"": true,
+        "3.Ünite \"Arayüz Tasarımı (UI) ve Görsel Tasarım İlkeleri\"": true,
+        "4.Ünite \"WEB TASARIMINA GİRİŞ: HTML VE TEMEL BİLGİLER\"": true,
+        "5.Ünite \"HTML ile Sayfa Yapılandırma\"": true,
+        "6.Ünite \"CSS Temelleri\"": true,
+        "7.Ünite \"İleri CSS Teknikleri\"": true
       }
     }
   },
@@ -237,6 +243,60 @@
       "summary": "🧠 1. Ünite Özeti — Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavramlar\n🔹 İnternetin Doğuşu ve Gelişimi\n\nİnternetin temeli 1960’larda ARPANET projesi ile atılmıştır.\n→ Amaç: Güvenli bilgi paylaşımı sağlamak.\n\n1980’lerde TCP/IP protokolü standart hale geldi, böylece farklı bilgisayarlar birbirine bağlanabildi.\n\n1989’da Tim Berners-Lee, World Wide Web (WWW) sistemini geliştirdi.\n→ Web’in yaygınlaşmasını sağlayan kişi odur.\n\nWeb tarayıcılarının gelişmesiyle internet kitlesel hale geldi.\n\n🔹 Web Standartları ve W3C\n\nW3C (World Wide Web Consortium), web teknolojilerinin uyumlu ve doğru çalışması için standartları belirler.\n\nStandartların amacı:\n→ Farklı cihaz ve tarayıcılarda uyumluluk,\n→ Erişilebilirlik,\n→ Kapsayıcılık sağlamaktır.\n\n🔹 Erişilebilirlik ve Evrensel Tasarım\n\nErişilebilir web tasarımı, tüm kullanıcıların (engelli bireyler dâhil) web içeriğine eşit şekilde ulaşabilmesini hedefler.\n\nYalnızca teknik değil, etik ve toplumsal bir sorumluluktur.\n\nAmaç: Kapsayıcı, kullanılabilir, herkes için erişilebilir web siteleri.\n\n🔹 Ağ Yapısı ve Temel Kavramlar\n\nİstemci (Client): Kaynak (bilgi, dosya vb.) talep eden taraftır.\n\nSunucu (Server): Bu kaynakları sağlayan, depolayan taraftır.\n\nWeb bu istemci–sunucu modeline dayanır.\n→ Örneğin: Tarayıcı (istemci), web sitesinden veri ister.\n\nIP adresi: Bilgisayarların ağ üzerindeki benzersiz numarasıdır.\n\nAlan adı (Domain Name): IP adresinin hatırlanabilir hâlidir.\n\nDNS (Domain Name System): Alan adlarını IP adreslerine çevirir.\n\n🔹 Temel İnternet Protokolleri\n\nHTTP (HyperText Transfer Protocol): Web sayfalarının aktarım protokolüdür.\n\nHTTPS: HTTP’nin güvenli (şifreli) hâlidir. Veri transferi SSL/TLS ile korunur.\n\nFTP (File Transfer Protocol): Dosya transferi içindir.\n\nSMTP (Simple Mail Transfer Protocol): E-posta gönderme protokolüdür.\n\nPOP3 / IMAP: E-posta alma protokolleridir.\n\n🔹 HTML (HyperText Markup Language)\n\nWeb sayfasının yapısını tanımlar.\n\nTarayıcıya, içeriği nasıl düzenleyeceğini söyler.\n\nHTML = içeriği tanımlar, görünümü düzenlemez.\n\nTemel HTML5 şablonu:\n\n<!DOCTYPE html>\n<html lang=\"tr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Sayfa Başlığı</title>\n</head>\n<body>\n  Sayfa içeriği buraya yazılır.\n</body>\n</html>\n\n\nDOCTYPE → Belge türünü belirtir (HTML5 için zorunlu).\n\n<html> → Sayfanın tamamını kapsar.\n\n<head> → Sayfa hakkında bilgiler içerir (başlık, meta etiketler, stil bağlantıları vb.).\n\n<title> → Tarayıcı sekmesinde görünen başlıktır.\n\n<meta charset=\"UTF-8\"> → Karakter kodlamasıdır (Türkçe harfler için gerekli).\n\n<body> → Kullanıcının tarayıcıda gördüğü içerikler buraya yazılır.\n\n🔹 CSS (Cascading Style Sheets)\n\nWeb sayfasının görünümünü düzenler.\n→ Yazı tipi, renk, arka plan, kenar boşlukları, hizalama vb.\n\nHTML ne gösterileceğini, CSS ise nasıl görüneceğini belirler.\n\nWeb sitelerini estetik, düzenli, mobil uyumlu hâle getirir.\n\n🔹 JavaScript\n\nWeb sayfasına etkileşim ve dinamizm kazandırır.\n→ Buton tıklamaları, formların kontrolü, açılır menüler, animasyonlar.\n\nTarayıcılar JavaScript’i doğrudan çalıştırır (ek yazılım gerekmez).\n\nGünümüzde ayrıca:\n\nSunucu tarafında: Node.js\n\nMobil uygulamalarda: React Native\n\nMasaüstü uygulamalarda: Electron\nkullanılır.\n\n🔹 Front-End (Ön Yüz) ve Back-End (Arka Yüz)\n\nFront-End:\n→ Kullanıcının gördüğü ve etkileşimde bulunduğu kısımdır.\n→ HTML (yapı), CSS (görünüm), JavaScript (etkileşim) teknolojilerinden oluşur.\n→ Örnek: Menü, buton, yazı, resim, formlar.\n\nBack-End:\n→ Kullanıcının görmediği, arka planda çalışan kısımdır.\n→ Veritabanı, kullanıcı doğrulama, veri işleme, sunucu yönetimi yapılır.\n→ Diller: Python, PHP, Java, Node.js, veritabanı olarak MySQL, PostgreSQL, MongoDB.\n\n🔹 Web Sayfasının Görünmeyen Kısmı\n\nKullanıcı sadece sayfanın ön yüzünü görür, ancak tarayıcı arka planda HTML kodlarını işler.\n\nBu yapı, sayfanın düzenini ve işleyişini belirler.\n\nHTML, CSS ve JavaScript arka plan kodlarıdır ama back-end değildir, hâlâ front-end’dir.\n\n🔹 Geliştirme Ortamları\n\nWeb kodları düz metin olarak yazılır.\n\nBasit araç: Not Defteri (Notepad).\n\nProfesyonel ortam: Visual Studio Code (VS Code).\n\nÜcretsiz, hızlı, geniş eklenti desteği var.\n\nOtomatik tamamlama (IntelliSense), hata uyarısı (Linting), hata ayıklama (Debugging),\ncanlı önizleme, Git entegrasyonu özellikleri içerir.\n\nAlternatif editörler: Notepad++, Sublime Text, Brackets.\n\n🎯 Testte En Sık Gelen Bilgiler\n\nARPANET → Güvenli bilgi paylaşımı amacıyla kuruldu.\n\nWorld Wide Web (WWW) → Tim Berners-Lee geliştirdi.\n\nWeb standartlarını belirleyen kuruluş → W3C.\n\nErişilebilir tasarımın amacı → Herkes için kapsayıcı içerik sunmak.\n\nİstemci → Kaynak talep eder. Sunucu → Kaynağı gönderir.\n\nHTTPS → HTTP’nin şifreli (güvenli) versiyonu.\n\nDNS → Alan adlarını IP adreslerine çevirir.\n\nHTML → Yapıyı oluşturur.\n\nCSS → Görünümü düzenler.\n\nFront-End → HTML, CSS, JavaScript.\n\n✅ Sonuç\n\nBu özetle:\n\n10 test sorusunun tamamını doğru cevaplayabilirsin.\n\nEkstra bilgi gerekmez; sadece bu özetin 2–3 tekrarını yapman yeterli.",
       "pdfData": null,
       "createdAt": "2025-10-14T11:12:05.419Z"
+    },
+    {
+      "id": 1760440735233,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "2.Ünite \"WEB TASARIM SÜRECİ VE KULLANICI DENEYİMİ (UX)\"",
+      "title": "2.Ünite \"WEB TASARIM SÜRECİ VE KULLANICI DENEYİMİ (UX)\"",
+      "summary": "🧠 2. ÜNİTE ÖZETİ — WEB TASARIM SÜRECİ VE KULLANICI DENEYİMİ (UX)\n\n1️⃣ Web Tasarım Süreci\n\nWeb tasarımı sadece “görsel” değil, planlı ve ölçülebilir bir süreçtir.\n\nSüreç “planla – uygula – ölç – iyileştir” döngüsüyle yürütülür.\n\nİlk adım her zaman hedef kitleyi belirlemektir.\n\nAmaç: Siteyi kullanıcıya en uygun, kolay ve etkili hale getirmek.\n\n2️⃣ Hedef Kitle Analizi\nÜç temel katmandan oluşur:\n\nDemografik analiz: Yaş, cinsiyet, eğitim, gelir, meslek.\n\nPsikografik analiz: İlgi alanı, yaşam tarzı, değerler, motivasyonlar.\n\nDavranışsal analiz: Kullanıcının sitedeki davranışı (tıklama, süre, satın alma).\n\n3️⃣ Persona ve Kullanıcı Yolculuğu\n\nPersona: Gerçek verilere dayalı hayali kullanıcı profili.\n(Örn: “Zeynep, 24 yaşında, mobilde alışveriş yapar, kargo ücretine duyarlı.”)\n\nKullanıcı yolculuğu: Farkındalık → Araştırma → Karar → Deneyim.\n\nBu aşamalarda kullanıcı hangi noktada zorlanıyor, nerede siteyi terk ediyor belirlenir.\n\n4️⃣ Bilgi Mimarisi (Information Architecture - IA)\n\nWeb sitesinin içeriğini mantıklı ve erişilebilir biçimde düzenleme sürecidir.\n\nAmaç: Kullanıcının aradığını kolay bulmasıdır.\n\nSite haritası (sitemap) ve menü düzeni bu aşamada yapılır.\n\nYanlış bilgi mimarisi → kullanıcı kaybı ve terk oranı.\n\n5️⃣ Wireframe (İskelet Çizimi)\n\nWeb sitesinin görsel detaylar olmadan çizilmiş iskelet tasarımıdır.\n\nDüşük sadakatlidir (low-fidelity).\n\nNe nerede duracak, kullanıcı akışı nasıl olacak gösterir.\n\nSonraki adımlarda prototipe dönüşür.\n\n6️⃣ İçerik Stratejisi\n\nWeb sitesindeki metinlerin ve görsellerin planıdır.\n\nBaşlıca öğeler:\n\nDil ve üslup (kullanıcıya uygun, sade).\n\nİçerik türleri (metin, görsel, video vb.).\n\nGüncellenebilirlik.\n\nSEO içerik stratejisi parçası değildir.\n\n7️⃣ Kullanılabilirlik (Usability)\n\nBir sitenin ne kadar kolay, hızlı ve hatasız kullanılabildiğini gösterir.\n\nÖlçütleri: Etkinlik, verimlilik, memnuniyet.\n\nAmaç: Kullanıcı görevini minimum çabayla tamamlasın.\n\n8️⃣ Erişilebilirlik (Accessibility)\n\nTüm kullanıcıların (görme, işitme engelli vb.) siteyi eşit biçimde kullanabilmesini sağlar.\n\nGereklilikler: Yüksek kontrast, klavye ile gezinme, alternatif metinler, net hata mesajları.\n\n9️⃣ Gestalt İlkeleri (Görsel Düzen Psikolojisi)\n\nGörsel tasarımda kullanıcı algısını yöneten prensiplerdir:\n\nYakınlık (birbirine yakın öğeler ilişkili algılanır).\n\nBenzerlik (benzer öğeler aynı grupta hissedilir).\n\nSüreklilik (göz çizgisel akışı takip eder).\n\nTamamlama (eksik şekiller tamamlanmış gibi algılanır).\n\n“Tutarlılık” Gestalt ilkesi değildir.\n\n🔟 Nielsen’in 10 Kullanılabilirlik İlkesi (Heuristic Evaluation)\n\nKullanıcı deneyimini denetlemeye yarayan temel kurallar:\n\nSistem durumunun görünürlüğü\n\nSistem ve gerçek dünya uyumu\n\nKullanıcı kontrolü ve özgürlüğü\n\nTutarlılık ve standartlar\n\nHata önleme\n\nTanıma, hatırlamaya gerek bırakmama\n\nEsneklik ve verimlilik\n\nEstetik ve minimalist tasarım\n\nHataları tanıma ve düzeltme\n\nYardım ve dokümantasyon\n\n“Filtreleme” bu ilkeler arasında değildir.\n\n11️⃣ UX – UI Farkı\n\nUX (User Experience): Kullanıcının yaşadığı genel deneyim, akış, his.\n\nUI (User Interface): Görsel yüz, renkler, tipografi, butonlar.\n\nUX → kullanıcı mantığı ve işlev, UI → görünüm ve etkileşim.\n\n12️⃣ Yapay Zekâ ve UX\n\nYapay zekâ, kullanıcı davranışlarını analiz edip deneyimi kişiselleştirir.\n\nChatbotlar iletişimi hızlandırır.\n\nAI tabanlı analiz araçları (ör. FullStory, Contentsquare) site performansını ölçer.\n\n13️⃣ UX Ölçüm Göstergeleri\n\nDönüşüm oranı (CR)\n\nSepet terk oranı\n\nGörev süresi\n\nHata oranı\n\nSUS (Kullanılabilirlik puanı)\n\nNPS (Kullanıcı memnuniyeti)\n\nCore Web Vitals (LCP, CLS, INP)\n\n14️⃣ Temel Prensip\n“Küçük başla, ölç, yinele.”\n\nÇok fazla hipotez test etme, her değişikliğin etkisini ölç.\n\nUX sürekli iyileştirme gerektirir.\n\n💡 Sonuç olarak bu üniteden öğrenmen gerekenler:\n\nHedef kitle → Persona → Kullanıcı yolculuğu.\n\nBilgi mimarisi ve wireframe doğru kurgulanmalı.\n\nKullanılabilirlik, erişilebilirlik ve Gestalt ilkeleri uygulanmalı.\n\nUX ölçülmeli, test edilmeli ve veriye göre geliştirilmeli.",
+      "pdfData": null,
+      "createdAt": "2025-10-14T11:18:55.233Z"
+    },
+    {
+      "id": 1760441044863,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "3.Ünite \"Arayüz Tasarımı (UI) ve Görsel Tasarım İlkeleri\"",
+      "title": "3.Ünite \"Arayüz Tasarımı (UI) ve Görsel Tasarım İlkeleri\"",
+      "summary": "🧠 3. ÜNİTE ÖZETİ — ARAYÜZ TASARIMI (UI) VE GÖRSEL TASARIM İLKELERİ\n1️⃣ Arayüz Tasarımı (UI) Nedir?\n\nKullanıcının gördüğü ve etkileşime geçtiği görsel bileşenlerin tamamıdır.\n\nMenü çubukları, butonlar, ikonlar, formlar ve renk düzeni UI’ye dahildir.\n\nUI sadece görsellik değil; işlevsellik, düzen ve kolay kullanım da içerir.\n\nTemel amacı: Kullanıcıya bilgiye hızlı, kolay ve anlaşılır erişim sağlamaktır.\n\n2️⃣ UI – UX İlişkisi\n\nUI: Görsel yüz, kullanıcıyla etkileşim katmanı.\n\nUX: Kullanıcının genel deneyimi, memnuniyet düzeyi.\n\nGüçlü UX için iyi bir UI gerekir, ama sadece görsellik yeterli değildir.\n\n3️⃣ Etkileşim Tasarımı (IxD)\n\nKullanıcının yaptığı eyleme sistemin nasıl tepki verdiğini düzenler.\n\nÖrnekler:\n\nButona basınca rengin değişmesi\n\nDosya yüklenirken ilerleme çubuğu\n\nHatalı formda uyarı mesajı çıkması\n\nAmaç: Kullanıcıya görünmez rehberlik sağlayarak deneyimi sezgisel kılmak.\n\n“Metnin anlaşılır olması” etkileşim tasarımı değildir.\n\n4️⃣ Arayüzün Önemi\n\nKullanıcılar bir siteyi ilk birkaç saniyede değerlendirir.\n\nKullanıcı dostu UI güven, sadelik ve kolay öğrenme sağlar.\n\nDüzensiz veya karmaşık arayüzler kullanıcı kaybına yol açar.\n\n5️⃣ Ön Hazırlık Süreci\n\nTasarım başlamadan plan yapılır.\n\nEskiz (çizim): Fikirlerin hızlı görselleştirilmesi.\n\nWireframe: Sayfa iskeleti, yerleşim düzeni.\n\nSite haritası: İçerik yapısı ve hiyerarşi.\n\nAmaç: Hataları erkenden görmek, düzeni sağlam kurmak.\n\n6️⃣ Görsel Tasarım İlkeleri\n\nTasarımın temelini oluşturan 4 unsur:\n\n1. Renk:\n\nGörsel denge ve duygusal etki yaratır.\n\nAnlam örnekleri:\n\nMavi → Güven, profesyonellik\n\nKırmızı → Enerji, dikkat, aciliyet\n\nYeşil → Doğa, huzur, onay\n\nRenk körlüğü dikkate alınmalı, bilgi sadece renkle verilmemeli.\n\n2. Tipografi:\n\nYazı tipinin okunabilirliği ve hiyerarşiyi belirler.\n\nSans-serif fontlar dijital ortamda daha okunabilir.\n\nBaşlık – alt başlık – metin boyutu arasında fark olmalı.\n\nSatır uzunluğu, kontrast ve font ailesi tutarlı olmalıdır.\n\n3. Grid Sistemi:\n\nSayfa düzenini satır–sütun sistemiyle hizalar.\n\nDüzeni, dengeyi ve hiyerarşiyi sağlar.\n\nGörsel metafor oluşturmaz (bu yanlış şıktır).\n\n4. Boşluk (White Space):\n\nVurguyu artırır, karmaşayı azaltır.\n\nSayfayı “rahat” hissettiren unsurdur.\n\n7️⃣ Kullanılabilirlik ve Erişilebilirlik\n\nHer bireyin siteyi eşit şekilde kullanabilmesi gerekir.\n\nWCAG 2.1 standartları 4 temel ilkeye dayanır:\n\nAlgılanabilirlik (Perceivable): Bilgiler alternatif metin, altyazı, kontrast ile görünür olmalı.\n\nÇalıştırılabilirlik (Operable): Klavye ile gezinme, tıklanabilir alan boyutları uygun olmalı.\n\nAnlaşılabilirlik (Understandable): Açık dil, tutarlı yapı, anlaşılır hata mesajı.\n\nSağlamlık (Robust): İçerik ekran okuyucular ve tüm cihazlarla uyumlu olmalı.\n\n8️⃣ Erişilebilirlik Teknikleri\n\nAlt Metin (alt text): Görseller için açıklama eklenir.\nÖrnek: <img src=\"kitap.jpg\" alt=\"Kütüphanede açık bir kitap\">\n\nLongdesc: Eskiden grafik açıklamaları için kullanılırdı, artık figure–figcaption önerilir.\n\nTabindex: Klavye ile form ve butonlar arasında sırayla geçiş sağlar.\n\nKlavye Navigasyonu: Menülerin ok tuşlarıyla gezilmesi, “Enter” ile seçim yapılması, “Esc” ile çıkış yapılması.\n\n9️⃣ Engellere Yönelik Tasarım\n\nRenk Körlüğü: Bilgi yalnızca renkle verilmemeli, ikon/metinle desteklenmeli.\n\nGörme Engeli: Alt metin, longdesc ve ekran okuyucu etiketleri kullanılmalı.\n\nİşitme Engeli: Videolara altyazı ve transkript eklenmeli.\n\nMotor Engeli: Klavye navigasyonu, büyük butonlar, dokunmatik dostu alanlar olmalı.\n\n🔟 Responsive Tasarım\n\nFarklı ekran boyutlarına otomatik uyum sağlayan tasarım yaklaşımıdır.\n\nAmaç: Her cihazda aynı kullanılabilirlik ve görünüm.\n\nMobile First (Mobil Öncelikli Tasarım):\n\nÖnce mobil ekran tasarlanır, sonra masaüstü sürümüne geçilir.\n\nKüçük ekranda temel işlevlere odaklanılır.\n\nAvantajlar: Hızlı yükleme, basit menü, kolay gezinme.\n\n11️⃣ Flexbox ve CSS Grid\n\nFlexbox: Tek boyutlu düzen (yatay/dikey). Öğeleri hizalar, aralıkları dengeler.\nÖrnek:\n\ndisplay: flex;\njustify-content: space-between;\nalign-items: center;\n\n\nCSS Grid: İki boyutlu ızgara sistemi (satır + sütun).\nKarmaşık sayfa iskeletlerinde kullanılır.\n\ndisplay: grid;\ngrid-template-columns: 1fr 2fr 1fr;\ngap: 20px;\n\n\nGenellikle küçük düzenlerde Flexbox, geniş yapılarda Grid tercih edilir.\n\n12️⃣ Farklı Cihazlarda Tutarlılık\n\nKullanıcı hangi cihazdan girerse girsin aynı deneyimi bekler.\n\nTutarlılık sağlamak için:\n\nMarka renkleri, yazı tipi, ikonlar korunmalı.\n\nMenü yapısı aynı kalmalı (masaüstü yatay, mobil hamburger olabilir).\n\nForm ve buton davranışları değişmemeli.\n\nAmaç: Güven, kolay öğrenme ve marka bütünlüğü.\n\n🔚 Sonuç\n\nİyi bir arayüz yalnızca güzel görünen değil,\nher cihazda erişilebilir, anlaşılır ve güven veren bir deneyim sunan tasarımdır.\n\n✅ 10 SORUDA GEREKEN BİLGİLERİN KISA HATLARI\n\n1️⃣ UI amacı → “Bilgiye kolay erişim”\n2️⃣ IxD olmayan → “Metnin anlaşılır olması”\n3️⃣ Renk eşleşmesi → “Yeşil = doğa ve huzur”\n4️⃣ Tipografi doğru ifade → “Sans-serif okunabilirliği artırır”\n5️⃣ Grid olmayan → “Görsel metafor”\n6️⃣ Boşluk amacı → “Vurguyu artırır, karmaşayı azaltır”\n7️⃣ WCAG’de olmayan → “Estetiklik”\n8️⃣ Görsellere açıklama → “Alt metin (alt text)”\n9️⃣ Mobile First → “Küçük ekrandan büyüğe doğru tasarım”\n🔟 Tutarlılıkla ilgisiz → “Tamamen farklı arayüz geliştirmek”",
+      "pdfData": null,
+      "createdAt": "2025-10-14T11:24:04.863Z"
+    },
+    {
+      "id": 1760443311599,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "4.Ünite \"WEB TASARIMINA GİRİŞ: HTML VE TEMEL BİLGİLER\"",
+      "title": "4.Ünite \"WEB TASARIMINA GİRİŞ: HTML VE TEMEL BİLGİLER\"",
+      "summary": "HTML ve Temel Bilgiler Özeti\n\nSemantik HTML Etiketleri:\n\n<nav>: Ana menü veya sayfa içi navigasyon için kullanılır.\n\n<section>: Belirgin ve anlamlı sayfa bölümlerini ayırır, her bölümde başlık önerilir.\n\n<article>: Bağımsız ve taşınabilir içerik (blog yazısı, haber makalesi).\n\n<aside>: Ana içeriğe ek yan içerikler (reklam, yan menü).\n\n<footer>: Sayfanın veya bölümün alt bilgisi (iletişim, telif hakkı).\n\n<form>: Kullanıcı veri girişi ve etkileşim için form elemanlarını tanımlar.\n\nfor özniteliği ile <input> id eşleştirilir, erişilebilirliği artırır.\n\nMedya Etiketleri:\n\n<audio>: Ses oynatmak için; controls, autoplay, loop, muted gibi öznitelikler vardır.\n\n<video>: Video oynatmak için; poster, controls, width/height öznitelikleri ile kullanılır.\n\n<source>: Farklı medya formatları için kaynak belirtir.\n\n<embed>: PDF veya gömülü medya gibi harici içerikleri ekler.\n\nTemel HTML Yapısı ve Standartlar:\n\n<!DOCTYPE html>: HTML5 belgesi belirtir.\n\n<html lang=\"tr\">: Sayfanın dilini belirtir.\n\n<meta charset=\"utf-8\">: Karakter kodlaması, Türkçe karakterlerin doğru görüntülenmesini sağlar.\n\nCSS ve JavaScript entegrasyonu:\n\n<link rel=\"stylesheet\" href=\"stil.css\"> → CSS bağlamak için\n\n<script src=\"script.js\"></script> → JavaScript eklemek için\n\nTemel HTML Kullanımı ve Araçlar:\n\n<header>, <nav>, <main>, <footer> gibi semantik etiketler kullanılır.\n\nListe, tablo, form ve görseller eklenebilir (<ul>, <table>, <form>, <img>).\n\nBağlantılar ve sayfa içi navigasyon <a href=\"...\"> ile sağlanır.\n\nBasit CSS ile stil ve görünüm özelleştirilebilir.\n\nKodlar Visual Studio Code, Notepad++ gibi editörlerde test edilebilir.\n\nModern Web Tasarımının Önemi:\n\nErişilebilir ve kullanıcı dostu sayfalar oluşturmak.\n\nMobil uyumlu ve hızlı yüklenen web sayfaları tasarlamak.\n\nSemantik HTML ile arama motorları ve erişim araçları için uygun içerik sağlamak.\n\nResponsive tasarım ve güncel teknolojileri takip etmek.\n\nDeğerlendirme Soruları ve Cevapları\n\nHTML belgesinin en üst satırı? → b) <!DOCTYPE html>\n\nHTML etiketleri arasında yer almaz? → e) <content>\n\nSayfa başlığı hangi etiket içinde? → e) <title>\n\nGörsel eklemek için? → c) <img>\n\nSırasız liste için? → b) <ul>\n\nBaşlık seviyeleri için? → b) <h1> - <h6>\n\nForm elemanı tanımlamak için? → c) <form> (not: kullanıcı yanıtınızda “e” yanlış verilmiş)\n\nKullanıcıdan veri toplamak için? → b) <form>\n\nSemantik HTML nedir? → d) Etiketlerin yapı ve anlamına göre doğru kullanılması\n\nResponsive tasarımın amacı? → b) Farklı cihazlarda uyumlu görünüm sağlamak",
+      "pdfData": null,
+      "createdAt": "2025-10-14T12:01:51.599Z"
+    },
+    {
+      "id": 1760443820444,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "5.Ünite \"HTML ile Sayfa Yapılandırma\"",
+      "title": "5.Ünite \"HTML ile Sayfa Yapılandırma\"",
+      "summary": "HTML ile Sayfa Yapılandırma Özeti\n\nSemantik Etiketler ve SEO:\n\nSemantik etiketler, hem arama motorlarının sayfayı doğru analiz etmesini hem de kullanıcıların içeriğe daha rahat erişmesini sağlar.\n\nÖrnekler:\n\n<header> → Sayfanın üst kısmı, başlıklar\n\n<nav> → Navigasyon menüsü\n\n<article> → Bağımsız içerik parçaları\n\nErişilebilirlik (Accessibility):\n\nWeb sitelerinin herkes tarafından kullanılabilmesini ifade eder.\n\nHedef kitle sadece engelliler değil; yaşlılar, düşük internet hızı veya farklı cihaz kullananlar da kapsanır.\n\nErişilebilirlik faydaları:\n\nİçeriğe rahat erişim\n\nForm ve menülerin kullanımı kolay\n\nMedya içeriklerinin açıklamaları alınabilir\n\nEkran okuyucular, braille ekranlar ve sesli komutlarla erişim\n\nHTML’de Erişilebilirlik Sağlayan Özellikler:\n\nAlternatif metin (alt) → Görsellerin açıklanması\n\n<label> → Form alanlarıyla ilişkilendirme, for özniteliği ile bağlanır\n\nBaşlık hiyerarşisi (h1-h6) → Mantıksal içerik sırası\n\nTablo başlıkları (<th>) → Hücrelerin hangi başlığa ait olduğunu belirtir\n\nARIA öznitelikleri → Dinamik içeriklerin ekran okuyucular tarafından anlaşılmasını sağlar\n\nForm doğrulama → required, minlength, pattern gibi öznitelikler\n\nErişilebilir Form Örnekleri:\n\n<fieldset> ve <legend> → Formu mantıksal çerçeveye alır, ekran okuyucuya açıklama sağlar\n\n<label> → Her giriş alanını tanımlar\n\nrequired / minlength → Hatalı veri girişini önler\n\nAnlamlı hata mesajları → Kullanıcıyı yönlendirir\n\nÖzet:\n\nSemantik HTML ve erişilebilirlik standartları, web sayfalarının işlevsel, düzenli ve kapsayıcı olmasını sağlar.\n\nAçık renk-kontrast, basit menü yapıları ve mantıklı içerik hiyerarşisi tüm kullanıcı deneyimini iyileştirir.\n\nSEO ve erişilebilirlik uyumu, sitenin hem görünürlüğünü hem de kullanıcı memnuniyetini artırır.\n\nDeğerlendirme Soruları ve Cevapları\n\nFormun hedef adresi özniteliği → c) action\n\nYalnızca sayı girişi → c) <input type=\"number\">\n\nForm alanını boş bırakmama → c) required\n\nTablo başlık hücresi → b) <th>\n\nHücrenin yatayda birden fazla sütunu kapsaması → a) colspan\n\nWeb sayfasının ana içeriği → e) <main>\n\nGezinme bağlantıları → d) <nav>\n\nGörsel için alternatif metin → a) alt\n\nForm gruplama ve açıklama → b) <fieldset> – <legend>\n\nWCAG ile ilişkili kavram → a) Erişilebilirlik",
+      "pdfData": null,
+      "createdAt": "2025-10-14T12:10:20.444Z"
+    },
+    {
+      "id": 1760444158439,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "6.Ünite \"CSS Temelleri\"",
+      "title": "6.Ünite \"CSS Temelleri\"",
+      "summary": "📌 CSS Temelleri Özeti\n\n1. CSS ve HTML İlişkisi\n\nHTML → Sayfanın yapısal iskeletini oluşturur\n\nCSS → Sayfanın görsel düzeni, estetiği ve sunumu için kullanılır 🎨\n\nCSS sayesinde aynı içerik farklı stillerle sunulabilir, okunabilirlik ve kullanıcı deneyimi artar\n\n2. CSS Sözdizimi\n\nSeçici (Selector) → Stil uygulanacak HTML öğesi\n\nÖzellik (Property) → Stil niteliklerini belirtir\n\nDeğer (Value) → Özelliğin alacağı biçim\n\nÖrnek:\np { color: blue; font-size: 14px; }\n\np → seçici\n\ncolor, font-size → özellik\n\nblue, 14px → değer\n\n3. CSS Seçiciler\n\nEvrensel (*) → Tüm öğeleri seçer\n\nEtiket → Belirli HTML etiketini seçer (ör: p, h1)\n\nSınıf (.class) → Aynı sınıfa sahip öğeler\n\nID (#id) → Tek öğe\n\nSözde sınıf (:hover, :active) → Kullanıcı etkileşimi\n\nSözde eleman (::first-line, ::first-letter) → Öğenin belirli kısmını biçimlendirir\n\n4. Metin Biçimlendirme\n\nRenk (color), yazı tipi (font-family), boyut (font-size)\n\nSatır aralığı (line-height), hizalama (text-align), harf aralığı (letter-spacing)\n\nİtalik, kalın, altı çizili, gölge veya tüm harfleri büyük yapmak okunabilirliği artırır ✍️\n\n5. Tablolar ve CSS\n\nKenarlıklar, hücre boşlukları, arka plan renkleri düzeni sağlar\n\nZebra şerit → Satırların dönüşümlü renklendirilmesi\n\nHover efekti ile satırlar vurgulanabilir\n\n6. Kutu Modeli (Box Model) 📦\n\nContent (İçerik) → Metin veya görsel\n\nPadding (İç boşluk) → İçerik ile kenarlık arasındaki boşluk\n\nBorder (Kenarlık) → İçeriği ve padding’i çevreleyen çizgi\n\nMargin (Dış boşluk) → Öğelerin birbirinden uzaklaşmasını sağlar\n\nToplam alan = content + padding + border + margin\n\n7. Boyutlandırma ve Ölçü Birimleri\n\nMutlak birimler → px, pt, cm, mm, in\n\nGöreli birimler → %, em, rem, vw, vh, vmin, vmax\n\nGöreli birimler responsive (duyarlı) tasarım için tercih edilir 📱💻\n\nÖrnekler:\n\n.kutu1 { width: 300px; } → Sabit\n\n.kutu2 { width: 50%; } → Ana öğeye göre\n\n.kutu3 { width: 40vw; } → Ekran genişliğine göre\n\n8. Sayfa Düzeni ve Modern Yaklaşımlar\n\nBlok öğeler → Satırın tamamını kaplar\n\nSatır içi öğeler → İçerik kadar alan kaplar\n\nFlexbox → Yatay ve dikey eksende hizalama, boşluk dağıtımı kolay\n\nGrid → Satır ve sütun tabanlı düzen, çok sütunlu sayfa oluşturma kolay\n\n9. Menüler ve Konumlandırma\n\nMenüler yatay veya dikey düzenlenebilir\n\nHover efektleriyle etkileşim sağlanır\n\ndisplay, visibility, position, z-index ile öğelerin konumu ve katmanı kontrol edilir\n\n🔟 Duyarlı Tasarım (Responsive)\n\nFarklı cihazlarda aynı deneyimi sunmak için media query kullanılır\n\nFont boyutu, alan genişliği gibi değerler ekran boyutuna göre değiştirilebilir\n\nFrameworkler (Bootstrap vb.) hazır grid ve bileşenlerle tasarımı hızlandırır\n\n✨ Özet\n\nCSS, HTML ile sunumu ayırır ve web geliştirmeyi esnek, estetik ve erişilebilir yapar\n\nSeçiciler, kutu modeli, tipografi, tablolar, ölçü birimleri ve düzen araçları ile modern, kullanıcı dostu ve responsive siteler oluşturulabilir",
+      "pdfData": null,
+      "createdAt": "2025-10-14T12:15:58.439Z"
+    },
+    {
+      "id": 1760444312744,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "7.Ünite \"İleri CSS Teknikleri\"",
+      "title": "7.Ünite \"İleri CSS Teknikleri\"",
+      "summary": "İleri CSS Teknikleri – Özet 🎨💻\n\n1. Flexbox\n\nTek boyutlu düzenlerde (satır veya sütun) öğeleri hizalamak için kullanılır. 📏\n\njustify-content → yatay eksen hizalaması\n\nalign-items → dikey eksen hizalaması\n\norder → öğelerin görsel sırasını değiştirir\n\nflex-grow → öğenin diğerlerinden daha fazla alan kaplamasını sağlar\n\nFlexbox, responsive tasarımlarda esnek ve dengeli düzen sağlar.\n\n2. CSS Grid\n\nSatır ve sütun temelli iki boyutlu düzen sağlar. 🟦\n\ngrid-template-columns → sütunları tanımlar\n\ngrid-template-rows → satırları tanımlar\n\ngrid-gap → öğeler arası boşluk\n\ngrid-column: span 2 → bir öğeyi 2 sütun boyunca genişletir\n\nfr birimi → esnek alan payını belirtir (responsive için ideal)\n\n3. Responsive Tasarım & Media Queries\n\nFarklı cihazlarda tutarlı kullanıcı deneyimi sağlar 📱💻\n\n@media ile ekran genişliğine göre farklı CSS kuralları uygulanır\n\nMenü ve grid düzenleri mobilde farklı, masaüstünde farklı olabilir\n\n4. Transition (Geçiş Efektleri)\n\nKullanıcı etkileşimleri (hover, click) ile başlayan yumuşak geçişler sağlar 🌊\n\ntransition: transform 0.3s ease, box-shadow 0.3s ease;\n\ntransform ve opacity animasyonları performans açısından en verimli olanlardır\n\n5. Animation (Animasyonlar)\n\nSayfa yüklenince veya sürekli hareket için kullanılır 🎬\n\n@keyframes ile adım adım hareketler tanımlanır\n\nÖrnek: butonun büyüyüp küçülmesi → pulse animasyonu\n\nAnimasyonlar estetik ve işlevsel olabilir: kullanıcı dikkatini çekmek, içerik vurgulamak\n\n6. Örnek Kullanımlar\n\nÜrün Kartı → hover ile yukarı kalkma ve gölge efekti\n\nPortfolyo Kartları → grid ile düzen, hover ile ölçeklenme\n\nButonlar → pulse animasyonu\n\nResponsive grid ve flexbox sayesinde mobil uyumlu tasarım\n\n7. Genel Notlar\n\nFlexbox, Grid, transition ve animation modern web tasarımının temel yapı taşlarıdır\n\nBirlikte kullanıldığında hem estetik hem fonksiyonel, kullanıcı merkezli deneyim sağlar\n\nPerformans için transform ve opacity tercih edilmeli, width/height/margin gibi layout değişikliklerinden kaçınılmalı",
+      "pdfData": null,
+      "createdAt": "2025-10-14T12:18:32.744Z"
     }
   ],
   "exams": {
@@ -2922,6 +2982,726 @@
           "E": "HTML, CSS ve JavaScript"
         },
         "correctAnswer": "E"
+      }
+    ],
+    "Web Tasarımının Temelleri - 2.Ünite \"WEB TASARIM SÜRECİ VE KULLANICI DENEYİMİ (UX)\" - 2.Ünite Deneme sınavı": [
+      {
+        "id": 1760440756895,
+        "text": "Web tasarım sürecinin ilk adımı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Hedef kitleyi belirlemek",
+          "B": "Renk paletini seçmek",
+          "C": "Sunucu altyapısını satın almak",
+          "D": "Animasyonları tasarlamak",
+          "E": "SEO çalışması yapmak"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440776480,
+        "text": "Aşağıdakilerden hangisi demografik veri kapsamında değerlendirilir?",
+        "options": {
+          "A": "Kullanıcının marka algısı",
+          "B": "Kullanıcının hobileri",
+          "C": "Kullanıcının site içi tıklama yolu",
+          "D": "Kullanıcının yaş bilgisi",
+          "E": "Kullanıcının satın alma motivasyonu"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440793271,
+        "text": "………………… kullanıcıların yaşam tarzı, ilgi alanları, değerleri ve\nmotivasyonlarını ortaya koyar.\nYukarıdaki cümlede boş bırakılan yere aşağıdakilerden hangisi\ngetirilmelidir?",
+        "options": {
+          "A": "Psikografik analiz",
+          "B": "Demografik analiz",
+          "C": "Hedef Kitle analizi",
+          "D": "Davranışsal analiz",
+          "E": "Maliyet analizi"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440810225,
+        "text": "Aşağıdakilerden hangisi kullanıcı yolculuğu aşamalarından birisi değildir?",
+        "options": {
+          "A": "Farkındalık",
+          "B": "Araştırma",
+          "C": "Karar",
+          "D": "Kod yazma",
+          "E": "Deneyim"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440830428,
+        "text": "Aşağıdakilerden hangisi bilgi mimarisini en doğru şekilde açıklar?",
+        "options": {
+          "A": "Web sitesinin renk paletinin ve tipografisinin seçilmesi",
+          "B": "İçeriklerin düzenlenip kategorize edilmesi ve kullanıcıların kolayca erişebileceği biçimde yapılandırılması",
+          "C": "Sunucu altyapısının ve veri tabanının ölçeklendirilmesi",
+          "D": "Görsel öğeler için animasyon efektlerinin tasarlanması",
+          "E": "Arama motoru optimizasyonu (SEO) metinlerinin yazılması"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440850290,
+        "text": "Aşağıdakilerden hangisi Wireframe’i en doğru şekilde tanımlar?",
+        "options": {
+          "A": "Web sitesinin son hâline yakın, tüm görsel detayları içeren yüksek sadakatli tasarım",
+          "B": "Sunucu yapılandırmasını gösteren teknik diyagram",
+          "C": "Görsel tasarımdan bağımsız, sitenin iskelet yapısını gösteren düşük sadakatli çizim/diyagram",
+          "D": "Kullanıcı testlerinden elde edilen ısı haritaları",
+          "E": "SEO için anahtar kelime listesi"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440867730,
+        "text": "Aşağıdakilerden hangisi içerik stratejisinin temel başlıklarından birisi\ndeğildir?",
+        "options": {
+          "A": "Dil ve Üslup",
+          "B": "İçerik Türleri",
+          "C": "SEO Uyumlu İçerik",
+          "D": "Maliyet analizi",
+          "E": "Güncellenebilirlik"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440884105,
+        "text": "…………………… bir web sitesinin kullanıcılar tarafından ne kadar kolay, hızlı\nve hatasız bir şekilde kullanılabileceğini ifade eder.\nYukarıdaki cümlede boş bırakılan yere aşağıdaki seçeneklerden hangisi\ngetirilmelidir?",
+        "options": {
+          "A": "Erişilebilirlik",
+          "B": "Kullanılabilirlik",
+          "C": "Gestalt psikolojisi",
+          "D": "Yakınlık",
+          "E": "Süreklilik"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440898914,
+        "text": "Aşağıdakilerden hangisi Gestalt ilkelerinden birisi değildir?",
+        "options": {
+          "A": "Yakınlık",
+          "B": "Benzerlik",
+          "C": "Süreklilik",
+          "D": "Tamamlama",
+          "E": "Tutarlılık"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760440912978,
+        "text": "Aşağıdakilerden hangisi Jakob Nielsen’in 10 Kullanılabilirlik İlkesinden\nbirisi değildir?",
+        "options": {
+          "A": "Sistem durumunun görünürlüğü",
+          "B": "Sistem ve gerçek dünya uyumu",
+          "C": "Kullanıcı kontrolü ve özgürlüğü",
+          "D": "Hata önleme",
+          "E": "Filtreleme"
+        },
+        "correctAnswer": "E"
+      }
+    ],
+    "Web Tasarımının Temelleri - 3.Ünite \"Arayüz Tasarımı (UI) ve Görsel Tasarım İlkeleri\" - 3.Ünite Deneme sınavı": [
+      {
+        "id": 1760441084005,
+        "text": "Arayüz tasarımının (UI) temel amacı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Kullanıcıların yalnızca görsel olarak etkilenmesini sağlamak",
+          "B": "Kullanıcıya bilgiye hızlı, kolay ve anlaşılır şekilde erişim sunmak",
+          "C": "Sitenin yalnızca estetik görünümünü düzenlemek",
+          "D": "Yazılım hatalarını ortadan kaldırmak",
+          "E": "Kodlama süresini kısaltmak"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760441099053,
+        "text": "Aşağıdakilerden hangisi etkileşim tasarımının (IxD) örneği değildir?",
+        "options": {
+          "A": "Bir butona basıldığında renginin değişmesi",
+          "B": "Dosya yüklenirken ilerleme çubuğunun dolması",
+          "C": "Menüde gezinirken tıklanabilir alanların büyümesi",
+          "D": "Metin içeriğinin anlaşılır olması",
+          "E": "Form doldururken hata mesajının çıkması"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760441113625,
+        "text": "Renklerin kullanıcı üzerindeki etkisi ile ilgili aşağıdaki eşleştirmelerden\nhangisi doğrudur?",
+        "options": {
+          "A": "Mavi – Aciliyet ve tehlike",
+          "B": "Kırmızı – Güven ve profesyonellik",
+          "C": "Yeşil – Doğa ve huzur",
+          "D": "Siyah – Neşe ve iyimserlik",
+          "E": "Sarı – Lüks ve resmiyet"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760441129139,
+        "text": "Tipografi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "options": {
+          "A": "Sans-serif yazı tipleri dijital ortamda okunabilirliği artırır.",
+          "B": "Serif yazı tipleri küçük puntoda daha okunabilirdir.",
+          "C": "Satır uzunluğu 100–150 karakter olmalıdır.",
+          "D": "Kontrastın düşük olması metin okunabilirliğini artırır.",
+          "E": "Ana metin için genellikle 10px puntolar tercih edilir."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760441148979,
+        "text": "Aşağıdakilerden hangisi grid sisteminin sağladığı avantajlardan biri\ndeğildir?",
+        "options": {
+          "A": "İçeriğin hizalanmasını sağlamak",
+          "B": "Düzeni ve dengeyi artırmak",
+          "C": "Görsel hiyerarşiyi oluşturmak",
+          "D": "Kullanıcıya estetik bir deneyim sunmak",
+          "E": "Görsel metaforların geliştirilmesi"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760441172399,
+        "text": "Boşluk (white space) kullanımının temel işlevi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Vurguyu artırmak ve karmaşayı azaltmak",
+          "B": "Tasarıma daha fazla öğe eklemek",
+          "C": "Okunabilirliği azaltmak",
+          "D": "Sayfanın daha çok reklam almasını sağlamak",
+          "E": "Metaforları güçlendirmek"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760441186411,
+        "text": "Aşağıdakilerden hangisi WCAG erişilebilirlik ilkelerinden biri değildir?",
+        "options": {
+          "A": "Algılanabilirlik",
+          "B": "Çalıştırılabilirlik",
+          "C": "Anlaşılabilirlik",
+          "D": "Sağlamlık",
+          "E": "Estetiklik"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760441200215,
+        "text": "Bir web sitesinde görsellere açıklayıcı metin eklemek hangi teknikle\nsağlanır?",
+        "options": {
+          "A": "Longdesc",
+          "B": "Tabindex",
+          "C": "Alt Metin (Alt Text)",
+          "D": "Klavye Navigasyonu",
+          "E": "Flexbox"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760441221827,
+        "text": "Mobil öncelikli tasarım (Mobile First) yaklaşımının temel özelliği\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Öncelikle masaüstü tasarımı yapıp sonra mobil uyarlamak",
+          "B": "Tasarım sürecine küçük ekranlardan başlayıp büyüğe doğru geliştirmek",
+          "C": "Tüm cihazlarda aynı düzeni zorunlu tutmak",
+          "D": "Yalnızca responsive grid sistemleri kullanmak",
+          "E": "Görsel öğeleri küçülterek mobil cihazlara uyarlamak"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760441242154,
+        "text": "Aşağıdakilerden hangisi farklı cihazlarda tutarlılık sağlamaya yönelik bir\nilke değildir?",
+        "options": {
+          "A": "Marka renklerinin korunması",
+          "B": "Navigasyon yapısının benzer kalması",
+          "C": "İkonların aynı işlevi sürdürmesi",
+          "D": "Farklı cihazlarda tamamen farklı arayüzler geliştirmek",
+          "E": "Tipografinin aynı font ailesinden seçilmesi"
+        },
+        "correctAnswer": "D"
+      }
+    ],
+    "Web Tasarımının Temelleri - 4.Ünite \"WEB TASARIMINA GİRİŞ: HTML VE TEMEL BİLGİLER\" - 4.Ünite Deneme sınavı": [
+      {
+        "id": 1760443338202,
+        "text": "HTML belgesinin en üst satırında hangi ibare bulunmalıdır?",
+        "options": {
+          "A": "<html>",
+          "B": "<!DOCTYPE html>",
+          "C": "<head>",
+          "D": "<body>",
+          "E": "<meta>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443354819,
+        "text": "Aşağıdakilerden hangisi HTML etiketleri arasında yer almaz?",
+        "options": {
+          "A": "<header>",
+          "B": "<footer>",
+          "C": "<style>",
+          "D": "<article>",
+          "E": "<content>"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760443371523,
+        "text": "Bir sayfanın başlık bilgisi hangi etiket içinde bulunur?",
+        "options": {
+          "A": "<body>",
+          "B": "<footer>",
+          "C": "<h1>",
+          "D": "<meta>",
+          "E": "<title>"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760443389018,
+        "text": "Aşağıdaki etiketlerden hangisi bir görsel eklemek için kullanılır?",
+        "options": {
+          "A": "<video>",
+          "B": "<audio>",
+          "C": "<img>",
+          "D": "<link>",
+          "E": "<canvas>"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760443406728,
+        "text": "HTML’de sırasız liste oluşturmak için hangi etiket kullanılır?",
+        "options": {
+          "A": "<ol>",
+          "B": "<ul>",
+          "C": "<li>",
+          "D": "<table>",
+          "E": "<div>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443424482,
+        "text": "HTML’de başlık seviyelerini belirtmek için hangi etiketler kullanılır?",
+        "options": {
+          "A": "<h1> - <h3>",
+          "B": "<h1> - <h6>",
+          "C": "<heading>",
+          "D": "<header> - <footer>",
+          "E": "<title> - <header>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443442902,
+        "text": "Bir form elemanını tanımlamak için hangi etiket kullanılır?",
+        "options": {
+          "A": "<input>",
+          "B": "<button>",
+          "C": "<form>",
+          "D": "<textarea>",
+          "E": "<html>"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760443458939,
+        "text": "Aşağıdakilerden hangisi kullanıcıdan veri toplamak için kullanılan bir HTML\netiketidir?",
+        "options": {
+          "A": "<img>",
+          "B": "<form>",
+          "C": "<div>",
+          "D": "<span>",
+          "E": "<figure>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443475983,
+        "text": "Semantik HTML nedir?",
+        "options": {
+          "A": "HTML'in hızlı yazılması.",
+          "B": "Yalnızca görsel öğeleri içermesi.",
+          "C": "Tasarımın estetik açıdan güzel olması.",
+          "D": "Etiketlerin yapı ve anlamına göre doğru kullanılması.",
+          "E": "Yalnızca metin içermesi."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760443494360,
+        "text": "Responsive (duyarlı) tasarımın amacı nedir?",
+        "options": {
+          "A": "Sadece masaüstü kullanıcıları için tasarım yapmak",
+          "B": "Farklı cihazlarda uyumlu görünüm sağlamak.",
+          "C": "Sadece mobil cihazlar için tasarım yapmak.",
+          "D": "Hızlı yüklenen sayfalar oluşturmak.",
+          "E": "Görsel öğeleri kaldırmak."
+        },
+        "correctAnswer": "B"
+      }
+    ],
+    "Web Tasarımının Temelleri - 5.Ünite \"HTML ile Sayfa Yapılandırma\" - 5.Ünite Deneme sınavı": [
+      {
+        "id": 1760443624087,
+        "text": "Bir formda kullanıcıdan alınan verilerin gönderileceği hedef adresi\nbelirleyen öznitelik aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "method",
+          "B": "name",
+          "C": "action",
+          "D": "type",
+          "E": "id"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760443638173,
+        "text": "Aşağıdaki giriş türlerinden hangisi kullanıcının yalnızca sayı girmesini\nsağlar?",
+        "options": {
+          "A": "<input type=\"text\">",
+          "B": "<input type=\"password\">",
+          "C": "<input type=\"number\">",
+          "D": "<input type=\"email\">",
+          "E": "<input type=\"file\">"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760443650482,
+        "text": "HTML5’te bir form alanının boş bırakılmamasını sağlayan öznitelik\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "maxlenght",
+          "B": "placeholder",
+          "C": "required",
+          "D": "value",
+          "E": "alt"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760443666610,
+        "text": "Bir tablonun başlık hücreleri için kullanılan HTML etiketi aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "<tr>",
+          "B": "<th>",
+          "C": "<td>",
+          "D": "<thead>",
+          "E": "<caption>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443686543,
+        "text": "Bir hücrenin yatayda birden fazla sütunu kapsamasını sağlayan öznitelik\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "colspan",
+          "B": "rowspan",
+          "C": "align",
+          "D": "merge",
+          "E": "spanrow"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760443700657,
+        "text": "Bir web sayfasının ana içeriğini belirtmek için kullanılan semantik HTML5\netiketi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "<section>",
+          "B": "<header>",
+          "C": "<article>",
+          "D": "<footer>",
+          "E": "<main>"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760443714505,
+        "text": "Sayfa içinde gezinme bağlantılarını içeren semantik etiket aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "<aside>",
+          "B": "<footer>",
+          "C": "<article>",
+          "D": "<nav>",
+          "E": "<section>"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760443728683,
+        "text": "Görseller için alternatif metin sağlayarak erişilebilirliği artıran öznitelik\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "alt",
+          "B": "title",
+          "C": "aria-label",
+          "D": "id",
+          "E": "name"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760443743682,
+        "text": "Formların mantıksal olarak gruplanmasını sağlayan ve ekran okuyucular\niçin açıklama ekleyen etiket ikilisi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "<form> – <input>",
+          "B": "<fieldset> – <legend>",
+          "C": "<label> – <textarea>",
+          "D": "<section> – <article>",
+          "E": "<main> – <aside>"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760443756535,
+        "text": "WCAG standartları ile doğrudan ilişkili olan kavram aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Erişilebilirlik",
+          "B": "Sayfa yüklenme hızı",
+          "C": "Görsel çözünürlük",
+          "D": "Responsive tasarım",
+          "E": "SEO optimizasyonu"
+        },
+        "correctAnswer": "A"
+      }
+    ],
+    "Web Tasarımının Temelleri - 6.Ünite \"CSS Temelleri\" - 6.Ünite Deneme sınavı": [
+      {
+        "id": 1760443985481,
+        "text": "CSS'in web geliştirmedeki rolü ve HTML ile ilişkisi göz önüne alındığında,\naşağıdaki ifadelerden hangisi CSS'in temel işlevini en doğru şekilde\ntanımlamaktadır?",
+        "options": {
+          "A": "HTML içeriğinin görsel düzenini, estetiğini ve sunumunu belirler.",
+          "B": "Web sayfasının iskeletini ve anlamsal yapısını oluşturur.",
+          "C": "Sayfaya yalnızca resim ve bağlantı gibi multimedya öğeleri ekler.",
+          "D": "Sunucu tarafında veri işleme ve veritabanı bağlantılarını yönetir.",
+          "E": "Kullanıcının tarayıcısına web sayfasını indirme hızını artırır."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760443999097,
+        "text": "CSS kurallarının HTML sayfasına eklenme yöntemlerinden hangisi, özellikle\nbakım kolaylığı ve geniş çaplı projelerde tutarlılık sağlaması açısından en\nçok öne çıkmaktadır?",
+        "options": {
+          "A": "Satır İçi CSS Ekleme",
+          "B": "Harici CSS Ekleme",
+          "C": "Dahili (Sayfa İçi) CSS Ekleme",
+          "D": "Etiket Seçici Kullanımı",
+          "E": "Kimlik Seçici Kullanımı"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760444016295,
+        "text": "Bir CSS kuralı, temel olarak üç bileşenden oluşur. Aşağıdakilerden hangisi\nbu üç temel bileşeni doğru sırasıyla vermektedir?",
+        "options": {
+          "A": "İçerik – Boyut – Hizalama",
+          "B": "HTML Etiketi – Sınıf Adı – Değer",
+          "C": "Seçici – Özellik – Değer",
+          "D": "Seçici – Değer – Tarayıcı",
+          "E": "Özellik – Seçici – Sözdizimi"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760444033510,
+        "text": "CSS’te, belirli bir sınıf adıyla tanımlanmış birden fazla HTML öğesine aynı\nstili uygulamayı sağlayan seçici türü ve kullanılan ön ek aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Kimlik Seçici (#)",
+          "B": "Evrensel Seçici (*)",
+          "C": "Etiket Seçici (hiçbir ön ek kullanılmaz)",
+          "D": "Sözde Sınıf Seçici (:)",
+          "E": "Class Seçici (.)"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760444050431,
+        "text": "Sayfadaki tüm paragraf (p) etiketlerinin yazı rengini maviye ve yazı\nboyutunu 14 piksele ayarlamak için kullanılan CSS sözdizimi örneğinde,\n\"color\" ifadesi kuralın hangi bileşenini temsil eder?",
+        "options": {
+          "A": "Seçici (Selector)",
+          "B": "Değer (Value)",
+          "C": "Özellik (Property)",
+          "D": "Kimlik (ID)",
+          "E": "Sınıf (Class)"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760444067739,
+        "text": "CSS Kutu Modeli'ne göre, bir HTML öğesinin İçerik (Content) alanı ile\nKenarlık (Border) alanı arasındaki boşluğu tanımlayan bileşen\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Margin (Dış boşluk)",
+          "B": "Border (Kenarlık)",
+          "C": "Content (İçerik)",
+          "D": "Padding (İç boşluk)",
+          "E": "Width (Genişlik)"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760444082788,
+        "text": "Tabloları biçimlendirirken, komşu hücre kenarlıklarının tek bir çizgi halinde\nbirleşmesini sağlayarak tabloların görsel karmaşasını azaltan CSS özelliği\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "border-collapse",
+          "B": "border",
+          "C": "border-color",
+          "D": "padding",
+          "E": "caption-side"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760444097334,
+        "text": "Metin biçimlendirme özelliklerinden biri olan letter-spacing, metnin hangi\ntipografik unsurunu kontrol eder?",
+        "options": {
+          "A": "Satırlar arasındaki dikey boşluk.",
+          "B": "Kelimeler arasındaki boşluk.",
+          "C": "Paragrafın ilk satırının girintisi.",
+          "D": "Bireysel harfler arasındaki yatay boşluk.",
+          "E": "Metnin büyük/küçük harfe dönüştürülmesi."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760444113350,
+        "text": "CSS’te, vw (viewport width) ve vh (viewport height) gibi birimlerin temel\nözelliği nedir ve modern duyarlı (responsive) tasarımlarda neden tercih\nedilirler?",
+        "options": {
+          "A": "Sabit olmaları ve her cihazda aynı sonucu vermeleri.",
+          "B": "Yalnızca kök (html) elemanının font boyutuna göre hesaplanmaları.",
+          "C": "Geleneksel matbaa ölçüsü kullanmaları (point/pt).",
+          "D": "Sadece metin rengini değiştirmek için kullanılmaları.",
+          "E": "Cihazın ekran genişliğine veya yüksekliğine göre orantısal olarak değişmeleri."
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760444130168,
+        "text": "Bir HTML öğesinin çevresindeki diğer kutularla arasındaki mesafeyi\nbelirleyen ve Kutu Modeli'nin en dış katmanını oluşturan bileşen\nhangisidir?",
+        "options": {
+          "A": "Border",
+          "B": "Margin",
+          "C": "Padding",
+          "D": "Content",
+          "E": "Box-sizing"
+        },
+        "correctAnswer": "B"
+      }
+    ],
+    "Web Tasarımının Temelleri - 7.Ünite \"İleri CSS Teknikleri\" - 7.Ünite Deneme sınavı": [
+      {
+        "id": 1760444335858,
+        "text": "Flexbox hangi düzenler için en uygundur?",
+        "options": {
+          "A": "Tablo tabanlı düzenler",
+          "B": "İki boyutlu düzenler",
+          "C": "Tek boyutlu düzenler",
+          "D": "Responsive düzenler",
+          "E": "Grid sistemleri"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760444350036,
+        "text": "Flexbox içinde öğelerin yatay hizalanmasını hangi özellik belirler?",
+        "options": {
+          "A": "align-items",
+          "B": "justify-content",
+          "C": "flex-direction",
+          "D": "order",
+          "E": "align-self"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760444368128,
+        "text": "Flexbox’ta öğelerin görsel sırasını değiştirmek için hangi özellik kullanılır?",
+        "options": {
+          "A": "flex-grow",
+          "B": "justify-items",
+          "C": "flex-shrink",
+          "D": "order",
+          "E": "gap"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760444381802,
+        "text": "Bir öğenin diğerlerinden daha fazla yer kaplaması için hangi özellik\nkullanılır?",
+        "options": {
+          "A": "flex-shrink",
+          "B": "flex-grow",
+          "C": "align-self",
+          "D": "justify-content",
+          "E": "flex-basis"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760444398207,
+        "text": "Grid sisteminde sütunları tanımlamak için kullanılan özellik hangisidir?",
+        "options": {
+          "A": "grid-template-rows",
+          "B": "grid-gap",
+          "C": "grid-template-columns",
+          "D": "grid-area",
+          "E": "grid-auto-flow"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760444415470,
+        "text": "Grid’de öğeler arasındaki boşluk hangi özellik ile ayarlanır?",
+        "options": {
+          "A": "grid-gap",
+          "B": "padding",
+          "C": "margin",
+          "D": "justify-content",
+          "E": "align-content"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760444431214,
+        "text": "Grid sisteminde “fr” birimi neyi ifade eder?",
+        "options": {
+          "A": "Piksel ölçüsü",
+          "B": "Yüzde",
+          "C": "Rem birimi",
+          "D": "Em birimi",
+          "E": "Esnek pay"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760444448560,
+        "text": "Bir öğeyi 2 sütun boyunca genişletmek için doğru yazım hangisidir?",
+        "options": {
+          "A": "grid-column: 2;",
+          "B": "grid-template: span 2;",
+          "C": "grid-row: 2;",
+          "D": "grid-column: span 2;",
+          "E": "grid-auto-flow: column;"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760444463656,
+        "text": "Media queries hangi yapı ile tanımlanır?",
+        "options": {
+          "A": "@font-face",
+          "B": "@media",
+          "C": "@keyframes",
+          "D": "@responsive",
+          "E": "@container"
+        },
+        "correctAnswer": "B"
       }
     ]
   },
