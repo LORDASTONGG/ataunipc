@@ -3596,7 +3596,7 @@
     ],
     "Web Tasarımının Temelleri - 7.Ünite \"İleri CSS Teknikleri\" - 7.Ünite Deneme sınavı": [
       {
-        "id": 1760444335858,
+        "id": 1760444612254,
         "text": "Flexbox hangi düzenler için en uygundur?",
         "options": {
           "A": "Tablo tabanlı düzenler",
@@ -3608,7 +3608,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760444350036,
+        "id": 1760444626049,
         "text": "Flexbox içinde öğelerin yatay hizalanmasını hangi özellik belirler?",
         "options": {
           "A": "align-items",
@@ -3620,7 +3620,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760444368128,
+        "id": 1760444646458,
         "text": "Flexbox’ta öğelerin görsel sırasını değiştirmek için hangi özellik kullanılır?",
         "options": {
           "A": "flex-grow",
@@ -3632,7 +3632,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760444381802,
+        "id": 1760444663507,
         "text": "Bir öğenin diğerlerinden daha fazla yer kaplaması için hangi özellik\nkullanılır?",
         "options": {
           "A": "flex-shrink",
@@ -3644,7 +3644,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760444398207,
+        "id": 1760444685703,
         "text": "Grid sisteminde sütunları tanımlamak için kullanılan özellik hangisidir?",
         "options": {
           "A": "grid-template-rows",
@@ -3656,7 +3656,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760444415470,
+        "id": 1760444700280,
         "text": "Grid’de öğeler arasındaki boşluk hangi özellik ile ayarlanır?",
         "options": {
           "A": "grid-gap",
@@ -3668,7 +3668,7 @@
         "correctAnswer": "A"
       },
       {
-        "id": 1760444431214,
+        "id": 1760444713990,
         "text": "Grid sisteminde “fr” birimi neyi ifade eder?",
         "options": {
           "A": "Piksel ölçüsü",
@@ -3680,7 +3680,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760444448560,
+        "id": 1760444728828,
         "text": "Bir öğeyi 2 sütun boyunca genişletmek için doğru yazım hangisidir?",
         "options": {
           "A": "grid-column: 2;",
@@ -3692,7 +3692,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760444463656,
+        "id": 1760444741557,
         "text": "Media queries hangi yapı ile tanımlanır?",
         "options": {
           "A": "@font-face",
@@ -3702,6 +3702,18 @@
           "E": "@container"
         },
         "correctAnswer": "B"
+      },
+      {
+        "id": 1760444760212,
+        "text": "Küçük etkileşimlerde kullanılan geçiş efektleri hangi özellik ile yapılır?",
+        "options": {
+          "A": "Animation",
+          "B": "Keyframes",
+          "C": "@media",
+          "D": "Transform",
+          "E": "transition"
+        },
+        "correctAnswer": "E"
       }
     ]
   },
