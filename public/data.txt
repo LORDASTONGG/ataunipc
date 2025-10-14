@@ -27,7 +27,9 @@
         "1.Ünite \"Bilgi Teknolojilerinde Temel Kavramlar\"": true,
         "2.Ünite \"Bilgisayarın Yapısı\"": true,
         "3.Ünite \"İşletim Sistemleri\"": true,
-        "4.Ünite \"Temel Bilgisayar Kullanımı\"": true
+        "4.Ünite \"Temel Bilgisayar Kullanımı\"": true,
+        "5.Ünite \"Kelime İşlemciler\"": true,
+        "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"": true
       }
     }
   },
@@ -193,6 +195,24 @@
       "summary": "🧠 4. ÜNİTE – TEMEL BİLGİSAYAR KULLANIMI (KISA VE TAM ÖZET)\n🔹 1. Antivirüs Programları ve Bilgisayar Güvenliği\n\nBilgisayarlarda sistem ve uygulama yazılımlarının korunması gerekir.\n\nYazılımsal arızalar zaman kaybı ve veri kaybına neden olabilir.\n\nBilgisayar virüsleri de birer programdır. Başka dosyalara bulaşarak yayılırlar.\n\nVirüsler, kullanıcıdan izinsiz olarak sistemin işleyişini değiştirir.\n\nVirüs Türleri:\n\nDosya sistemi virüsleri: Genellikle .EXE veya .COM uzantılı çalıştırılabilir dosyalara bulaşır.\n\nÖn yükleme (boot) virüsleri: Sabit diskin “MBR” (Master Boot Record) kısmına yerleşir.\n\nMakro virüsleri: Word veya Excel gibi ofis programlarında çalışır.\n\nSolucan (Worm): İnternet veya ağ üzerinden kendini diğer sistemlere kopyalar.\n\nTruva atı (Trojan): Zararsız gibi görünen programların içine gizlenmiş kötü yazılımdır.\n\nCasus yazılımlar (Spyware): Kullanıcının hareketlerini izler, bilgileri toplar.\n\nSpam: Kullanıcının isteği dışında gelen e-postalardır.\n\nTrojan virüsler: Kendilerini çoğaltmazlar ama sisteme zarar verirler.\n\nVirüslerden Korunma Yöntemleri:\n\nAntivirüs programı kullan.\n\nBilinmeyen e-posta eklerini açma.\n\nTaşınabilir bellekleri taramadan kullanma.\n\nGüvenlik duvarını aktif tut.\n\nWindows Defender gibi güvenlik araçlarını kullan.\n\nWindows Defender:\nWindows 10 ve 11’de ücretsiz gelir. Microsoft 365 ailesinin bir parçasıdır. Bilgisayarını ve cihazlarını virüslere karşı korur.\n\n🔹 2. Web Tarayıcıları\n\nWeb tarayıcıları, internet sitelerine erişmemizi sağlayan programlardır.\n\nHTML, CSS, JavaScript gibi teknolojileri işleyip sayfayı kullanıcıya gösterir.\n\nGüvenli bağlantı kurmak için HTTPS kullanırlar.\n\nÇerez, önbellek ve gizlilik özellikleri kullanıcı deneyimini geliştirir.\n\nEn sık kullanılan tarayıcılar:\n\nGoogle Chrome\n\nMicrosoft Edge\n\nMozilla Firefox\n\nSafari\n\nYandex\n\nVivaldi\n\nWeb tarayıcılarının temel özellikleri:\n\nAdres çubuğu: Site adresi yazılır. (Örnek: www.atauni.edu.tr\n)\n\nwww → başlangıç\n\natauni → kurum adı\n\nedu → kurum türü\n\ntr → ülke kodu\n\nAçılış sayfası: Tarayıcı açıldığında ilk gelen sayfa.\n\nWeb geçmişi: Ziyaret edilen adreslerin kayıtları.\n\nGizli sekme: Geçmiş veya şifre kaydı tutmaz, gizlilik sağlar.\n\nAlan uzantıları:\n\n.com → ticari siteler\n\n.edu → eğitim kurumları\n\n.gov → devlet kurumları\n\n.org → vakıf / dernek\n\n.net → servis sağlayıcı\n\n.mil → askeri kurum\n\n.biz → şirket\n\n.name → kişisel adres\n\n.aero → havacılık\n\n.k12 → okullar\n\nÜlke kodları:\n\ntr → Türkiye\n\nde → Almanya\n\nnl → Hollanda\n\nru → Rusya\n\nca → Kanada\n\nbg → Bulgaristan\n\nes → İspanya\n\nse → İsveç\n\nit → İtalya\n\nkz → Kazakistan\n\n🔹 3. İnternette Gezinirken Dikkat Edilecekler\n\nSadece güvenilir kaynaklardan bilgi alın (örnek: edu, gov uzantılı siteler).\n\nSosyal ağlarda kişisel bilgileri sınırlı paylaş.\n\nTanımadığın kişilerle özel bilgileri paylaşma.\n\n“Ödül kazandınız” gibi dolandırıcı bağlantılara tıklama.\n\nİnternetten dosya indirirken site güvenilirliğini kontrol et.\n\nSosyal medyada tehdit veya hakaret içerikli paylaşımlardan uzak dur.\n\nAlışverişte güvenilir siteleri ve 3D Secure yöntemini kullan.\n\nİnternette gizlilik, bütünlük ve erişilebilirlik ilkelerine dikkat et.\n\n🔹 4. Bilgisayara Program / Dosya İndirme\n\nDosya, video, belge veya programları internetten indirebilirsin.\n\n“Kaydet” seçeneği ile dosya bilgisayarına iner.\n\nİndirme süresi, dosya boyutu ve internet hızına bağlıdır.\n\nEn önemli nokta: Dosyanın virüssüz ve güvenli bir siteden indirilmesi gerekir.\n\nİndirme bittikten sonra dosyayı kaydettiğin klasörden açabilirsin.\n\n🔹 5. En Çok Sorulan Bilgiler (Testte Çıkanlar)\n\nVirüs olmayan: Scriptler\n\nEXE ve COM uzantısına bulaşan: Dosya sistemi virüsü\n\nSadece Windows’ta çalışmaz diyen yanlış: Truva atı sorusu (3. c)\n\nSolucanlar reklam göstermez → yanlış bilgi (4. b)\n\nİstenmeyen e-postalar: Spam\n\nKötü amaçlı yazılım olmayan: Firmware\n\nVirüs olduğunda yapılmaması gereken: Sistem dosyalarını başka bilgisayardan değiştirmek\n\nWeb tarayıcısı olmayan: Microsoft Defender\n\nWeb geçmişi antivirüsle değil, tarayıcıyla ilgilidir (9. e yanlış)\n\nFarklı programlama dilleriyle yazılan komut setleri: Makrolar\n\n🔹 Sonuç\n\nBu ünitede bilgisayar güvenliği, virüs türleri, antivirüs programları, web tarayıcılarının işlevleri ve internette güvenli davranışlar öğrenilir.\nAmaç: Bilgisayarı, interneti ve yazılımları güvenli, bilinçli ve verimli kullanmak.",
       "pdfData": null,
       "createdAt": "2025-10-14T10:44:01.568Z"
+    },
+    {
+      "id": 1760439231935,
+      "subject": "Temel Bilgi Teknolojileri",
+      "unit": "5.Ünite \"Kelime İşlemciler\"",
+      "title": "5.Ünite \"Kelime İşlemciler\"",
+      "summary": "🧠 5. ÜNİTE – KELİME İŞLEMCİLER (KISA VE TAM ÖZET)\n🔹 1. Kelime İşlemci Nedir?\n\nMetin belgeleri oluşturmak, düzenlemek, kaydetmek, görüntülemek ve yazdırmak için kullanılan programlardır.\n\nBilgisayarlarda en sık kullanılan programlardandır.\n\n1970’lerde elektronik yazı makineleriyle ortaya çıkmış, 1980’lerde bellek eklenince düzenleme yapılabilir hale gelmiştir.\n\nTüm kullanıcıların belgeleri açabilmesi için ortak belge biçimi gerekir.\n\nAçık belge standardı (OpenDocument)\n\n2006’da ISO tarafından kabul edilmiştir.\n\n.odt uzantılı dosyalar bu biçimdedir.\n\nMicrosoft, 2009’da Word 2007 SP2 sürümünden itibaren desteklemeye başlamıştır.\n\n🔹 2. Önemli Kelime İşlemci Programları\n\nMicrosoft Word\n\nMicrosoft tarafından geliştirilmiştir.\n\nİlk kez 1983’te piyasaya çıkmıştır.\n\nMasaüstü, mobil ve web sürümleri vardır.\n\nEn son sürümü: Word 2021\n\nAçıldığında kullanıcıya boş belge veya hazır şablonlar (özgeçmiş, broşür, rapor, takvim vb.) sunar.\n\nLibreOffice Writer\n\nThe Document Foundation tarafından geliştirilmiştir.\n\nÜcretsiz ve açık kaynak kodludur.\n\nDosya uzantısı: .odt\n\nWord belgelerini (.docx) de açabilir.\n\nWindows, MacOS, Linux üzerinde çalışır.\n\nApple Pages\n\nApple tarafından geliştirilmiştir.\n\niWork ofis paketinde yer alır.\n\nKelime işlemci + sayfa tasarımı (mizanpaj) yapabilir.\n\nGerçek zamanlı ortak çalışma (bir belge üzerinde aynı anda birden fazla kişi çalışabilir).\n\nGoogle Dokümanlar\n\nWeb tabanlı (çevrimiçi) bir kelime işlemcidir.\n\n“docs.google.com” adresi üzerinden çalışır.\n\nBelgeler otomatik olarak Google Drive’a kaydedilir.\n\nGerçek zamanlı ortak çalışma yapılabilir.\n\n🔹 3. Word 2021 Genel Yapısı\n\nAna ekran: Boş belge veya hazır şablon seçimi yapılır.\n\nSekmeli yapı: Biçimlendirme araçları sekmeler halinde düzenlenmiştir.\n\nEn sağdaki sekme: Dosya menüsü\n\n🔹 4. Word Seçenekleri (Word Options)\n\nOfis kullanıcı dili ayarlanabilir.\n\nYazma ve yazım denetleme dili seçilebilir.\n\nDiğer kullanıcıların belgeye erişim izinleri düzenlenebilir.\n\nKesme, kopyalama, yapıştırma ayarları değiştirilebilir.\n\nŞerit ve Hızlı Erişim araç çubuğu özelleştirilebilir.\n\nYeni komut grupları oluşturulabilir.\n\nEklentiler görüntülenip yönetilebilir.\n(Not: Burada “Word seçenekleri” menüsünden belgeye parola eklenemez.)\n\n🔹 5. Word 2021 Dosya Menüsü\n\nDosya menüsünde şu sekmeler yer alır:\nBilgi, Kaydet, Farklı Kaydet, Yazdır, Paylaş, Dışarı Aktar.\n\n🔸 Bilgi Sekmesi\n\nBelgeyi Koru: Belgeye parola eklenebilir, düzenleme engellenebilir, dijital imza eklenebilir.\n\nBelgeyi İncele: Gizli bilgi, kişisel bilgi, erişilebilirlik sorunları denetlenir.\n\nBelgeyi Yönet: Kaydedilmemiş belgeler kurtarılabilir veya son kopyalar silinebilir.\n\nAyrıca belge boyutu, sayfa sayısı, sözcük sayısı, düzenleme süresi, yazar bilgisi gibi verilere buradan ulaşılır.\n\n🔸 Kaydet / Farklı Kaydet\n\nBelgeyi bilgisayara veya buluta kaydeder.\n\nVarsayılan biçim: .docx\n\n“Farklı Kaydet” ile belgeyi farklı formatlarda dışa aktarabilirsin:\n\n.pdf, .xml, .html (web sayfası)\n\n🔸 Yazdır Sekmesi\n\nYazıcı seçimi yapılır.\n\nYazdırılacak alan, sayfa yönü (dikey/yatay), kenar boşlukları ve sayfa boyutu ayarlanabilir.\n\nÖn izleme yapılabilir.\n\nYazdır sekmesinde belge sorunlarını denetleyemezsin.\n\n🔸 Paylaş Sekmesi\n\nKişilerle Paylaş: Belgeyi OneDrive üzerinden başkalarıyla paylaş.\n\nE-posta: Belgeyi e-posta ekinde veya bağlantı şeklinde gönder.\n\nÇevrimiçi Sun: Belgeyi web tarayıcıda görüntülenebilir hale getir.\n\nBlogda Yayınla: Belgeyi blog gönderisine dönüştür ve paylaş.\n(Desteklenen siteler: WordPress, SharePoint, Telligent, TypePad)\n\nNot: Paylaş sekmesinden erişim kısıtlaması yapılamaz. Bu işlem “Belgeyi Koru” kısmındadır.\n\n🔹 6. En Önemli Bilgiler (Sınav Odaklı)\n\nMetin belgeleriyle çalışan program: Kelime işlemci\n\nEvrensel belge biçimi: .odt (OpenDocument)\n\nKitap ve e-kitap tasarımı yapan kelime işlemci: Apple Pages\n\nWord karşılama ekranında “yazdırma” işlemi yapılamaz.\n\nWord seçenekleri penceresinden “belgeye parola eklenemez.”\n\nDosya menüsünde “Erişim kolaylığı” sekmesi yoktur.\n\n“Belgeyi Koru” → parola, imza, düzenleme kısıtlama\n\n“Belgeyi İncele” → gizli bilgi ve erişilebilirlik denetimi\n\n“Yazdır” sekmesinde → belge sorunlarını denetleme işlemi yapılamaz.\n\n“Paylaş” sekmesinde → erişim kısıtlanamaz.\n\n🎯 Kısaca Hatırla\n\nWord: profesyonel masaüstü kelime işlemci.\n\nLibreOffice Writer: açık kaynak, .odt.\n\nPages: Apple, tasarım + kelime işlemci.\n\nGoogle Docs: çevrimiçi, ortak çalışma.\n\nBelgeyi koruma, inceleme, yönetme işlemleri → Dosya > Bilgi.\n\nYazdırma → Dosya > Yazdır.\n\nPaylaşım → Dosya > Paylaş.",
+      "pdfData": null,
+      "createdAt": "2025-10-14T10:53:51.935Z"
+    },
+    {
+      "id": 1760439542683,
+      "subject": "Temel Bilgi Teknolojileri",
+      "unit": "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"",
+      "title": "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"",
+      "summary": "🧠 6. Ünite Özeti – Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\n🔹 Word Penceresi ve Şerit Yapısı\n\nŞerit Yapısı: Office 2007 ile geldi.\nSekmeler → Gruplar → Komutlar şeklinde düzenlenmiştir.\n\n10 Sekme: Giriş, Ekle, Çiz, Tasarım, Düzen, Başvurular, Posta Gönderileri, Gözden Geçir, Görünüm, Yardım.\n\nHer sekme benzer işlevli grupları içerir (örnek: Giriş sekmesinde Yazı Tipi ve Paragraf grubu).\n\nKlavye ile erişim: ALT tuşuna bas → sekme harfi → komut harfi.\n\n🔹 Posta Gönderileri Sekmesi\n\nAdres Mektup Birleştirme: Aynı anda birçok kişiye özel mektup oluşturur.\n\nEtiket yazdırma ve zarflar oluşturma bu sekmede yapılır.\n\nE-posta gönderimi için kişiselleştirme sağlar.\n\n🔹 Gözden Geçir Sekmesi\n\nYazım Denetleme, Dil, İzleme, Değişiklikler, Karşılaştır, Koru gibi komutlar bulunur.\n\nNot ekleme, değişiklikleri izleme, belgeyi koruma işlevlerini sağlar.\n\nYeni Özellikler (2021):\n\nSesli Oku: Seçilen metni seslendirir (ALT + CTRL + Boşluk).\n\nÇevir: Belgenin tamamını veya bir kısmını farklı dile çevirir.\n\n🔹 Görünüm Sekmesi\n\nBelgenin görünüm biçimini ve yakınlaştırma oranını ayarlamak için kullanılır.\n\nSayfa düzeni, çoklu görünüm, bölme ekran, yakınlaştırma seçenekleri bulunur.\n\n🔹 Metin Biçimlendirme (Temel Bilgi)\n\nBiçimlendirme yapmak için önce metin seçilmeli, sonra komut kullanılmalı.\n\nÖrnek: Altı çizili yapmak → metni seç → Altı Çizili komutu (Ctrl+Shift+A).\n\n🔹 Yazı Tipi Grubu (Giriş Sekmesi)\n\nYazı Tipi (Ctrl+Shift+Y)\n\nYazı Tipi Boyutu (Ctrl+Shift+P)\n\nYazı Tipini Büyüt/Küçült (Ctrl+. / Ctrl+;)\n\nBüyük/Küçük Harf Değiştir (Shift+F3)\n\nBiçimlendirmeyi Temizle\n\nKalın (Ctrl+K)\n\nİtalik (Ctrl+T)\n\nAltı Çizili (Ctrl+Shift+A)\n\nÜstü Çizili\n\nAlt Simge (Ctrl+%)\n\nÜst Simge (Ctrl+Shift+4)\n\nVurgu Rengi\n\nYazı Tipi Rengi\n\nYazı Tipi Rengi: Metnin rengini değiştirir.\n\nMetin Vurgu Rengi: Arka planı renklendirir.\n\nAlt/Üst Simge: Kimyasal formül, matematik gibi yazımlarda kullanılır.\n\nBüyük/Küçük Harf: Shift + F3\n\nBiçimlendirmeyi Temizle: Tüm biçimleri sıfırlar.\n\n🔹 Paragraf Grubu (Giriş Sekmesi)\n\nMadde İşaretleri\n\nNumaralandırma\n\nÇok Düzeyli Liste\n\nGirintiyi Azalt / Artır\n\nSırala (alfabetik sıralama)\n\nTümünü Göster (Ctrl+())\n\nHizalama:\n\nSola (Ctrl+L)\n\nOrtala (Ctrl+R)\n\nSağa (Ctrl+G)\n\nYasla (Ctrl+D)\n\nSatır ve Paragraf Aralığı\n\nGölgelendirme\n\nKenarlıklar\n\nGirinti: Paragrafın sayfa başından uzaklığını ayarlar.\n\nSatır Aralığı: Satırlar arası boşluk.\n\nMadde İşareti / Numaralandırma: Listeler oluşturmak için.\n\nSırala: Alfabetik sıralama yapar.\n\n🔹 Pano Grubu (Giriş Sekmesi)\n\nKes: Ctrl + X\n\nKopyala: Ctrl + C\n\nYapıştır: Ctrl + V\n\nBiçim Boyacısı: Bir metnin biçimini (renk, yazı tipi, boyut) başka metne uygular.\n\nKopyalama: Ctrl + Shift + C\n\nYapıştırma: Ctrl + Shift + V\n\nAynı işlemler resim, tablo ve şekiller için de geçerlidir.\n\n🔹 Stiller Grubu\n\nÖnceden tanımlı biçim kombinasyonlarını içerir.\n\n“Stil Oluştur” ile kendi yazı stili kaydedilebilir.\n\nRapor, ödev, başlık biçimleri oluşturmakta kullanılır.\n\n🧩 Kısayollar Özeti (Test Sorularında Geçenler)\n\nBelge kaydet: Ctrl + S\n\nKopyala: Ctrl + C\n\nKes: Ctrl + X\n\nYapıştır: Ctrl + V\n\nKalın: Ctrl + K\n\nİtalik: Ctrl + T\n\nYazı tipi değiştir: Ctrl + Shift + Y\n\nBüyük/küçük harf: Shift + F3\n\nSola hizala: Ctrl + L\n\nBiçim boyacısı: Ctrl + Shift + C\n\nŞeritteki komutlara erişim: ALT\n\nSesli oku: Alt + Ctrl + Boşluk\n\n🎯 Bu Özeti Bilenin Çözeceği Sorular\n\n✅ Şerit yapısı ve sekmeler (1–5. sorular)\n✅ Kısayol tuşları (2, 6–10. sorular)\n✅ Hangi sekmede hangi özellik var (4, 5. sorular)",
+      "pdfData": null,
+      "createdAt": "2025-10-14T10:59:02.683Z"
     }
   ],
   "exams": {
@@ -2390,6 +2410,250 @@
           "E": "Ofis ürünleri"
         },
         "correctAnswer": "C"
+      }
+    ],
+    "Temel Bilgi Teknolojileri - 5.Ünite \"Kelime İşlemciler\" - 5.Ünite Deneme sınavı": [
+      {
+        "id": 1760439263636,
+        "text": "Metin dokümanlarının oluşturulmasına, düzenlenmesine, kaydedilmesine,\ngörüntülenmesine ve yazdırılmasına olanak tanıyan programlara verilen\nisim aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Kelime işlemci",
+          "B": "Hesap tablosu",
+          "C": "Sunu programları",
+          "D": "Veritabanı yazılımları",
+          "E": "Mizanpaj programları"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760439280528,
+        "text": "Herhangi bir kelime işlemci programında oluşturulan belgelerin başka\nkelime işlemciler tarafından açılmasına olanak tanıyan dosya biçimi\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "pdf",
+          "B": "odt",
+          "C": "xps",
+          "D": "xml",
+          "E": "docx"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760439297297,
+        "text": "Galerisinde hazır kitap şablonları bulunduran ve elektronik kitapların kolay\nbir şekilde tasarlanmasına imkân tanıyan kelime işlemci programı\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "LibreOffice",
+          "B": "Apache OpenOffice",
+          "C": "iWork Pages",
+          "D": "Google Docs",
+          "E": "Microsoft Word"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760439319992,
+        "text": "Word programı karşılama ekranının yardımıyla aşağıdakilerden hangisi\nyapılamaz?",
+        "options": {
+          "A": "Boş belge açılabilir.",
+          "B": "Var olan belge açılabilir.",
+          "C": "Hazır şablonlar kullanılabilir.",
+          "D": "Belge yazdırılabilir.",
+          "E": "Word seçeneklerine erişilebilir."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760439339754,
+        "text": "Word seçenekleri penceresi kullanılarak aşağıdakilerden hangisi\nyapılamaz?",
+        "options": {
+          "A": "Gizlilik ayarları düzenlenebilir.",
+          "B": "Şerit otomatik gizlenebilir.",
+          "C": "Yazım denetleme ayarları yapılabilir.",
+          "D": "Yazdırma seçenekleri belirlenebilir.",
+          "E": "Belgeye parola eklenebilir."
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760439357408,
+        "text": "Aşağıdakilerden hangisi Word 2021 Dosya menüsünde yer almaz?",
+        "options": {
+          "A": "Erişim kolaylığı",
+          "B": "Bilgi",
+          "C": "Farklı kaydet",
+          "D": "Geçmiş",
+          "E": "Yazdır"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760439379217,
+        "text": "Word 2021’de Dosya menüsünde yer alan Belgeyi Koru seçeneği\nkullanılarak aşağıdakilerden hangisi yapılamaz?",
+        "options": {
+          "A": "Parola ile şifreleme",
+          "B": "Belgeyi inceleme",
+          "C": "Dijital imza ekleme",
+          "D": "Erişimi kısıtlama",
+          "E": "Düzenlemeyi kısıtlama"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760439400022,
+        "text": "Word 2021’de Dosya menüsünde yer alan Belgeyi İncele seçeneği\nkullanılarak aşağıdakilerden hangisi yapılabilir?",
+        "options": {
+          "A": "Belgeye şifre ekleme",
+          "B": "Belgeyi salt okunur hale getirme",
+          "C": "Erişebilirliği denetleme",
+          "D": "Kaydedilmemiş belgeleri kurtarma",
+          "E": "Belgeyi son olarak işaretleme"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760439415564,
+        "text": "Word 2021’de Dosya menüsünde yer alan Yazdır seçeneği kullanılarak\naşağıdakilerden hangisi yapılamaz?",
+        "options": {
+          "A": "Geçerli sayfa yazdırılabilir.",
+          "B": "Yazıcı seçimi yapılabilir.",
+          "C": "Sayfa yönlendirmesi ayarlanabilir.",
+          "D": "Belge sorunları denetlenebilir.",
+          "E": "Kenar boşlukları ayarlanabilir."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760439431850,
+        "text": "Word 2021’de Dosya menüsünde yer alan Paylaş seçeneği kullanılarak\naşağıdakilerden hangisi yapılamaz?",
+        "options": {
+          "A": "Belge e-posta olarak gönderilebilir.",
+          "B": "Belge başka kişilerle paylaşılabilir.",
+          "C": "Belgeye erişim bağlantısı oluşturulabilir.",
+          "D": "Belge blog yayını haline getirilebilir.",
+          "E": "Belgeye erişim kısıtlanabilir."
+        },
+        "correctAnswer": "E"
+      }
+    ],
+    "Temel Bilgi Teknolojileri - 6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\" - 6.Ünite Deneme sınavı": [
+      {
+        "id": 1760439648646,
+        "text": "Word program penceresinde görünüm düğmeleri kullanılarak\naşağıdakilerden hangisi yapılabilir?",
+        "options": {
+          "A": "Belge okuma modunda görüntülenebilir.",
+          "B": "Belge birden çok sayfa halinde görüntülenebilir.",
+          "C": "Belge yazdırılabilir.",
+          "D": "Düzenleme alanı yakınlaştırılabilir.",
+          "E": "Düzenleme alanı kaydırılabilir."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760439666775,
+        "text": "Word programında oluşturulan belgeyi kaydetmek için kullanılan kısayol\ntuş bileşeni aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CTRL+C",
+          "B": "CTRL+S",
+          "C": "CTRL+Z",
+          "D": "CTRL+D",
+          "E": "CTRL+K"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760439683503,
+        "text": "Word programında şeritte yer alan komutlara klavyeden erişmek için\nkullanılan tuş aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CTRL",
+          "B": "SHIFT",
+          "C": "ALT",
+          "D": "ALT GR",
+          "E": "TAB"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760439702312,
+        "text": "Word programında kalın, italik, sola hizala ve yazı tipi komutları aşağıdaki\nsekmelerin hangisinde yer alır?",
+        "options": {
+          "A": "Çiz",
+          "B": "Ekle",
+          "C": "Tasarım",
+          "D": "Giriş",
+          "E": "Düzen"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760439723387,
+        "text": "Word programında metinlerin seslendirilmesi işlevini gören sesli oku\nkomutu aşağıdaki sekmelerin hangisinde yer alır?",
+        "options": {
+          "A": "Giriş",
+          "B": "Başvurular",
+          "C": "Tasarım",
+          "D": "Görünüm",
+          "E": "Gözden geçir"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760439739492,
+        "text": "Word programında bir metnin yazı tipini değiştirmek için kullanılan kısayol\ntuş bileşeni aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CTRL+SHIFT+Y",
+          "B": "CTRL+SHIFT+P",
+          "C": "ALT+SHIFT+Y",
+          "D": "ALT+SHIFT+P",
+          "E": "CTRL+ALT+Y"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760439764502,
+        "text": "Word programında bir metindeki küçük/büyük harf değiştirmek için\nkullanılan kısayol tuş bileşeni aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "SHIFT+F1",
+          "B": "SHIFT+F3",
+          "C": "ALT+F1",
+          "D": "ALT+F3",
+          "E": "ALT+SHIFT+F1"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760439790234,
+        "text": "Word programında bir metnin sola hizalı şekilde yazılmasını sağlayan\nkısayol tuş bileşeni aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CTRL+R",
+          "B": "CTRL+G",
+          "C": "CTRL+L",
+          "D": "CTRL+D",
+          "E": "CTRL+H"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760439805641,
+        "text": "Word programında bir metnin veya nesnenin kopyalanması için kullanılan\nkısayol tuş bileşeni aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CTRL+K",
+          "B": "CTRL+P",
+          "C": "CTRL+T",
+          "D": "CTRL+C",
+          "E": "CTRL+V"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760439822013,
+        "text": "Word programında bir metnin veya nesnenin biçimsel özelliklerinin\nkopyalanması için kullanılan kısayol tuş bileşeni aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "CTRL+SHIFT+K",
+          "B": "CTRL+ SHIFT+P",
+          "C": "CTRL+ SHIFT+T",
+          "D": "CTRL+ SHIFT+C",
+          "E": "CTRL+ SHIFT+V"
+        },
+        "correctAnswer": "D"
       }
     ]
   },
