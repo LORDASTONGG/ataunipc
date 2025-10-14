@@ -29,7 +29,8 @@
         "3.Ünite \"İşletim Sistemleri\"": true,
         "4.Ünite \"Temel Bilgisayar Kullanımı\"": true,
         "5.Ünite \"Kelime İşlemciler\"": true,
-        "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"": true
+        "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"": true,
+        "7.Ünite \"Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\"": true
       }
     }
   },
@@ -213,6 +214,15 @@
       "summary": "🧠 6. Ünite Özeti – Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\n🔹 Word Penceresi ve Şerit Yapısı\n\nŞerit Yapısı: Office 2007 ile geldi.\nSekmeler → Gruplar → Komutlar şeklinde düzenlenmiştir.\n\n10 Sekme: Giriş, Ekle, Çiz, Tasarım, Düzen, Başvurular, Posta Gönderileri, Gözden Geçir, Görünüm, Yardım.\n\nHer sekme benzer işlevli grupları içerir (örnek: Giriş sekmesinde Yazı Tipi ve Paragraf grubu).\n\nKlavye ile erişim: ALT tuşuna bas → sekme harfi → komut harfi.\n\n🔹 Posta Gönderileri Sekmesi\n\nAdres Mektup Birleştirme: Aynı anda birçok kişiye özel mektup oluşturur.\n\nEtiket yazdırma ve zarflar oluşturma bu sekmede yapılır.\n\nE-posta gönderimi için kişiselleştirme sağlar.\n\n🔹 Gözden Geçir Sekmesi\n\nYazım Denetleme, Dil, İzleme, Değişiklikler, Karşılaştır, Koru gibi komutlar bulunur.\n\nNot ekleme, değişiklikleri izleme, belgeyi koruma işlevlerini sağlar.\n\nYeni Özellikler (2021):\n\nSesli Oku: Seçilen metni seslendirir (ALT + CTRL + Boşluk).\n\nÇevir: Belgenin tamamını veya bir kısmını farklı dile çevirir.\n\n🔹 Görünüm Sekmesi\n\nBelgenin görünüm biçimini ve yakınlaştırma oranını ayarlamak için kullanılır.\n\nSayfa düzeni, çoklu görünüm, bölme ekran, yakınlaştırma seçenekleri bulunur.\n\n🔹 Metin Biçimlendirme (Temel Bilgi)\n\nBiçimlendirme yapmak için önce metin seçilmeli, sonra komut kullanılmalı.\n\nÖrnek: Altı çizili yapmak → metni seç → Altı Çizili komutu (Ctrl+Shift+A).\n\n🔹 Yazı Tipi Grubu (Giriş Sekmesi)\n\nYazı Tipi (Ctrl+Shift+Y)\n\nYazı Tipi Boyutu (Ctrl+Shift+P)\n\nYazı Tipini Büyüt/Küçült (Ctrl+. / Ctrl+;)\n\nBüyük/Küçük Harf Değiştir (Shift+F3)\n\nBiçimlendirmeyi Temizle\n\nKalın (Ctrl+K)\n\nİtalik (Ctrl+T)\n\nAltı Çizili (Ctrl+Shift+A)\n\nÜstü Çizili\n\nAlt Simge (Ctrl+%)\n\nÜst Simge (Ctrl+Shift+4)\n\nVurgu Rengi\n\nYazı Tipi Rengi\n\nYazı Tipi Rengi: Metnin rengini değiştirir.\n\nMetin Vurgu Rengi: Arka planı renklendirir.\n\nAlt/Üst Simge: Kimyasal formül, matematik gibi yazımlarda kullanılır.\n\nBüyük/Küçük Harf: Shift + F3\n\nBiçimlendirmeyi Temizle: Tüm biçimleri sıfırlar.\n\n🔹 Paragraf Grubu (Giriş Sekmesi)\n\nMadde İşaretleri\n\nNumaralandırma\n\nÇok Düzeyli Liste\n\nGirintiyi Azalt / Artır\n\nSırala (alfabetik sıralama)\n\nTümünü Göster (Ctrl+())\n\nHizalama:\n\nSola (Ctrl+L)\n\nOrtala (Ctrl+R)\n\nSağa (Ctrl+G)\n\nYasla (Ctrl+D)\n\nSatır ve Paragraf Aralığı\n\nGölgelendirme\n\nKenarlıklar\n\nGirinti: Paragrafın sayfa başından uzaklığını ayarlar.\n\nSatır Aralığı: Satırlar arası boşluk.\n\nMadde İşareti / Numaralandırma: Listeler oluşturmak için.\n\nSırala: Alfabetik sıralama yapar.\n\n🔹 Pano Grubu (Giriş Sekmesi)\n\nKes: Ctrl + X\n\nKopyala: Ctrl + C\n\nYapıştır: Ctrl + V\n\nBiçim Boyacısı: Bir metnin biçimini (renk, yazı tipi, boyut) başka metne uygular.\n\nKopyalama: Ctrl + Shift + C\n\nYapıştırma: Ctrl + Shift + V\n\nAynı işlemler resim, tablo ve şekiller için de geçerlidir.\n\n🔹 Stiller Grubu\n\nÖnceden tanımlı biçim kombinasyonlarını içerir.\n\n“Stil Oluştur” ile kendi yazı stili kaydedilebilir.\n\nRapor, ödev, başlık biçimleri oluşturmakta kullanılır.\n\n🧩 Kısayollar Özeti (Test Sorularında Geçenler)\n\nBelge kaydet: Ctrl + S\n\nKopyala: Ctrl + C\n\nKes: Ctrl + X\n\nYapıştır: Ctrl + V\n\nKalın: Ctrl + K\n\nİtalik: Ctrl + T\n\nYazı tipi değiştir: Ctrl + Shift + Y\n\nBüyük/küçük harf: Shift + F3\n\nSola hizala: Ctrl + L\n\nBiçim boyacısı: Ctrl + Shift + C\n\nŞeritteki komutlara erişim: ALT\n\nSesli oku: Alt + Ctrl + Boşluk\n\n🎯 Bu Özeti Bilenin Çözeceği Sorular\n\n✅ Şerit yapısı ve sekmeler (1–5. sorular)\n✅ Kısayol tuşları (2, 6–10. sorular)\n✅ Hangi sekmede hangi özellik var (4, 5. sorular)",
       "pdfData": null,
       "createdAt": "2025-10-14T10:59:02.683Z"
+    },
+    {
+      "id": 1760439990252,
+      "subject": "Temel Bilgi Teknolojileri",
+      "unit": "7.Ünite \"Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\"",
+      "title": "7.Ünite \"Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\"",
+      "summary": "🧠 7. Ünite Özeti – Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\n🔹 Bölüm Sonları (Kesmeler)\n\nBölüm Sonu: Belgeyi farklı kısımlara ayırmaya yarar.\n\nSonraki Sayfa: Yeni bölümü bir sonraki sayfada başlatır.\n\nSürekli: Yeni bölümü aynı sayfada başlatır.\n\nÇift Sayfa: Yeni bölümü bir sonraki çift sayfa numarasından başlatır.\n\nTek Sayfa: Yeni bölümü bir sonraki tek sayfa numarasından başlatır.\n\nBölüm sonları özellikle farklı sayfa düzenleri, numaralandırmalar veya üstbilgi–altbilgi farklılıkları gerektiğinde kullanılır.\n\n🔹 Satır Numaraları\n\nHer satıra numara ekleyebilirsin.\n\nDüzen sekmesi → Sayfa Yapısı grubu → Satır Numaraları menüsünden yapılır.\n\nSatır Numaralandırma Seçenekleri menüsünde:\n\nBaşlangıç numarası\n\nMetinden uzaklık\n\nArtış miktarı\n\nNumaranın hangi sayfada başlayacağı gibi ayarlar bulunur.\n\n🔹 Heceleme\n\nUzun kelimeler satır sonuna sığmazsa, heceleme kelimeyi uygun yerden böler.\n\nSayfa Düzeni sekmesi → Sayfa Yapısı grubu → Heceleme komutu ile yapılır.\n\nOtomatik veya El ile seçenekleri vardır.\n\n“Heceleme seçenekleri” menüsünden ayrıntılı ayarlar yapılabilir.\n\nHeceleme sayesinde metin kenarları daha düzgün görünür.\n\n🔹 Filigran\n\nSayfa içeriğinin arkasına soluk yazı veya görsel eklemek için kullanılır.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Filigran komutu.\n\nTüm sayfalara uygulanır.\n\nÖzel Filigran seçeneğinden:\n\nMetin veya resim tabanlı filigran oluşturulur.\n\nVar olan filigran kaldırılabilir.\n\nMetin rengi, yazı tipi ve boyutu değiştirilebilir.\n\nÖrnek: Şirket logosu veya “Gizli”, “Taslak” yazısı.\n\n🔹 Sayfa Rengi\n\nSayfa arka planını renklendirmek için.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Sayfa Rengi.\n\nStandart renkler veya dolgu efektleri seçilebilir.\n\nBelge daha görsel hale gelir.\n\n🔹 Sayfa Kenarlıkları\n\nSayfaya çerçeve (kenarlık) eklemeye yarar.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Sayfa Kenarlıkları.\n\nAçılan Kenarlıklar ve Gölgelendirme penceresinden:\n\nStil, renk, genişlik, resim kenarlıkları belirlenir.\n\nUygulama yeri: Belgenin tamamı veya seçilen bölümler olabilir.\n\n“Seçenekler” düğmesinden boşluk ayarları yapılabilir.\n\n🔹 Başvurular Sekmesi\n\nBelgede bilgilendirme yapıları oluşturmak için kullanılır.\n\nİçindekiler Tablosu\n\nBaşlık stillerine göre otomatik liste oluşturur.\n\nBaşvurular sekmesi → İçindekiler.\n\nİçindekiler tablosu başlıkları ve sayfa numaralarını içerir.\n\nTabloyu Güncelleştir seçeneğiyle değişiklikler güncellenir.\n\nİçindekiler Tablosunu kaldırmak için aynı menüde “Kaldır” seçeneği vardır.\n\nDipnot ve Son Not\n\nDipnot: Sayfa altında açıklama veya kaynak belirtmek için.\n\nSon Not: Belge sonunda bulunur.\n\nBaşvurular sekmesi → Dipnotlar grubu → Dipnot Ekle / Son Not Ekle.\n\nDipnot penceresinden:\n\nSayı biçimi\n\nKonum\n\nNumara sırası ayarlanabilir.\n\n“Notları Göster” seçeneğiyle tüm dipnotlar görüntülenir.\n\n🔹 Değişiklikleri İzleme (Gözden Geçir Sekmesi)\n\nBelgedeki ekleme, silme veya düzenlemeleri otomatik olarak kaydeder.\n\nGözden Geçir sekmesi → İzleme grubu → Değişiklikleri İzle.\n\nDeğişiklikler farklı renklerle gösterilir.\n\nKabul Et → Değişiklik onaylanır.\n\nReddet → Değişiklik iptal edilir.\n\nÖzellikle öğretmen–öğrenci, editör–yazar iletişiminde kullanılır.\n\n⚙️ Ek Bilgiler (Sayfa Düzeni Ayarları)\n\nKenar Boşlukları: Sayfa Yapısı grubundaki “Kenar Boşlukları” listesinden ayarlanır.\nVarsayılanlar: Normal, Dar, Orta, Geniş, Yansıtmalı.\n\nYönlendirme: Sayfayı dikey (portrait) veya yatay (landscape) yapar.\n→ Düzen sekmesi → Yönlendirme.\n\nBoyut: Sayfa boyutunu (A4, A3 vb.) ayarlamak için kullanılır.\n→ Düzen sekmesi → Boyut.\n\nSütunlar: Metni sütunlara bölmek için.\n→ Düzen sekmesi → Sayfa Yapısı grubu → Sütunlar.\nSeçenekler: Bir, İki, Üç, Sola, Sağa, Diğer Sütunlar.\n\n🎯 Testte En Çok Gelen Konular\n\nFiligran – Tasarım sekmesinde.\n\nSayfa Rengi / Kenarlığı – Tasarım sekmesinde.\n\nSütun / Yönlendirme / Kesmeler – Düzen sekmesinde.\n\nSatır Numaraları / Heceleme – Düzen sekmesinde.\n\nDipnot / Son Not / İçindekiler – Başvurular sekmesinde.\n\nDeğişiklikleri İzle – Gözden Geçir sekmesinde.\n\n✅ 10 Soruluk Testi Bu Bilgilerle Çözebilirsin\n\nKritik Hatırlatmalar:\n\nFiligran, Sayfa Rengi, Kenarlık → Tasarım sekmesi.\n\nSütun, Kesmeler, Satır Numaraları, Heceleme → Düzen sekmesi.\n\nDipnot ve İçindekiler → Başvurular sekmesi.\n\nDeğişiklikleri İzle → Gözden Geçir sekmesi.\n\nGrafikler → Excel’de oluşturulur (Word, Excel’den veri alır).",
+      "pdfData": null,
+      "createdAt": "2025-10-14T11:06:30.252Z"
     }
   ],
   "exams": {
@@ -2652,6 +2662,128 @@
           "C": "CTRL+ SHIFT+T",
           "D": "CTRL+ SHIFT+C",
           "E": "CTRL+ SHIFT+V"
+        },
+        "correctAnswer": "D"
+      }
+    ],
+    "Temel Bilgi Teknolojileri - 7.Ünite \"Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\" - 7.Ünite Deneme sınavı": [
+      {
+        "id": 1760440013003,
+        "text": "Word programında bir tabloya ait tablo tasarımı bağlamsal sekmesinden\naşağıdakilerden hangisi yapılamaz?",
+        "options": {
+          "A": "Tablo hücreleri bölünebilir.",
+          "B": "Tablo stilleri belirlenir.",
+          "C": "Gölgelendirme yapılabilir.",
+          "D": "Kenarlık stilleri ayarlanabilir.",
+          "E": "Kenarlık boyacısı kullanılabilir."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440026813,
+        "text": "Word programında resim biçimi bağlamsal sekmesinden aşağıdakilerden\nhangisi yapılamaz?",
+        "options": {
+          "A": "Resim kenarlığı belirlenebilir.",
+          "B": "Biçim boyacısı aracı kullanılabilir.",
+          "C": "Artistik efektler ayarlanabilir.",
+          "D": "Saydamlık ayarı yapılabilir.",
+          "E": "Resim değiştirilebilir."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440042464,
+        "text": "Grafik oluşturmada kullanılan değerlerin yazıldığı program aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "PowerPoint",
+          "B": "Access",
+          "C": "Excel",
+          "D": "Publisher",
+          "E": "Outlook"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440063476,
+        "text": "Word programında belgeye filigran eklemek için kullanılan sekme\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Giriş",
+          "B": "Çiz",
+          "C": "Ekle",
+          "D": "Tasarım",
+          "E": "Düzen"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440078241,
+        "text": "Word programında dikey yöndeki belgeyi yatay konuma getirmek için\nkullanılan sekme aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Giriş",
+          "B": "Başvurular",
+          "C": "Tasarım",
+          "D": "Görünüm",
+          "E": "Düzen"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760440092322,
+        "text": "Word programında belgeyi sütunlara ayırmak için kullanılan komut hangi\nsekmede yer alır?",
+        "options": {
+          "A": "Düzen",
+          "B": "Giriş",
+          "C": "Başvurular",
+          "D": "Tasarım",
+          "E": "Görünüm"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440108547,
+        "text": "Word programında bölüm sonu ekleyip yeni bölümü aynı sayfada başlatan\nkesmeler özelliği aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Sütun",
+          "B": "Sürekli",
+          "C": "Metin kaydırma",
+          "D": "Sonraki sayfa",
+          "E": "Çift sayfa"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440122833,
+        "text": "Word programında belgenin tümüne satır numarası eklemek için\nkullanılan komut hangi sekmede yer alır?",
+        "options": {
+          "A": "Giriş",
+          "B": "Başvurular",
+          "C": "Düzen",
+          "D": "Tasarım",
+          "E": "Görünüm"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440142286,
+        "text": "Word programında tüm belgenin arkasına şirket logosu, sloganı vb.\nbilgileri silik bir biçimde bastırmaya yarayan özellik aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Grafik",
+          "B": "Dipnot",
+          "C": "Son not",
+          "D": "Filigran",
+          "E": "Baskı Önizleme"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440157195,
+        "text": "Word programında sayfa arka plan rengini değiştirmeyi sağlayan komut\nhangi sekmede yer alır?",
+        "options": {
+          "A": "Giriş",
+          "B": "Başvurular",
+          "C": "Düzen",
+          "D": "Tasarım",
+          "E": "Görünüm"
         },
         "correctAnswer": "D"
       }
