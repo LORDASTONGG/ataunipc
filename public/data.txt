@@ -26,7 +26,8 @@
       "units": {
         "1.Ünite \"Bilgi Teknolojilerinde Temel Kavramlar\"": true,
         "2.Ünite \"Bilgisayarın Yapısı\"": true,
-        "3.Ünite \"İşletim Sistemleri\"": true
+        "3.Ünite \"İşletim Sistemleri\"": true,
+        "4.Ünite \"Temel Bilgisayar Kullanımı\"": true
       }
     }
   },
@@ -183,6 +184,15 @@
       "summary": "🧠 ÜNİTE 3 – İŞLETİM SİSTEMLERİ (ÖZET)\n\nİşletim sistemi, kullanıcı ile bilgisayar arasındaki iletişimi sağlayan temel yazılımdır. Bilgisayarın donanım ve yazılım kaynaklarını yönetir, kullanıcıdan gelen istekleri donanıma iletir.\nYani bir bilgisayarın çalışabilmesi, kullanılabilmesi için işletim sistemi mutlaka gerekir.\n\nBilgisayar teknolojisi geliştikçe işletim sistemleri de gelişmiştir.\nİlk bilgisayarlar vakum tüpleriyle çalışan dev sistemlerdi. Zamanla transistörlerin, entegre devrelerin ve mikroçiplerin kullanılmasıyla modern bilgisayarlar ortaya çıktı.\nBu gelişim sürecinde işletim sistemleri de daha güçlü, hızlı ve kullanıcı dostu hale geldi.\n\nWindows İşletim Sistemi\n\nMicrosoft firması tarafından geliştirilmiştir.\nDünyada en çok kullanılan bilgisayar işletim sistemidir.\nGünümüzde kullanılan her 4 bilgisayardan 3’ünde Windows yüklüdür.\nSon sürümü Windows 11’dir.\nWindows 11 ile birlikte görev çubuğu, başlangıç menüsü ve masaüstü tasarımı yenilenmiştir. Ayrıca “Widget” adı verilen küçük bilgi kutucukları eklenmiştir.\nBu widget’lar hava durumu, haber, finans gibi bilgilere anında ulaşmayı sağlar.\nWindows işletim sistemi ücretlidir ve kapalı kaynak kodludur.\n\nMacOS İşletim Sistemi\n\nApple firması tarafından geliştirilmiştir.\nSadece Apple markalı bilgisayarlar (Macintosh veya Mac) için üretilir.\nKapalı kaynak kodlu ve lisanslıdır, yani yalnızca Apple donanımlarında çalışır.\nİlk sürümü 1984 yılında çıkmıştır. 2001’e kadar olan sürümler “Klasik MacOS”, sonrakiler “MacOS X” veya “MacOS” adını alır.\n2024 yılında yayımlanan en son sürümü MacOS Sequoia’dır.\nMacOS sade ve kullanıcı dostu bir tasarıma sahiptir. Apple ürünleri (iPhone, iPad, iWatch) ile kusursuz uyum sağlar.\nGüvenli yapısı sayesinde virüs ve trojan gibi zararlı yazılımlara çok az rastlanır.\nUygulamalar genellikle Apple Store üzerinden yüklenir, dışarıdan yükleme yapmak zordur ama bu da güvenliği artırır.\n\nLinux İşletim Sistemi\n\nLinux, açık kaynak kodlu, özgür ve ücretsiz bir işletim sistemidir.\nKaynak kodları GNU adı verilen “Genel Kamu Lisansı” altında herkesle paylaşılır.\nBu sayede kullanıcılar işletim sistemini değiştirebilir, geliştirebilir ve yeniden dağıtabilir.\nLinux’un çekirdeğini Linus Torvalds geliştirmiştir.\nDünya genelinde birçok geliştirici tarafından desteklenir.\nLinux aslında bir temel sistemdir; onun üzerine farklı sürümler geliştirilir.\nEn bilinen Linux sürümleri şunlardır: Ubuntu, Fedora, Red Hat, Debian ve Türkiye’nin yerli sistemi Pardus.\n\nPardus (Türkiye’nin Yerli İşletim Sistemi)\n\nPardus, Türkiye’nin ilk özgür ve açık kaynak kodlu milli işletim sistemidir.\nTÜBİTAK-ULAKBİM tarafından geliştirilmiştir.\n“Pardus” adı “Anadolu Leoparı” anlamına gelir.\nLinux tabanlıdır ve tamamen ücretsizdir.\nKolay kurulabilir, hatta kurulum olmadan bile çalışabilir.\nHızlı, kararlı, güvenli ve Türkçe dil desteğine sahiptir.\nKamu kurumlarında sıkça kullanılmaktadır.\nAmaç; veri güvenliğini artırmak ve yabancı yazılımlara olan bağımlılığı azaltmaktır.\n\nMobil İşletim Sistemleri\n\nBilgisayarlardan farklı olarak cep telefonları ve tabletlerde özel işletim sistemleri kullanılır. Bunlara “mobil işletim sistemleri” denir.\nGünümüzde en yaygın iki mobil işletim sistemi Android ve iOS’tur.\n\nAndroid İşletim Sistemi\n\nGoogle tarafından geliştirilmiştir.\nLinux tabanlıdır ve büyük kısmı açık kaynak kodludur.\nÜcretsizdir ve bu nedenle çok sayıda üretici tarafından kullanılır.\nAndroid işletim sistemi, çekirdek, kütüphaneler, uygulama çatısı ve uygulama katmanı olmak üzere dört katmandan oluşur.\nUygulama mağazası Google Play’dir. Bu mağazada 2 milyondan fazla uygulama bulunur.\nAndroid ilk kez 2008’de kullanılmıştır.\n2025 yılı itibarıyla en güncel sürümü Android 16’dır.\nAndroid işletim sistemi yalnızca telefon ve tabletlerde değil, televizyonlarda, akıllı saatlerde, araç sistemlerinde ve ev eşyalarında da kullanılmaktadır.\nDünya genelinde mobil cihazların yaklaşık %72’sinde, Türkiye’de ise %78’inde Android kullanılmaktadır.\n\niOS İşletim Sistemi\n\nApple firması tarafından geliştirilmiştir.\nSadece Apple cihazlarında (iPhone ve iPad) kullanılır.\nKapalı kaynak kodludur ve dışarıdan uygulama yüklenmesine izin vermez.\nUygulamalar sadece Apple Store üzerinden yüklenebilir.\nİlk sürümü 2007 yılında “iPhoneOS 1” adıyla tanıtılmıştır.\n2024 yılında çıkan son sürümü iOS 18’dir.\niOS, donanım ve yazılımı mükemmel şekilde entegre eder, bu yüzden çok hızlı ve kararlıdır.\nAndroid’e göre çok daha sıkı güvenlik politikaları vardır.\nKullanıcı deneyimi sade, akıcı ve güvenilirdir.\n\nGenel Sonuç\n\nİşletim sistemleri, bilgisayar ve mobil cihazların çalışmasını sağlayan temel yazılımlardır.\nWindows, MacOS ve Linux masaüstü sistemlerde; Android ve iOS ise mobil sistemlerde en yaygın olanlardır.\nWindows en çok kullanılan masaüstü sistemidir.\nMacOS kapalı, Linux açık kaynaklıdır.\nTürkiye’nin milli işletim sistemi Pardus’tur.\nMobil dünyada Android liderdir, onu iOS takip eder.\n\nTestte En Çok Çıkan Bilgiler\n\nKullanıcı ile bilgisayar arasındaki arayüz: İşletim sistemi\n\nİlk bilgisayar: ENIAC\n\nEn yaygın bilgisayar işletim sistemi: Windows\n\nWidget özelliği: Windows 11’de bulunur\n\nMac bilgisayarların sistemi: MacOS\n\nApple uygulama mağazası: Apple Store\n\nAçık kaynak kodlu sistem: Linux\n\nTürkiye’nin milli sistemi: Pardus\n\nMobilde en yaygın sistem: Android",
       "pdfData": null,
       "createdAt": "2025-10-14T10:10:27.045Z"
+    },
+    {
+      "id": 1760438641568,
+      "subject": "Temel Bilgi Teknolojileri",
+      "unit": "4.Ünite \"Temel Bilgisayar Kullanımı\"",
+      "title": "4.Ünite \"Temel Bilgisayar Kullanımı\"",
+      "summary": "🧠 4. ÜNİTE – TEMEL BİLGİSAYAR KULLANIMI (KISA VE TAM ÖZET)\n🔹 1. Antivirüs Programları ve Bilgisayar Güvenliği\n\nBilgisayarlarda sistem ve uygulama yazılımlarının korunması gerekir.\n\nYazılımsal arızalar zaman kaybı ve veri kaybına neden olabilir.\n\nBilgisayar virüsleri de birer programdır. Başka dosyalara bulaşarak yayılırlar.\n\nVirüsler, kullanıcıdan izinsiz olarak sistemin işleyişini değiştirir.\n\nVirüs Türleri:\n\nDosya sistemi virüsleri: Genellikle .EXE veya .COM uzantılı çalıştırılabilir dosyalara bulaşır.\n\nÖn yükleme (boot) virüsleri: Sabit diskin “MBR” (Master Boot Record) kısmına yerleşir.\n\nMakro virüsleri: Word veya Excel gibi ofis programlarında çalışır.\n\nSolucan (Worm): İnternet veya ağ üzerinden kendini diğer sistemlere kopyalar.\n\nTruva atı (Trojan): Zararsız gibi görünen programların içine gizlenmiş kötü yazılımdır.\n\nCasus yazılımlar (Spyware): Kullanıcının hareketlerini izler, bilgileri toplar.\n\nSpam: Kullanıcının isteği dışında gelen e-postalardır.\n\nTrojan virüsler: Kendilerini çoğaltmazlar ama sisteme zarar verirler.\n\nVirüslerden Korunma Yöntemleri:\n\nAntivirüs programı kullan.\n\nBilinmeyen e-posta eklerini açma.\n\nTaşınabilir bellekleri taramadan kullanma.\n\nGüvenlik duvarını aktif tut.\n\nWindows Defender gibi güvenlik araçlarını kullan.\n\nWindows Defender:\nWindows 10 ve 11’de ücretsiz gelir. Microsoft 365 ailesinin bir parçasıdır. Bilgisayarını ve cihazlarını virüslere karşı korur.\n\n🔹 2. Web Tarayıcıları\n\nWeb tarayıcıları, internet sitelerine erişmemizi sağlayan programlardır.\n\nHTML, CSS, JavaScript gibi teknolojileri işleyip sayfayı kullanıcıya gösterir.\n\nGüvenli bağlantı kurmak için HTTPS kullanırlar.\n\nÇerez, önbellek ve gizlilik özellikleri kullanıcı deneyimini geliştirir.\n\nEn sık kullanılan tarayıcılar:\n\nGoogle Chrome\n\nMicrosoft Edge\n\nMozilla Firefox\n\nSafari\n\nYandex\n\nVivaldi\n\nWeb tarayıcılarının temel özellikleri:\n\nAdres çubuğu: Site adresi yazılır. (Örnek: www.atauni.edu.tr\n)\n\nwww → başlangıç\n\natauni → kurum adı\n\nedu → kurum türü\n\ntr → ülke kodu\n\nAçılış sayfası: Tarayıcı açıldığında ilk gelen sayfa.\n\nWeb geçmişi: Ziyaret edilen adreslerin kayıtları.\n\nGizli sekme: Geçmiş veya şifre kaydı tutmaz, gizlilik sağlar.\n\nAlan uzantıları:\n\n.com → ticari siteler\n\n.edu → eğitim kurumları\n\n.gov → devlet kurumları\n\n.org → vakıf / dernek\n\n.net → servis sağlayıcı\n\n.mil → askeri kurum\n\n.biz → şirket\n\n.name → kişisel adres\n\n.aero → havacılık\n\n.k12 → okullar\n\nÜlke kodları:\n\ntr → Türkiye\n\nde → Almanya\n\nnl → Hollanda\n\nru → Rusya\n\nca → Kanada\n\nbg → Bulgaristan\n\nes → İspanya\n\nse → İsveç\n\nit → İtalya\n\nkz → Kazakistan\n\n🔹 3. İnternette Gezinirken Dikkat Edilecekler\n\nSadece güvenilir kaynaklardan bilgi alın (örnek: edu, gov uzantılı siteler).\n\nSosyal ağlarda kişisel bilgileri sınırlı paylaş.\n\nTanımadığın kişilerle özel bilgileri paylaşma.\n\n“Ödül kazandınız” gibi dolandırıcı bağlantılara tıklama.\n\nİnternetten dosya indirirken site güvenilirliğini kontrol et.\n\nSosyal medyada tehdit veya hakaret içerikli paylaşımlardan uzak dur.\n\nAlışverişte güvenilir siteleri ve 3D Secure yöntemini kullan.\n\nİnternette gizlilik, bütünlük ve erişilebilirlik ilkelerine dikkat et.\n\n🔹 4. Bilgisayara Program / Dosya İndirme\n\nDosya, video, belge veya programları internetten indirebilirsin.\n\n“Kaydet” seçeneği ile dosya bilgisayarına iner.\n\nİndirme süresi, dosya boyutu ve internet hızına bağlıdır.\n\nEn önemli nokta: Dosyanın virüssüz ve güvenli bir siteden indirilmesi gerekir.\n\nİndirme bittikten sonra dosyayı kaydettiğin klasörden açabilirsin.\n\n🔹 5. En Çok Sorulan Bilgiler (Testte Çıkanlar)\n\nVirüs olmayan: Scriptler\n\nEXE ve COM uzantısına bulaşan: Dosya sistemi virüsü\n\nSadece Windows’ta çalışmaz diyen yanlış: Truva atı sorusu (3. c)\n\nSolucanlar reklam göstermez → yanlış bilgi (4. b)\n\nİstenmeyen e-postalar: Spam\n\nKötü amaçlı yazılım olmayan: Firmware\n\nVirüs olduğunda yapılmaması gereken: Sistem dosyalarını başka bilgisayardan değiştirmek\n\nWeb tarayıcısı olmayan: Microsoft Defender\n\nWeb geçmişi antivirüsle değil, tarayıcıyla ilgilidir (9. e yanlış)\n\nFarklı programlama dilleriyle yazılan komut setleri: Makrolar\n\n🔹 Sonuç\n\nBu ünitede bilgisayar güvenliği, virüs türleri, antivirüs programları, web tarayıcılarının işlevleri ve internette güvenli davranışlar öğrenilir.\nAmaç: Bilgisayarı, interneti ve yazılımları güvenli, bilinçli ve verimli kullanmak.",
+      "pdfData": null,
+      "createdAt": "2025-10-14T10:44:01.568Z"
     }
   ],
   "exams": {
@@ -1896,7 +1906,7 @@
     ],
     "Temel Bilgi Teknolojileri - 1.Ünite \"Bilgi Teknolojilerinde Temel Kavramlar\" - 1.Ünite Deneme Sınavı": [
       {
-        "id": 1760435547066,
+        "id": 1760437829877,
         "text": "Metinler, sözcükler, rakamlar, sayılar, olaylar, resimler vb. şekilde\ngösterilen ham gerçekliklere verilen ad aşağıdakilerden hangisidir?",
         "options": {
           "A": "Veri",
@@ -1908,7 +1918,7 @@
         "correctAnswer": "A"
       },
       {
-        "id": 1760435563825,
+        "id": 1760437844605,
         "text": "Aşağıdakilerden hangisi verinin enformasyona dönüştürülmesi sürecindeki\naşamalardan biri değildir?",
         "options": {
           "A": "Amaca yöneltme",
@@ -1920,8 +1930,8 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760435613177,
-        "text": "“………..; veri ve enformasyonu kaynak olarak kullanır ve tecrübe, deney\nveya yorumlama sonucu ortaya çıkar.”\n\nYukarıdaki boşluğa aşağıdakilerden hangisi getirilmelidir?",
+        "id": 1760437862687,
+        "text": "“………..; veri ve enformasyonu kaynak olarak kullanır ve tecrübe, deney\nveya yorumlama sonucu ortaya çıkar.”\nYukarıdaki boşluğa aşağıdakilerden hangisi getirilmelidir?",
         "options": {
           "A": "Veri",
           "B": "Enformasyon",
@@ -1932,7 +1942,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760435628875,
+        "id": 1760437881528,
         "text": "Aşağıdakilerden hangisi veri işlemenin evreleri arasında yer almaz?",
         "options": {
           "A": "El yordamıyla veri işleme",
@@ -1944,7 +1954,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760435651863,
+        "id": 1760437901787,
         "text": "Günümüzde kullanılan veri işleme evresi aşağıdakilerden hangisidir?",
         "options": {
           "A": "El yordamıyla veri işleme",
@@ -1956,7 +1966,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760435673471,
+        "id": 1760437916509,
         "text": "Aşağıdakilerden hangisi birinci kuşak bilgisayarların temel özellikleri\narasında yer alır?",
         "options": {
           "A": "Vakumlu tüpler",
@@ -1968,7 +1978,7 @@
         "correctAnswer": "A"
       },
       {
-        "id": 1760435704245,
+        "id": 1760437936420,
         "text": "Aşağıdakilerden hangisi ikinci kuşak bilgisayarların temel özellikleri\narasında yer alır?",
         "options": {
           "A": "Vakumlu tüpler",
@@ -1980,7 +1990,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760435727373,
+        "id": 1760437956030,
         "text": "Fiziksel değerleri ölçmek için üretilen bilgisayarlar aşağıdakilerden\nhangisidir?",
         "options": {
           "A": "Özel amaçlı dijital bilgisayarlar",
@@ -1992,7 +2002,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760435743894,
+        "id": 1760437971850,
         "text": "Hem analog hem de dijital bilgisayarların özelliklerini bir arada barındıran\nbilgisayarlar aşağıdakilerden hangisidir?",
         "options": {
           "A": "Özel amaçlı dijital bilgisayarlar",
@@ -2002,23 +2012,35 @@
           "E": "Sayısal bilgisayarlar"
         },
         "correctAnswer": "D"
+      },
+      {
+        "id": 1760437989369,
+        "text": "Bilgisayarlar arasında iletişim sağlanarak kolaylıkla veri paylaşımı\nyapılabilmesine, yazıcı ve tarayıcı gibi aygıtların ortak bir şekilde\nkullanılabilmesine olanak tanıyan yapı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Mikrobilgisayar sistemleri",
+          "B": "Merkezi bilgisayar sistemleri",
+          "C": "Analog bilgisayar sistemleri",
+          "D": "Dijital bilgisayar sistemleri",
+          "E": "Ağ sistemleri"
+        },
+        "correctAnswer": "E"
       }
     ],
     "Temel Bilgi Teknolojileri - 2.Ünite \"Bilgisayarın Yapısı\" - 2.Ünite Deneme Sınavı": [
       {
-        "id": 1760435941925,
+        "id": 1760438061381,
         "text": "Aşağıdakilerden hangisi anakart üzerine kasa dışından veya kablo ile\ndolaylı olarak bağlanan donanım birimlerine verilen genel isimdir?",
         "options": {
           "A": "Dışsal donanım",
           "B": "İçsel donanım",
           "C": "Sabit disk",
           "D": "Kasa",
-          "E": "İşlemci"
+          "E": "Kasa"
         },
         "correctAnswer": "A"
       },
       {
-        "id": 1760435959991,
+        "id": 1760438077585,
         "text": "Aşağıdakilerden hangisi bütün donanım birimlerinin doğrudan veya dolaylı\nolarak üzerine bağlandığı elektronik karttır?",
         "options": {
           "A": "Monitör",
@@ -2030,7 +2052,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760435977002,
+        "id": 1760438094823,
         "text": "Bilgisayarlardaki bütün görevleri yürütme ve yönlendirme işlemini\ngerçekleştiren donanım birimi aşağıdakilerden hangisidir?",
         "options": {
           "A": "Sabit disk",
@@ -2042,7 +2064,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760436007402,
+        "id": 1760438111990,
         "text": "Ram bellekler için aşağıdakilerden hangisi doğru değildir?",
         "options": {
           "A": "Statik RAM’ler, Ram bellek çeşitlerinden biridir.",
@@ -2054,7 +2076,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760436023464,
+        "id": 1760438128782,
         "text": "Her bilgisayar için eşsiz özellikte olan adres aşağıdakilerden hangisidir?",
         "options": {
           "A": "Kasa üretici firma adresi",
@@ -2066,7 +2088,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760436047239,
+        "id": 1760438147254,
         "text": "Bilgisayardaki seslerin çalışmasını ve bunların bilgisayar hoparlörüne\ngönderilmesini sağlayan donanım birimi aşağıdakilerden hangisidir?",
         "options": {
           "A": "Ses kartı",
@@ -2078,7 +2100,7 @@
         "correctAnswer": "A"
       },
       {
-        "id": 1760436069775,
+        "id": 1760438174057,
         "text": "I. Dot Pitch\nII. Çözünürlük\nIII. Tazeleme hızı\n\nYukardakilerden hangisi veya hangileri görüntü kalitesi üzerinde etkisi\nolan seçeneklerdendir?",
         "options": {
           "A": "Yalnız I",
@@ -2090,7 +2112,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760436088289,
+        "id": 1760438190463,
         "text": "Klavye üzerindeki harflerin dizilimine göre belirlenen klavye türleri\naşağıdaki seçeneklerin hangisinde doğru olarak verilmiştir?",
         "options": {
           "A": "A ve Z klavyeler",
@@ -2102,7 +2124,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760436113797,
+        "id": 1760438206010,
         "text": "Birbirinden uzak bilgisayarları telefon hattı aracılığıyla haberleşmesini\nsağlayan donanım birimi aşağıdakilerden hangisidir?",
         "options": {
           "A": "RAM bellek",
@@ -2114,7 +2136,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760436127968,
+        "id": 1760438224652,
         "text": "Aşağıdakilerden hangisi sistem yazılımlarından biri değildir?",
         "options": {
           "A": "Windows 10",
@@ -2128,7 +2150,7 @@
     ],
     "Temel Bilgi Teknolojileri - 3.Ünite \"İşletim Sistemleri\" - 3.Ünite Deneme Sınavı": [
       {
-        "id": 1760436660764,
+        "id": 1760438284308,
         "text": "Kullanıcı ile bilgisayar arasındaki iletişimi sağlayan, kullanıcının isteklerine\ngöre donanım ve yazılım kaynaklarını düzenleyen sisteme ne isim verilir?",
         "options": {
           "A": "Donanım sistemi",
@@ -2140,7 +2162,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760436681328,
+        "id": 1760438302999,
         "text": "1946 yılında ABD ordusu tarafından kullanılan onluk sayı tabanına dayalı\nilk genel kullanım amaçlı bilgisayar olarak bilinen cihaz aşağıdakilerden\nhangisidir?",
         "options": {
           "A": "Windows",
@@ -2152,7 +2174,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760436697336,
+        "id": 1760438320115,
         "text": "Aşağıdakilerden hangisi bir işletim sistemi değildir?",
         "options": {
           "A": "Windows",
@@ -2164,7 +2186,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760436713188,
+        "id": 1760438332744,
         "text": "Dünyadaki kişisel bilgisayarlarda en çok kullanılan işletim sistemi\nhangisidir?",
         "options": {
           "A": "Android",
@@ -2176,7 +2198,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760436733202,
+        "id": 1760438349235,
         "text": "Windows 11 ile sunulan ve görev çubuğuna entegre edilmiş güncel, aktüel\nbilgilere anında erişim imkânı veren kısayollara ne isim verilir?",
         "options": {
           "A": "Widget",
@@ -2188,7 +2210,7 @@
         "correctAnswer": "A"
       },
       {
-        "id": 1760436801975,
+        "id": 1760438364458,
         "text": "Macintosh adıyla bilinen bilgisayarlara özel olarak üretilen işletim\nsisteminin adı nedir?",
         "options": {
           "A": "Linux",
@@ -2200,7 +2222,7 @@
         "correctAnswer": "C"
       },
       {
-        "id": 1760436825094,
+        "id": 1760438379089,
         "text": "Apple marka cihazların uygulama mağazasının adı nedir?",
         "options": {
           "A": "Apple Play",
@@ -2212,7 +2234,7 @@
         "correctAnswer": "B"
       },
       {
-        "id": 1760437539351,
+        "id": 1760438396335,
         "text": "Özgür, açık kaynak kodlu ve ücretsiz dağıtılan işletim sistemi ailesi\nhangisidir?",
         "options": {
           "A": "MacOS Ventura",
@@ -2224,7 +2246,7 @@
         "correctAnswer": "D"
       },
       {
-        "id": 1760437557392,
+        "id": 1760438414844,
         "text": "Türkiye’ nin ilk yerli ve milli işletim sisteminin adı nedir?",
         "options": {
           "A": "Red Hat",
@@ -2236,7 +2258,7 @@
         "correctAnswer": "E"
       },
       {
-        "id": 1760437574165,
+        "id": 1760438427478,
         "text": "Dünyadaki mobil cihazlarda en çok kullanılan işletim sistemi hangisidir?",
         "options": {
           "A": "Android",
@@ -2246,6 +2268,128 @@
           "E": "Pardus"
         },
         "correctAnswer": "A"
+      }
+    ],
+    "Temel Bilgi Teknolojileri - 4.Ünite \"Temel Bilgisayar Kullanımı\" - 4.Ünite Deneme Sınavı": [
+      {
+        "id": 1760438709647,
+        "text": "Aşağıdakilerden hangisi bir virüs türü değildir?",
+        "options": {
+          "A": "Solucanlar",
+          "B": "Ön yükleme virüsleri",
+          "C": "Truva atı",
+          "D": "Casus yazılımlar",
+          "E": "Scriptler"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760438726086,
+        "text": "Dosya sistemi virüsleri, genellikle … veya … uzantılı olan işletilebilir\ndosyalara bulaşan virüs türleridir.\nCümledeki boşluğa sırasıyla aşağıdaki hangi ifadeler getirilmelidir",
+        "options": {
+          "A": "EXE-COM",
+          "B": "EXE-XLS",
+          "C": "COM-DOCX",
+          "D": "APK-APP",
+          "E": "XLS-DOCX"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760438745322,
+        "text": "Aşağıdakilerden hangisi Truva atının özelliklerinden biri değildir?",
+        "options": {
+          "A": "Zamana veya eyleme bağlı olarak çalışan virüs türleridir.",
+          "B": "Kullanıcıya cazip bir program şeklinde sunularak veya asıl programların kopyaları içine gizlenerek sisteme bulaşmaktadırlar.",
+          "C": "Sadece Windows işlem sisteminde çalışmak üzere geliştirilirler.",
+          "D": "Truva atları, sistemine bulaştıkları kullanıcının kişisel bilgilerine erişmek amacıyla kullanılmaktadır.",
+          "E": "Truva atı virüsleri aslında bir dosya sistemi virüsüdür."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760438866316,
+        "text": "Solucanlar (Worm) ile ilgili aşağıdakilerden hangisi yanlıştır?",
+        "options": {
+          "A": "İnternet veya yerel ağlar üzerinde sistemden sisteme geçerek yayılma gösteren bir virüs türüdür.",
+          "B": "Bu virüs türünün öncelikli hedefi reklam veya bağlantı göstermektir.",
+          "C": "Sistemin yavaşlamasına, dosya ve veri kayıplarına, erişim hızının düşmesine sebebiyet vermektedir.",
+          "D": "Sistem üzerinde açık bulunan bir port aracılığıyla veya e-postalar üzerinden kendini transfer ederek diğer sistemlere bulaşmaktadırlar.",
+          "E": "Antivirüs yazılımı ve güvenlik duvarı kullanılarak korunulabilir."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760438882084,
+        "text": "Kullanıcının isteği dışında kendisine gelen elektronik postalar. ……… olarak\nadlandırılmaktadır.\nCümledeki boşluğa aşağıdakilerden hangisi getirilmelidir",
+        "options": {
+          "A": "Solucan",
+          "B": "Spam",
+          "C": "Truva Atı",
+          "D": "Spyware",
+          "E": "Firmware"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760438898135,
+        "text": "Aşağıdakilerden hangisi kötü amaçlı bir yazılım değildir?",
+        "options": {
+          "A": "Truva atı",
+          "B": "Trojan",
+          "C": "Solucan",
+          "D": "Firmware",
+          "E": "Spam"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760438916565,
+        "text": "Windows işletim sistemi kullanan bir bilgisayarda virüs olduğundan\nşüphelenilirse aşağıdakilerden hangisi yapılmamalıdır?",
+        "options": {
+          "A": "Bilgisayar güvenli modda çalıştırılarak antivirüs taramasından geçirilmelidir.",
+          "B": "Bilgisayardaki kritik bilgilerin (kişisel bilgiler vb.) girişi yapılmamalıdır.",
+          "C": "Bilgisayara usb, telefon gibi taşınabilir cihazlar takılmamalıdır.",
+          "D": "Başka bir bilgisayar ile bağlantı kurularak Windows sistem dosyaları değiştirilmelidir.",
+          "E": "Windows güncelleştirilmeli ve güvenlik duvarı pasif ise aktif hale getirilmelidir."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760438931931,
+        "text": "Aşağıdakilerden hangisi bir web tarayıcısı değildir?",
+        "options": {
+          "A": "Safari",
+          "B": "Microsoft Edge",
+          "C": "Yandex",
+          "D": "Mozilla Firefox",
+          "E": "Microsoft Defender"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760438949318,
+        "text": "Web tarayıcıları ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+        "options": {
+          "A": "Eğitim kurumlarının internet siteleri için edu uzantılı adresler kullanılır.",
+          "B": "İnternet üzerinde gezinti yaptığınız adresler web tarayıcıları tarafından saklanabilir",
+          "C": "Bağlanmak istediğimiz web sayfasının adresini yazdığımız alana adres çubuğu denir.",
+          "D": "Devlet kurumlarının internet siteleri için gov uzantılı adresler kullanılır",
+          "E": "Antivirüs yazılımları kullanılarak web geçmişi, şifre hatırlatma gibi birtakım özellikler web tarayıcılarına kazandırılır."
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760438963336,
+        "text": "Farklı programlama dilleri ile oluşturulan, program kütüphanelerinin\nyetersiz olduğu durumlarda programcılara esneklik sağlayan çeşitli komut\nsetlerine ne ad verilir?",
+        "options": {
+          "A": "Virüsler",
+          "B": "Dosyalar",
+          "C": "Makrolar",
+          "D": "Trojanlar",
+          "E": "Ofis ürünleri"
+        },
+        "correctAnswer": "C"
       }
     ]
   },
