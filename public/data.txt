@@ -32,6 +32,11 @@
         "6.Ünite \"Kelime İşlemcilerde Metin Biçimlendirme İşlemleri\"": true,
         "7.Ünite \"Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\"": true
       }
+    },
+    "Web Tasarımının Temelleri": {
+      "units": {
+        "1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram": true
+      }
     }
   },
   "lessons": [
@@ -223,6 +228,15 @@
       "summary": "🧠 7. Ünite Özeti – Kelime İşlemcilerde Belge Biçimlendirme İşlemleri\n🔹 Bölüm Sonları (Kesmeler)\n\nBölüm Sonu: Belgeyi farklı kısımlara ayırmaya yarar.\n\nSonraki Sayfa: Yeni bölümü bir sonraki sayfada başlatır.\n\nSürekli: Yeni bölümü aynı sayfada başlatır.\n\nÇift Sayfa: Yeni bölümü bir sonraki çift sayfa numarasından başlatır.\n\nTek Sayfa: Yeni bölümü bir sonraki tek sayfa numarasından başlatır.\n\nBölüm sonları özellikle farklı sayfa düzenleri, numaralandırmalar veya üstbilgi–altbilgi farklılıkları gerektiğinde kullanılır.\n\n🔹 Satır Numaraları\n\nHer satıra numara ekleyebilirsin.\n\nDüzen sekmesi → Sayfa Yapısı grubu → Satır Numaraları menüsünden yapılır.\n\nSatır Numaralandırma Seçenekleri menüsünde:\n\nBaşlangıç numarası\n\nMetinden uzaklık\n\nArtış miktarı\n\nNumaranın hangi sayfada başlayacağı gibi ayarlar bulunur.\n\n🔹 Heceleme\n\nUzun kelimeler satır sonuna sığmazsa, heceleme kelimeyi uygun yerden böler.\n\nSayfa Düzeni sekmesi → Sayfa Yapısı grubu → Heceleme komutu ile yapılır.\n\nOtomatik veya El ile seçenekleri vardır.\n\n“Heceleme seçenekleri” menüsünden ayrıntılı ayarlar yapılabilir.\n\nHeceleme sayesinde metin kenarları daha düzgün görünür.\n\n🔹 Filigran\n\nSayfa içeriğinin arkasına soluk yazı veya görsel eklemek için kullanılır.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Filigran komutu.\n\nTüm sayfalara uygulanır.\n\nÖzel Filigran seçeneğinden:\n\nMetin veya resim tabanlı filigran oluşturulur.\n\nVar olan filigran kaldırılabilir.\n\nMetin rengi, yazı tipi ve boyutu değiştirilebilir.\n\nÖrnek: Şirket logosu veya “Gizli”, “Taslak” yazısı.\n\n🔹 Sayfa Rengi\n\nSayfa arka planını renklendirmek için.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Sayfa Rengi.\n\nStandart renkler veya dolgu efektleri seçilebilir.\n\nBelge daha görsel hale gelir.\n\n🔹 Sayfa Kenarlıkları\n\nSayfaya çerçeve (kenarlık) eklemeye yarar.\n\nTasarım sekmesi → Sayfa Arka Planı grubu → Sayfa Kenarlıkları.\n\nAçılan Kenarlıklar ve Gölgelendirme penceresinden:\n\nStil, renk, genişlik, resim kenarlıkları belirlenir.\n\nUygulama yeri: Belgenin tamamı veya seçilen bölümler olabilir.\n\n“Seçenekler” düğmesinden boşluk ayarları yapılabilir.\n\n🔹 Başvurular Sekmesi\n\nBelgede bilgilendirme yapıları oluşturmak için kullanılır.\n\nİçindekiler Tablosu\n\nBaşlık stillerine göre otomatik liste oluşturur.\n\nBaşvurular sekmesi → İçindekiler.\n\nİçindekiler tablosu başlıkları ve sayfa numaralarını içerir.\n\nTabloyu Güncelleştir seçeneğiyle değişiklikler güncellenir.\n\nİçindekiler Tablosunu kaldırmak için aynı menüde “Kaldır” seçeneği vardır.\n\nDipnot ve Son Not\n\nDipnot: Sayfa altında açıklama veya kaynak belirtmek için.\n\nSon Not: Belge sonunda bulunur.\n\nBaşvurular sekmesi → Dipnotlar grubu → Dipnot Ekle / Son Not Ekle.\n\nDipnot penceresinden:\n\nSayı biçimi\n\nKonum\n\nNumara sırası ayarlanabilir.\n\n“Notları Göster” seçeneğiyle tüm dipnotlar görüntülenir.\n\n🔹 Değişiklikleri İzleme (Gözden Geçir Sekmesi)\n\nBelgedeki ekleme, silme veya düzenlemeleri otomatik olarak kaydeder.\n\nGözden Geçir sekmesi → İzleme grubu → Değişiklikleri İzle.\n\nDeğişiklikler farklı renklerle gösterilir.\n\nKabul Et → Değişiklik onaylanır.\n\nReddet → Değişiklik iptal edilir.\n\nÖzellikle öğretmen–öğrenci, editör–yazar iletişiminde kullanılır.\n\n⚙️ Ek Bilgiler (Sayfa Düzeni Ayarları)\n\nKenar Boşlukları: Sayfa Yapısı grubundaki “Kenar Boşlukları” listesinden ayarlanır.\nVarsayılanlar: Normal, Dar, Orta, Geniş, Yansıtmalı.\n\nYönlendirme: Sayfayı dikey (portrait) veya yatay (landscape) yapar.\n→ Düzen sekmesi → Yönlendirme.\n\nBoyut: Sayfa boyutunu (A4, A3 vb.) ayarlamak için kullanılır.\n→ Düzen sekmesi → Boyut.\n\nSütunlar: Metni sütunlara bölmek için.\n→ Düzen sekmesi → Sayfa Yapısı grubu → Sütunlar.\nSeçenekler: Bir, İki, Üç, Sola, Sağa, Diğer Sütunlar.\n\n🎯 Testte En Çok Gelen Konular\n\nFiligran – Tasarım sekmesinde.\n\nSayfa Rengi / Kenarlığı – Tasarım sekmesinde.\n\nSütun / Yönlendirme / Kesmeler – Düzen sekmesinde.\n\nSatır Numaraları / Heceleme – Düzen sekmesinde.\n\nDipnot / Son Not / İçindekiler – Başvurular sekmesinde.\n\nDeğişiklikleri İzle – Gözden Geçir sekmesinde.\n\n✅ 10 Soruluk Testi Bu Bilgilerle Çözebilirsin\n\nKritik Hatırlatmalar:\n\nFiligran, Sayfa Rengi, Kenarlık → Tasarım sekmesi.\n\nSütun, Kesmeler, Satır Numaraları, Heceleme → Düzen sekmesi.\n\nDipnot ve İçindekiler → Başvurular sekmesi.\n\nDeğişiklikleri İzle → Gözden Geçir sekmesi.\n\nGrafikler → Excel’de oluşturulur (Word, Excel’den veri alır).",
       "pdfData": null,
       "createdAt": "2025-10-14T11:06:30.252Z"
+    },
+    {
+      "id": 1760440325419,
+      "subject": "Web Tasarımının Temelleri",
+      "unit": "1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram",
+      "title": "1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram",
+      "summary": "🧠 1. Ünite Özeti — Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavramlar\n🔹 İnternetin Doğuşu ve Gelişimi\n\nİnternetin temeli 1960’larda ARPANET projesi ile atılmıştır.\n→ Amaç: Güvenli bilgi paylaşımı sağlamak.\n\n1980’lerde TCP/IP protokolü standart hale geldi, böylece farklı bilgisayarlar birbirine bağlanabildi.\n\n1989’da Tim Berners-Lee, World Wide Web (WWW) sistemini geliştirdi.\n→ Web’in yaygınlaşmasını sağlayan kişi odur.\n\nWeb tarayıcılarının gelişmesiyle internet kitlesel hale geldi.\n\n🔹 Web Standartları ve W3C\n\nW3C (World Wide Web Consortium), web teknolojilerinin uyumlu ve doğru çalışması için standartları belirler.\n\nStandartların amacı:\n→ Farklı cihaz ve tarayıcılarda uyumluluk,\n→ Erişilebilirlik,\n→ Kapsayıcılık sağlamaktır.\n\n🔹 Erişilebilirlik ve Evrensel Tasarım\n\nErişilebilir web tasarımı, tüm kullanıcıların (engelli bireyler dâhil) web içeriğine eşit şekilde ulaşabilmesini hedefler.\n\nYalnızca teknik değil, etik ve toplumsal bir sorumluluktur.\n\nAmaç: Kapsayıcı, kullanılabilir, herkes için erişilebilir web siteleri.\n\n🔹 Ağ Yapısı ve Temel Kavramlar\n\nİstemci (Client): Kaynak (bilgi, dosya vb.) talep eden taraftır.\n\nSunucu (Server): Bu kaynakları sağlayan, depolayan taraftır.\n\nWeb bu istemci–sunucu modeline dayanır.\n→ Örneğin: Tarayıcı (istemci), web sitesinden veri ister.\n\nIP adresi: Bilgisayarların ağ üzerindeki benzersiz numarasıdır.\n\nAlan adı (Domain Name): IP adresinin hatırlanabilir hâlidir.\n\nDNS (Domain Name System): Alan adlarını IP adreslerine çevirir.\n\n🔹 Temel İnternet Protokolleri\n\nHTTP (HyperText Transfer Protocol): Web sayfalarının aktarım protokolüdür.\n\nHTTPS: HTTP’nin güvenli (şifreli) hâlidir. Veri transferi SSL/TLS ile korunur.\n\nFTP (File Transfer Protocol): Dosya transferi içindir.\n\nSMTP (Simple Mail Transfer Protocol): E-posta gönderme protokolüdür.\n\nPOP3 / IMAP: E-posta alma protokolleridir.\n\n🔹 HTML (HyperText Markup Language)\n\nWeb sayfasının yapısını tanımlar.\n\nTarayıcıya, içeriği nasıl düzenleyeceğini söyler.\n\nHTML = içeriği tanımlar, görünümü düzenlemez.\n\nTemel HTML5 şablonu:\n\n<!DOCTYPE html>\n<html lang=\"tr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Sayfa Başlığı</title>\n</head>\n<body>\n  Sayfa içeriği buraya yazılır.\n</body>\n</html>\n\n\nDOCTYPE → Belge türünü belirtir (HTML5 için zorunlu).\n\n<html> → Sayfanın tamamını kapsar.\n\n<head> → Sayfa hakkında bilgiler içerir (başlık, meta etiketler, stil bağlantıları vb.).\n\n<title> → Tarayıcı sekmesinde görünen başlıktır.\n\n<meta charset=\"UTF-8\"> → Karakter kodlamasıdır (Türkçe harfler için gerekli).\n\n<body> → Kullanıcının tarayıcıda gördüğü içerikler buraya yazılır.\n\n🔹 CSS (Cascading Style Sheets)\n\nWeb sayfasının görünümünü düzenler.\n→ Yazı tipi, renk, arka plan, kenar boşlukları, hizalama vb.\n\nHTML ne gösterileceğini, CSS ise nasıl görüneceğini belirler.\n\nWeb sitelerini estetik, düzenli, mobil uyumlu hâle getirir.\n\n🔹 JavaScript\n\nWeb sayfasına etkileşim ve dinamizm kazandırır.\n→ Buton tıklamaları, formların kontrolü, açılır menüler, animasyonlar.\n\nTarayıcılar JavaScript’i doğrudan çalıştırır (ek yazılım gerekmez).\n\nGünümüzde ayrıca:\n\nSunucu tarafında: Node.js\n\nMobil uygulamalarda: React Native\n\nMasaüstü uygulamalarda: Electron\nkullanılır.\n\n🔹 Front-End (Ön Yüz) ve Back-End (Arka Yüz)\n\nFront-End:\n→ Kullanıcının gördüğü ve etkileşimde bulunduğu kısımdır.\n→ HTML (yapı), CSS (görünüm), JavaScript (etkileşim) teknolojilerinden oluşur.\n→ Örnek: Menü, buton, yazı, resim, formlar.\n\nBack-End:\n→ Kullanıcının görmediği, arka planda çalışan kısımdır.\n→ Veritabanı, kullanıcı doğrulama, veri işleme, sunucu yönetimi yapılır.\n→ Diller: Python, PHP, Java, Node.js, veritabanı olarak MySQL, PostgreSQL, MongoDB.\n\n🔹 Web Sayfasının Görünmeyen Kısmı\n\nKullanıcı sadece sayfanın ön yüzünü görür, ancak tarayıcı arka planda HTML kodlarını işler.\n\nBu yapı, sayfanın düzenini ve işleyişini belirler.\n\nHTML, CSS ve JavaScript arka plan kodlarıdır ama back-end değildir, hâlâ front-end’dir.\n\n🔹 Geliştirme Ortamları\n\nWeb kodları düz metin olarak yazılır.\n\nBasit araç: Not Defteri (Notepad).\n\nProfesyonel ortam: Visual Studio Code (VS Code).\n\nÜcretsiz, hızlı, geniş eklenti desteği var.\n\nOtomatik tamamlama (IntelliSense), hata uyarısı (Linting), hata ayıklama (Debugging),\ncanlı önizleme, Git entegrasyonu özellikleri içerir.\n\nAlternatif editörler: Notepad++, Sublime Text, Brackets.\n\n🎯 Testte En Sık Gelen Bilgiler\n\nARPANET → Güvenli bilgi paylaşımı amacıyla kuruldu.\n\nWorld Wide Web (WWW) → Tim Berners-Lee geliştirdi.\n\nWeb standartlarını belirleyen kuruluş → W3C.\n\nErişilebilir tasarımın amacı → Herkes için kapsayıcı içerik sunmak.\n\nİstemci → Kaynak talep eder. Sunucu → Kaynağı gönderir.\n\nHTTPS → HTTP’nin şifreli (güvenli) versiyonu.\n\nDNS → Alan adlarını IP adreslerine çevirir.\n\nHTML → Yapıyı oluşturur.\n\nCSS → Görünümü düzenler.\n\nFront-End → HTML, CSS, JavaScript.\n\n✅ Sonuç\n\nBu özetle:\n\n10 test sorusunun tamamını doğru cevaplayabilirsin.\n\nEkstra bilgi gerekmez; sadece bu özetin 2–3 tekrarını yapman yeterli.",
+      "pdfData": null,
+      "createdAt": "2025-10-14T11:12:05.419Z"
     }
   ],
   "exams": {
@@ -2786,6 +2800,128 @@
           "E": "Görünüm"
         },
         "correctAnswer": "D"
+      }
+    ],
+    "Web Tasarımının Temelleri - 1.Ünite \"Web Tasarımına Giriş & İnternet Teknolojileri ve Temel Kavram - 1.Ünite Deneme sınavı": [
+      {
+        "id": 1760440366772,
+        "text": "İnternetin ortaya çıkışına öncülük eden ARPANET’in geliştirilme amacı\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Eğlence içeriklerini paylaşmak",
+          "B": "Küresel ticaret ağı kurmak",
+          "C": "Sosyal medya platformları geliştirmek",
+          "D": "E-posta sistemini kurmak",
+          "E": "Güvenli bilgi paylaşımı sağlamak"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760440380807,
+        "text": "World Wide Web’i (WWW) geliştiren bilim insanı kimdir?",
+        "options": {
+          "A": "Tim Berners-Lee",
+          "B": "Vinton Cerf",
+          "C": "Bill Gates",
+          "D": "Steve Jobs",
+          "E": "Alan Turing"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440396078,
+        "text": "Web standartlarını belirleyen kuruluş aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "IANA",
+          "B": "ICANN",
+          "C": "W3C",
+          "D": "ISO",
+          "E": "IEEE"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440415745,
+        "text": "Aşağıdakilerden hangisi erişilebilir web tasarımının temel amaçlarından\nbiridir?",
+        "options": {
+          "A": "Sadece gelişmiş cihazlarda çalışmak",
+          "B": "Sadece engelli bireylerin kullanımına uygun olmak",
+          "C": "Yalnızca görsel açıdan estetik olmak",
+          "D": "Tüm kullanıcılar için kapsayıcı ve kullanılabilir içerik sunmak",
+          "E": "İnternet hızını artırmak"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440435688,
+        "text": "İstemci–sunucu modelinde istemcinin temel görevi aşağıdakilerden\nhangisidir?",
+        "options": {
+          "A": "Verileri şifrelemek",
+          "B": "Kaynak talep etmek",
+          "C": "Protokolleri yönetmek",
+          "D": "Dosyaları barındırmak",
+          "E": "Güvenlik sağlamak"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440460290,
+        "text": "HTTP ile HTTPS arasındaki en önemli fark nedir?",
+        "options": {
+          "A": "HTTPS daha hızlıdır",
+          "B": "HTTP yalnızca metin aktarır",
+          "C": "HTTPS şifreli iletişim sağlar",
+          "D": "HTTP yalnızca e-posta için kullanılır",
+          "E": "HTTPS ücretsiz değildir"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760440480968,
+        "text": "Alan adlarının IP adreslerine dönüştürülmesini sağlayan sistem\naşağıdakilerden hangisidir?",
+        "options": {
+          "A": "URL",
+          "B": "DNS",
+          "C": "URI",
+          "D": "FTP",
+          "E": "SMTP"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760440500850,
+        "text": "HTML işaretleme dilinin temel işlevi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Web sayfasının yapısını tanımlamak",
+          "B": "Web sayfasının görünümünü düzenlemek",
+          "C": "Dinamik işlemler yapmak",
+          "D": "Sunucu yönetimini sağlamak",
+          "E": "Veritabanı işlemlerini yürütmek"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760440516191,
+        "text": "CSS aşağıdakilerden hangisi için kullanılır?",
+        "options": {
+          "A": "Sunucu erişimini yönetmek",
+          "B": "Verileri şifrelemek",
+          "C": "Kullanıcı girişi doğrulamak",
+          "D": "Sayfanın görselliğini düzenlemek",
+          "E": "Dosya transferi yapmak"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760440530121,
+        "text": "Aşağıdakilerden hangisi ön yüz (front-end) teknolojilerine örnek olarak\nverilebilir?",
+        "options": {
+          "A": "Node.js",
+          "B": "MySQL",
+          "C": "PostgreSQL",
+          "D": "PHP",
+          "E": "HTML, CSS ve JavaScript"
+        },
+        "correctAnswer": "E"
       }
     ]
   },
