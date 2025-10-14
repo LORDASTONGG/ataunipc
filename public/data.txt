@@ -17,7 +17,8 @@
         "2.Ünite \"Algoritmalar ve Akış Diyagramları\"": true,
         "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true,
         "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"": true,
-        "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"": true
+        "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"": true,
+        "6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\"": true
       }
     }
   },
@@ -129,6 +130,15 @@
       "summary": "🔹 1. Veri Türleri (Data Types)\n\nC++’ta değişkenin bellekte ne kadar yer kaplayacağını ve hangi tür veriyi tutacağını belirler.\n\nTemel Veri Türleri:\n\nTür\t                Açıklama\t                                                    Örnek\nint              \tTamsayı\t                                                       10\nfloat      \t        Ondalıklı sayı (tek duyarlık)\t                     3.14f\ndouble           \tOndalıklı sayı (çift duyarlık)\t                   3.141592\nchar\t                Tek karakter (ASCII değer saklar)\t                 'A'\nbool\t                 Doğru/Yanlış\t                                       true / false\n\nTüretilmiş (Derived) Türler:\n👉 Dizi (array), İşaretçi (pointer), Fonksiyon, Referans\nKullanıcı tanımlı türler: struct, union, enum\n\n🔹 2. Değişkenler (Variables)\n\nBellekte veri saklamak için kullanılır.\nTanımlama:\n\nint sayi = 10;\n\n\nKurallar:\n\nHarf veya _ ile başlamalı\n\nRakamla başlayamaz (❌ 2sayi)\n\nBüyük/küçük harfe duyarlıdır (sayi ≠ Sayi)\n✅ Örnek: ortalama, _puan, sayi_2\n\n🔹 3. Sabitler (Constants)\n\nProgram çalışırken değeri değişmeyen verilerdir.\n\nTanımlama Yöntemleri:\n\nconst anahtar kelimesi\n\nconst int yas = 18;\n\n\n➤ Değeri program boyunca değişmez. ✅ (Soru 6, 9)\n\n#define direktifi\n\n#define PI 3.14\n\n🔹 4. Operatörler (Operators)\n\nDeğişken ve sabitler üzerinde işlem yapan sembollerdir. ✅ (Soru 10)\n\n🧮 Aritmetik Operatörler\n\n+ - * / %\nÖrnek: a + b, a % b (mod alma)\n➡ % sadece tamsayılar ile kullanılır.\n❌ && aritmetik değildir. (Soru 5)\n\n🟩 Atama Operatörleri\nOperatör\tAnlamı\n=\tAtama\n+=\tTopla ve ata\n-=\tÇıkar ve ata\n*=\tÇarp ve ata\n/=\tBöl ve ata\n🔼 Arttırma / Azaltma Operatörleri\n\n++a → Önce arttır, sonra kullan\n\na++ → Önce kullan, sonra arttır\n\n--a, a-- aynı mantıkla azaltır.\n\n❓ Üçlü (Koşullu) Operatör\nsonuc = (a < b) ? b : a;\n\n\n➡ a < b doğruysa b, değilse a döner.\n\n⚙️ Diğer Operatörler\nOperatör\tAçıklama\nsizeof\tBellekte kapladığı alanı verir\n&\tAdresini verir\n.\tSınıf veya yapı üyesine erişim\n->\tİşaretçi ile erişim\n,\tVirgül, ifadeleri ayırır\n🔹 5. Operatör Önceliği (Priority)\n\nİşlemlerin yapılma sırasını belirler:\n\n( ) Parantez\n\n++, --\n\n*, /, %\n\n+, -\n\n<, >, <=, >=\n\n==, !=\n\n&&, ||\n\n=\n\nÖrnek:\n\n3 * 2 + 8 → (3 * 2) + 8 = 14\n\n🔹 6. Kısa Özetle Öğrenilmesi Gerekenler\nKonu\t                      Kısa Bilgi\t                                                            Soru\nTam sayı türü\t                   int\t                                                                       1\nSabit tanımlama\t          #define veya const\t                                      2, 6\nKarakter türü\t                   char\t                                                                3\n3.14 sabiti\t               Ondalık sayı (float/double)\t                                4\n&&\t                               Aritmetik değil, mantıksal\t                                5\nconst değişken\t       Değeri değişmez\t                                               6, 9\nGeçersiz değişken adı\t 2sayi\t                                                                 7\nTüretilmiş olmayan tür\t int\t                                                                         8\nOperatör tanımı\t       Değişken/sabit üzerinde işlem yapan semboller\t10\n\n✅ Sonuç:\nBu özetle;\n\nVeri türlerini (int, float, char, double, bool),\n\nSabit tanımlama yöntemlerini,\n\nOperatör çeşitlerini ve önceliklerini,\n\nArtırma/azaltma farklarını\ntam olarak öğrenmiş olursun.\n\n👉 Bu sayede 10 değerlendirme sorusunun tamamını rahatlıkla çözebilirsin.",
       "pdfData": null,
       "createdAt": "2025-10-13T12:40:34.948Z"
+    },
+    {
+      "id": 1760434308686,
+      "subject": "Programlama Temelleri",
+      "unit": "6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\"",
+      "title": "6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\"",
+      "summary": "🧠 Konu Özeti — İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\n🔹 1. İlişkisel Operatörler (Karşılaştırma)\n\nBu operatörler iki değeri karşılaştırır ve sonucu true (1) veya false (0) olarak döndürür.\n\nTemel Operatörler:\n\n== → Eşit mi?\n\n!= → Eşit değil mi?\n\n< → Küçük mü?\n\n> → Büyük mü?\n\n<= → Küçük veya eşit mi?\n\n>= → Büyük veya eşit mi?\n\n📌 Örnek:\n\nint a = 5, b = 10;\ncout << (a < b); // 1 (true)\n\n🔹 2. Mantıksal Operatörler\n\nBirden fazla koşulu birleştirmek veya ters çevirmek için kullanılır.\n\nOperatörler:\n\n&& → Mantıksal VE (her iki koşul da doğruysa → true)\n\n|| → Mantıksal VEYA (koşullardan biri doğruysa → true)\n\n! → Mantıksal DEĞİL (true → false, false → true)\n\n📌 Örnek:\n\n(x < y) && (y > 5)   // her iki koşul doğru → true\n(x > 10) || (y == 5) // biri bile doğruysa → true\n!(x == 5)            // x 5 değilse → true\n\n🔹 3. Koşul Yapıları (if – else)\n\nProgramın farklı durumlarda farklı yollar izlemesini sağlar.\n\nTemel yapı:\n\nif (koşul)\n    komut;\nelse\n    alternatif_komut;\n\n\n📌 Örnek:\n\nint sayi = 5;\nif (sayi > 0)\n    cout << \"Pozitif\";\nelse\n    cout << \"Pozitif degil\";\n\n🔹 4. If – Else If – Else Zinciri\n\nBirden fazla olasılık varsa kullanılır.\nHer koşul sırayla test edilir, doğru olan ilk koşulun bloğu çalışır.\n\n📌 Örnek:\n\nint yas = 18;\nif (yas < 13)\n    cout << \"Cocuk\";\nelse if (yas <= 18)\n    cout << \"Buyume caginda\";\nelse\n    cout << \"Yetiskin\";\n\n🔹 5. İç İçe (Nested) If Yapısı\n\nBir if bloğunun içinde başka bir if kullanılabilir.\nKarmaşık kararlar için tercih edilir.\n\n📌 Örnek:\n\nint n = 44;\nif (n > 0) {\n    if (n % 2 == 0)\n        cout << \"Pozitif ve cift\";\n    else\n        cout << \"Pozitif ve tek\";\n}\nelse if (n == 0)\n    cout << \"Sayi 0’a esittir\";\nelse\n    cout << \"Negatif\";\n\n🔹 6. Switch – Case Yapısı\n\nBir değişkenin sabit değerine göre dallanma sağlar.\nBirden çok if-else yerine daha düzenli yapı sunar.\n\nKullanımı:\n\nswitch (deger) {\n    case sabit1:\n        komut1;\n        break;\n    case sabit2:\n        komut2;\n        break;\n    default:\n        komut3;\n}\n\n\n📌 Örnek:\n\nchar c = 'B';\nswitch (c) {\ncase 'A':\n    cout << \"Programlamayi Seviyorum\";\n    break;\ncase 'B':\n    cout << \"AtauniAOF\";\n    break;\ndefault:\n    cout << \"Gecersiz giris\";\n}\n\n\n🧩 Notlar:\n\ncase ifadeleri zorunludur (her biri sabit bir değer olmalı).\n\nbreak konulmazsa, alt satırdaki case’ler de çalışabilir (fall-through).\n\ndefault, hiçbir case eşleşmezse çalışır.\n\n🔹 7. Ternary (Üçlü) Operatör\n\nKısa if-else yazımıdır.\n\nstring sonuc = (a > b) ? \"A buyuk\" : \"B buyuk\";\n\n🔹 8. Mantıksal İfadelerin Türü\n\nMantıksal ifadelerin sonucu int türündedir:\n\ntrue → 1\n\nfalse → 0\n\n🧩 Kısaca Öğrenilmesi Gerekenler\n\n✅ İlişkisel Operatörler\nEşitlik ve büyüklük karşılaştırması yapar. (==, !=, <, >, <=, >=)\n\n✅ Mantıksal Operatörler\nKoşulları birleştirir veya tersine çevirir. (&&, ||, !)\n\n✅ If – Else – Else If\nFarklı durumlara göre akışı değiştirir.\n\n✅ İç içe If\nBir koşulun içinde başka bir koşul test edilir.\n\n✅ Switch – Case\nSabit değerlere göre dallanma sağlar, case zorunludur, default isteğe bağlıdır.\n\n✅ Ternary Operatör\nKısa ve pratik koşul yazımı: (kosul) ? dogruDurum : yanlisDurum;\n\n✅ Mantıksal Sonuç Türü\nHer mantıksal işlem sonucu int (0 veya 1)’dir.\n\n🧮 Sınav Sorularına Uygun Hızlı Bilgi Tablosu\n#\tSoru Konusu\t   Doğru Cevap\tKısa Açıklama\n1\t== operatörü              \tc)\tDeğerlerin eşitliğini kontrol eder\n2\tGeçersiz operatör\t     e)\t= atama operatörüdür, karşılaştırma değildir\n3\tMantıksal VEYA\t      b)\t`\n4\t(x<y)&&(y>5) sonucu\td)\tHer iki koşul da doğru → true\n5\t! operatörü\t              d)\tMantıksal değeri tersine çevirir\n6\tif(x) çalışmaz durumu\tc)\tx = 0 olduğunda false olur\n7\tÇoklu koşullar         \te)\telse if kullanılır\n8\tSwitch’te zorunlu ifade\tb)\tcase ifadesi zorunludur\n9\tdefault görevi          \tb)\tHiçbir case eşleşmezse çalışır\n10\tMantıksal sonuç türü\ta)\tint (0 veya 1) döner\n\n✅ Sonuç:\nBu özeti okuduktan sonra;\n\nİlişkisel ve mantıksal operatörlerin farkını,\n\nif, else-if, nested-if ve switch yapılarının nasıl çalıştığını,\n\nve her operatörün mantığını net biçimde kavrarsın.\n\n👉 Bu bilgilerle değerlendirme sorularının tamamını (1–10) rahatlıkla çözebilirsin.",
+      "pdfData": null,
+      "createdAt": "2025-10-14T09:31:48.686Z"
     }
   ],
   "exams": {
@@ -1594,6 +1604,128 @@
           "E": "Veri türlerini belirlemek için kullanılırlar."
         },
         "correctAnswer": "B"
+      }
+    ],
+    "Programlama Temelleri - 6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\" - 6.Ünite Deneme Sınavı": [
+      {
+        "id": 1760434347201,
+        "text": "== operatörü hangi amaçla kullanılır?",
+        "options": {
+          "A": "Mantıksal VE işlemi yapmak için",
+          "B": "Mantıksal VEYA işlemi yapmak için",
+          "C": "Değerlerin eşitliğini karşılaştırmak için",
+          "D": "Değişkenin değerini değiştirmek için",
+          "E": "Negasyon (olumsuzlama) yapmak için"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760434370121,
+        "text": "Aşağıdaki ifadelerden hangisi yanlış bir karşılaştırma operatörüdür?",
+        "options": {
+          "A": "!=",
+          "B": ">=",
+          "C": "<",
+          "D": "<=",
+          "E": "="
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760434390856,
+        "text": "C++ programlama dilinde mantıksal VEYA işlemini gerçekleştiren operatör\nhangisidir?",
+        "options": {
+          "A": "&&",
+          "B": "||",
+          "C": "!",
+          "D": "==",
+          "E": "!="
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760434424675,
+        "text": "Aşağıdaki ifadelerden hangisi true (1) döner?\n\nint x = 5, y = 10;\n(x < y) && (y > 5)",
+        "options": {
+          "A": "Hiçbir zaman",
+          "B": "Sadece x=y olduğunda",
+          "C": "Koşul Sağlanmaz",
+          "D": "Doğrudur (1 döner)",
+          "E": "Derleme Hatası Oluşur"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760434446279,
+        "text": "! (ünlem) operatörü ne işe yarar?",
+        "options": {
+          "A": "İki Değeri Toplar",
+          "B": "Mantıksal VE işlemi yapar",
+          "C": "Mantıksal VEYA işlemi yapar",
+          "D": "Mantıksal değeri tersine çevirir",
+          "E": "Değeri Sıfırlar"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760434471439,
+        "text": "Aşağıdaki hangi durumda if bloğu çalışmaz?\n\nint x = 0;\nif(x)\nprintf(\"Calisti\");",
+        "options": {
+          "A": "x = 1 olduğunda.",
+          "B": "x = -5 olduğunda.",
+          "C": "x = 0 olduğunda.",
+          "D": "x = 10 olduğunda.",
+          "E": "x herhangi bir pozitif değerde olduğunda."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760434494677,
+        "text": "Çoklu koşullar için hangi yapı daha uygundur?",
+        "options": {
+          "A": "if",
+          "B": "else",
+          "C": "break",
+          "D": "switch-case",
+          "E": "else if"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760434516080,
+        "text": "Switch-Case yapısında hangi ifade zorunludur?",
+        "options": {
+          "A": "else",
+          "B": "case",
+          "C": "break",
+          "D": "default",
+          "E": "if"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760434536881,
+        "text": "Switch-Case yapısında default ifadesi ne işe yarar?",
+        "options": {
+          "A": "Programı sonlandırır.",
+          "B": "Hiçbir koşul sağlanmazsa çalışır",
+          "C": "Mantıksal VE işlemi yapar.",
+          "D": "Döngüyü sonlandırır.",
+          "E": "Yeni bir değişken oluşturur."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760434553699,
+        "text": "Mantıksal ifadelerin sonucu hangi veri türünde döner?",
+        "options": {
+          "A": "int (0 veya 1)",
+          "B": "char.",
+          "C": "float",
+          "D": "double",
+          "E": "string"
+        },
+        "correctAnswer": "A"
       }
     ]
   },
