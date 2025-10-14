@@ -18,7 +18,8 @@
         "3.Ünite \"İlk C++ Programı (Merhaba Dünya)\"": true,
         "4.Ünite \"Bir C++ Programının Yazılması, Derlenmesi ve Çalıştırılması\"": true,
         "5.Ünite \"Veri Türleri, Değişkenler, Sabitler ve Operatörler\"": true,
-        "6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\"": true
+        "6.Ünite \"İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\"": true,
+        "7.Ünite \"Döngüler\"": true
       }
     }
   },
@@ -139,6 +140,15 @@
       "summary": "🧠 Konu Özeti — İlişkisel ve Mantıksal Operatörler ve Şartlı Deyimler\n🔹 1. İlişkisel Operatörler (Karşılaştırma)\n\nBu operatörler iki değeri karşılaştırır ve sonucu true (1) veya false (0) olarak döndürür.\n\nTemel Operatörler:\n\n== → Eşit mi?\n\n!= → Eşit değil mi?\n\n< → Küçük mü?\n\n> → Büyük mü?\n\n<= → Küçük veya eşit mi?\n\n>= → Büyük veya eşit mi?\n\n📌 Örnek:\n\nint a = 5, b = 10;\ncout << (a < b); // 1 (true)\n\n🔹 2. Mantıksal Operatörler\n\nBirden fazla koşulu birleştirmek veya ters çevirmek için kullanılır.\n\nOperatörler:\n\n&& → Mantıksal VE (her iki koşul da doğruysa → true)\n\n|| → Mantıksal VEYA (koşullardan biri doğruysa → true)\n\n! → Mantıksal DEĞİL (true → false, false → true)\n\n📌 Örnek:\n\n(x < y) && (y > 5)   // her iki koşul doğru → true\n(x > 10) || (y == 5) // biri bile doğruysa → true\n!(x == 5)            // x 5 değilse → true\n\n🔹 3. Koşul Yapıları (if – else)\n\nProgramın farklı durumlarda farklı yollar izlemesini sağlar.\n\nTemel yapı:\n\nif (koşul)\n    komut;\nelse\n    alternatif_komut;\n\n\n📌 Örnek:\n\nint sayi = 5;\nif (sayi > 0)\n    cout << \"Pozitif\";\nelse\n    cout << \"Pozitif degil\";\n\n🔹 4. If – Else If – Else Zinciri\n\nBirden fazla olasılık varsa kullanılır.\nHer koşul sırayla test edilir, doğru olan ilk koşulun bloğu çalışır.\n\n📌 Örnek:\n\nint yas = 18;\nif (yas < 13)\n    cout << \"Cocuk\";\nelse if (yas <= 18)\n    cout << \"Buyume caginda\";\nelse\n    cout << \"Yetiskin\";\n\n🔹 5. İç İçe (Nested) If Yapısı\n\nBir if bloğunun içinde başka bir if kullanılabilir.\nKarmaşık kararlar için tercih edilir.\n\n📌 Örnek:\n\nint n = 44;\nif (n > 0) {\n    if (n % 2 == 0)\n        cout << \"Pozitif ve cift\";\n    else\n        cout << \"Pozitif ve tek\";\n}\nelse if (n == 0)\n    cout << \"Sayi 0’a esittir\";\nelse\n    cout << \"Negatif\";\n\n🔹 6. Switch – Case Yapısı\n\nBir değişkenin sabit değerine göre dallanma sağlar.\nBirden çok if-else yerine daha düzenli yapı sunar.\n\nKullanımı:\n\nswitch (deger) {\n    case sabit1:\n        komut1;\n        break;\n    case sabit2:\n        komut2;\n        break;\n    default:\n        komut3;\n}\n\n\n📌 Örnek:\n\nchar c = 'B';\nswitch (c) {\ncase 'A':\n    cout << \"Programlamayi Seviyorum\";\n    break;\ncase 'B':\n    cout << \"AtauniAOF\";\n    break;\ndefault:\n    cout << \"Gecersiz giris\";\n}\n\n\n🧩 Notlar:\n\ncase ifadeleri zorunludur (her biri sabit bir değer olmalı).\n\nbreak konulmazsa, alt satırdaki case’ler de çalışabilir (fall-through).\n\ndefault, hiçbir case eşleşmezse çalışır.\n\n🔹 7. Ternary (Üçlü) Operatör\n\nKısa if-else yazımıdır.\n\nstring sonuc = (a > b) ? \"A buyuk\" : \"B buyuk\";\n\n🔹 8. Mantıksal İfadelerin Türü\n\nMantıksal ifadelerin sonucu int türündedir:\n\ntrue → 1\n\nfalse → 0\n\n🧩 Kısaca Öğrenilmesi Gerekenler\n\n✅ İlişkisel Operatörler\nEşitlik ve büyüklük karşılaştırması yapar. (==, !=, <, >, <=, >=)\n\n✅ Mantıksal Operatörler\nKoşulları birleştirir veya tersine çevirir. (&&, ||, !)\n\n✅ If – Else – Else If\nFarklı durumlara göre akışı değiştirir.\n\n✅ İç içe If\nBir koşulun içinde başka bir koşul test edilir.\n\n✅ Switch – Case\nSabit değerlere göre dallanma sağlar, case zorunludur, default isteğe bağlıdır.\n\n✅ Ternary Operatör\nKısa ve pratik koşul yazımı: (kosul) ? dogruDurum : yanlisDurum;\n\n✅ Mantıksal Sonuç Türü\nHer mantıksal işlem sonucu int (0 veya 1)’dir.\n\n🧮 Sınav Sorularına Uygun Hızlı Bilgi Tablosu\n#\tSoru Konusu\t   Doğru Cevap\tKısa Açıklama\n1\t== operatörü              \tc)\tDeğerlerin eşitliğini kontrol eder\n2\tGeçersiz operatör\t     e)\t= atama operatörüdür, karşılaştırma değildir\n3\tMantıksal VEYA\t      b)\t`\n4\t(x<y)&&(y>5) sonucu\td)\tHer iki koşul da doğru → true\n5\t! operatörü\t              d)\tMantıksal değeri tersine çevirir\n6\tif(x) çalışmaz durumu\tc)\tx = 0 olduğunda false olur\n7\tÇoklu koşullar         \te)\telse if kullanılır\n8\tSwitch’te zorunlu ifade\tb)\tcase ifadesi zorunludur\n9\tdefault görevi          \tb)\tHiçbir case eşleşmezse çalışır\n10\tMantıksal sonuç türü\ta)\tint (0 veya 1) döner\n\n✅ Sonuç:\nBu özeti okuduktan sonra;\n\nİlişkisel ve mantıksal operatörlerin farkını,\n\nif, else-if, nested-if ve switch yapılarının nasıl çalıştığını,\n\nve her operatörün mantığını net biçimde kavrarsın.\n\n👉 Bu bilgilerle değerlendirme sorularının tamamını (1–10) rahatlıkla çözebilirsin.",
       "pdfData": null,
       "createdAt": "2025-10-14T09:31:48.686Z"
+    },
+    {
+      "id": 1760434994533,
+      "subject": "Programlama Temelleri",
+      "unit": "7.Ünite \"Döngüler\"",
+      "title": "7.Ünite \"Döngüler\"",
+      "summary": "🧠 DÖNGÜLER — KONU ÖZETİ (Eksiksiz, Kolay Anlaşılır)\n🔹 Döngü Nedir?\n\nDöngü, bir veya daha fazla işlemin belirli bir koşul sağlandıkça tekrarlanmasını sağlar.\nProgramcı aynı işlemleri tekrar tekrar yazmak zorunda kalmaz.\n\n🔹 Döngünün 3 Temel Parçası\n\nBaşlangıç (ilkleme):\nDöngüde kullanılacak sayacın başlangıç değeri atanır.\n\nKoşul:\nDöngünün devam edip etmeyeceğini belirleyen mantıksal ifade.\n\nArtırma/Azaltma:\nDöngü değişkenini güncelleyerek koşula yaklaşılmasını sağlar.\n\nBu üçü doğru tanımlanmazsa döngü sonsuz döngüye dönüşebilir.\n\n🔹 Döngü Türleri\n\nC++ dilinde 3 temel döngü vardır:\n\nfor döngüsü\n\nwhile döngüsü\n\ndo-while döngüsü\n\n🔸 1. for Döngüsü\n\nKullanım Amacı:\nTekrar sayısı önceden belliyse kullanılır.\n\nYapısı:\n\nfor (başlangıç; koşul; artış/azalış) {\n   // Tekrarlanacak işlemler\n}\n\n\nÖrnek:\n\nfor (int i = 1; i <= 5; i++) {\n   cout << i << \" \";\n}\n\n\nÇıktı:\n1 2 3 4 5\n\nNot:\nBaşlangıç, koşul ve artış tek satırda olduğu için okunması kolaydır.\n\n🔸 2. while Döngüsü\n\nKullanım Amacı:\nTekrar sayısı önceden bilinmiyorsa, koşula bağlı olarak çalışır.\n\nYapısı:\n\nwhile (koşul) {\n   // işlemler\n}\n\n\nÖrnek:\n\nint i = 1;\nwhile (i < 4) {\n   cout << i << \" \";\n   i++;\n}\n\n\nÇıktı:\n1 2 3\n\nÖnemli Not:\nKoşul başta kontrol edilir.\nKoşul baştan sağlanmazsa döngü hiç çalışmaz.\n\n🔸 3. do-while Döngüsü\n\nKullanım Amacı:\nDöngünün en az bir kez çalışması gerekiyorsa tercih edilir.\n\nYapısı:\n\ndo {\n   // işlemler\n} while (koşul);\n\n\nÖrnek:\n\nint i = 1;\ndo {\n   cout << i << \" \";\n   i++;\n} while (i <= 5);\n\n\nÇıktı:\n1 2 3 4 5\n\nÖnemli Not:\nKoşul sonda kontrol edilir.\nBu yüzden döngü gövdesi her durumda en az bir kez çalışır.\n\n🔸 Sonsuz Döngüler\n\nBir koşul hiç yanlış olmuyorsa döngü sonsuza kadar sürer.\nBu genelde bir hatadır, ama bazen bilinçli olarak kullanılır (örneğin sürekli çalışan sistemlerde).\n\nÖrnek 1:\n\nfor (;;) {\n   cout << \"Bu döngü sonsuza kadar çalışır.\";\n}\n\n\nÖrnek 2:\n\nwhile (true) {\n   cout << \"Durmaz.\";\n}\n\n\nNeden Olur:\nKoşul hep doğruysa veya sayaç hiç değişmiyorsa.\n\nÇözüm:\nKoşulun bir noktada false (yanlış) olmasını sağlamak gerekir.\n\n🔸 break ve continue\n🟥 break:\n\nDöngüyü hemen bitirir.\n\nDöngü koşulu doğru olsa bile döngüden çıkar.\n\nÖrnek:\n\nfor (int i = 0; i < 5; i++) {\n   if (i == 2)\n      break;\n   cout << i << \" \";\n}\n\n\nÇıktı:\n0 1\n(Döngü, i = 2 olduğunda biter.)\n\n🟩 continue:\n\nO anki adımı atlayıp sonraki adıma geçer.\n\nDöngü devam eder.\n\nÖrnek:\n\nfor (int i = 0; i < 5; i++) {\n   if (i == 2)\n      continue;\n   cout << i << \" \";\n}\n\n\nÇıktı:\n0 1 3 4\n(i = 2 atlanır, döngü devam eder.)\n\n🔸 İç İçe Döngüler\n\nTanım:\nBir döngünün içinde başka bir döngü varsa buna iç içe döngü denir.\n\nKural:\nİçteki döngü, dıştaki döngünün her tekrarında baştan sona kadar çalışır.\n\nÖrnek:\n\nfor (int i = 0; i < 3; i++) {\n   for (int j = 0; j < 2; j++) {\n      cout << \"i=\" << i << \", j=\" << j << endl;\n   }\n}\n\n\nÇıktı:\ni = 0, j = 0\ni = 0, j = 1\ni = 1, j = 0\ni = 1, j = 1\ni = 2, j = 0\ni = 2, j = 1\n\nNot:\nToplam tekrar sayısı = dış döngü sayısı × iç döngü sayısı\n\n🔹 Döngü Türlerinin Karşılaştırması\n\nfor döngüsü:\n\nTekrar sayısı belliyse kullanılır.\n\nBaşlangıç, koşul ve artış tek satırda yazılır.\n\nwhile döngüsü:\n\nKoşula bağlı olarak çalışır.\n\nKoşul yanlışsa hiç çalışmaz.\n\ndo-while döngüsü:\n\nEn az bir kez çalışır.\n\nKoşul sonda kontrol edilir.\n\n🔹 Sonsuz Döngüye Dair Uyarı\n\nDöngü koşulu hiç false olmazsa sonsuz döngü olur.\n\nÖrneğin “i” değeri artmıyorsa veya koşul hatalı yazılmışsa döngü bitmez.\n\nÖzellikle while kullanırken artırma unutulursa bu hata oluşur.\n\n🔹 Döngülerin Kullanım Alanları\n\nGirilen sayıları toplamak\n\nListe, dizi veya tablo verilerini işlemek\n\nEkrana seri sayılar yazdırmak\n\nŞartlı işlemleri tekrarlamak\n\nMatematiksel veya istatistiksel hesaplamalar yapmak\n\n🧩 Önemli Bilgiler (Sorularda Çıkar)\n\nfor döngüsü, tekrar sayısı belli olduğunda kullanılır.\n\nwhile döngüsü, koşula bağlıdır; hiç çalışmayabilir.\n\ndo-while döngüsü, en az bir kez çalışır.\n\nbreak, döngüyü tamamen bitirir.\n\ncontinue, bir adımı atlayıp devam eder.\n\nKoşul yanlış yazılırsa döngü sonsuza kadar sürebilir.\n\nİç içe döngüler karmaşıklığı artırır ama çok boyutlu işlemler için gereklidir.\n\nDöngü oluştururken başlangıç, koşul, artış tanımlamaları doğru yapılmalıdır.\n\n🎯 Bu Özetle Çözülebilecek 10 Soru\n\n1️⃣ For döngüsü ne zaman kullanılır?\n→ Tekrar sayısı belli olduğunda.\n\n2️⃣ Hangi döngü en az bir kez çalışır?\n→ do-while.\n\n3️⃣ continue ne yapar?\n→ O anki adımı atlar, sonraki adıma geçer.\n\n4️⃣ break ne yapar?\n→ Döngüyü tamamen bitirir.\n\n5️⃣ while döngüsü örneği çıktısı?\n→ 1 2 3\n\n6️⃣ Kullanıcı sürekli giriş yapıyor, -1 girince bitiyor →\n→ while döngüsü uygundur.\n\n7️⃣ Döngülerin ortak özelliği?\n→ Aynı işlemleri tekrar etmeleri.\n\n8️⃣ do-while örneği çıktısı?\n→ 5 4 3 2 1\n\n9️⃣ Yanlış ifade?\n→ break sadece switch’te kullanılmaz.\n\n🔟 1–100 tek sayılar için en uygun döngü?\n→ for döngüsü.\n\n✅ SONUÇ\n\nBu not:\n\nDöngülerin tüm türlerini,\n\nbreak ve continue farkını,\n\nSonsuz ve iç içe döngüleri,\n\nKoşul ve artış mantığını,\n\nVe 10 sorunun tamamını çözmek için gereken bilgiyi kapsar.\n\nBu özeti 2 kez okuman ve birkaç örneği elle yazman,\n“Döngüler” konusunu tam öğrenmen için yeterlidir 💪",
+      "pdfData": null,
+      "createdAt": "2025-10-14T09:43:14.533Z"
     }
   ],
   "exams": {
@@ -1724,6 +1734,128 @@
           "C": "float",
           "D": "double",
           "E": "string"
+        },
+        "correctAnswer": "A"
+      }
+    ],
+    "Programlama Temelleri - 7.Ünite \"Döngüler\" - 7.Ünite Deneme Sınavı": [
+      {
+        "id": 1760435035347,
+        "text": "C++ dilinde for döngüsü genellikle hangi durumda tercih edilir?",
+        "options": {
+          "A": "Koşulun yalnızca bir defa kontrol edileceği durumlarda",
+          "B": "Tekrar sayısının belli olduğu durumlarda",
+          "C": "Döngünün hiç çalışmamasının gerektiği durumlarda",
+          "D": "Kullanıcıdan sürekli giriş alınacağı durumlarda",
+          "E": "Koşulun en az bir kez çalışmasının garanti olduğu durumlarda"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760435062139,
+        "text": "Aşağıdaki döngü yapılarından hangisi en az bir kez çalışmayı garanti eder?",
+        "options": {
+          "A": "for",
+          "B": "while",
+          "C": "do-while",
+          "D": "switch-case",
+          "E": "if-else"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760435089915,
+        "text": "for (int i = 1; i <= 5; i++) {\nif (i == 3) continue;\nprintf(\"%d \", i);\n}\n\nYukarıdaki C++ programı çalıştırıldığında ekrana ne basar?",
+        "options": {
+          "A": "1 2 3 4 5",
+          "B": "1 2 4 5",
+          "C": "1 2",
+          "D": "3 4 5",
+          "E": "1 2 3"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760435111949,
+        "text": "break ifadesi döngü içerisinde ne yapar?",
+        "options": {
+          "A": "Döngüyü sonlandırır.",
+          "B": "O adımı atlar, sonraki adıma geçer.",
+          "C": "Döngünün koşulunu değiştirir.",
+          "D": "Döngüyü tersine çalıştırır.",
+          "E": "Değişikliğe neden olmaz."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760435134900,
+        "text": "int i = 1;\nwhile (i < 4) {\nprintf(\"%d \", i);\ni++;\n}\n\n\nYukarıdaki C++ programı çalıştırıldığında ekran çıktısı ne olur?",
+        "options": {
+          "A": "1 2",
+          "B": "1 2 3",
+          "C": "0 1 2 3",
+          "D": "1 2 3 4",
+          "E": "Sonsuz döngü oluşur."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1760435155757,
+        "text": "Bir programda kullanıcıdan sürekli pozitif sayılar alınıyor ve kullanıcı “-1”\ngirdiğinde döngü bitiyor. Bu durumda hangi döngü yapısı daha uygundur?",
+        "options": {
+          "A": "for",
+          "B": "switch-case",
+          "C": "do-while",
+          "D": "if-else",
+          "E": "while"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1760435173160,
+        "text": "Aşağıdaki seçeneklerden hangisi döngü yapılarının ortak özelliğidir?",
+        "options": {
+          "A": "Hepsi koşul sona bırakılarak çalışır.",
+          "B": "Hepsi koşul başta kontrol edilerek çalışır.",
+          "C": "Aynı işlemleri tekrar ederler.",
+          "D": "Sadece sayısal verilerle çalışabilirler.",
+          "E": "Döngü değişkeni tanımlamak zorunludur."
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1760435195393,
+        "text": "int i = 5;\ndo {\nprintf(\"%d \", i);\ni--;\n} while (i > 0);\n\n\nYukarıdaki kodun ekran çıktısı nedir?",
+        "options": {
+          "A": "5 4 3 2 1",
+          "B": "4 3 2 1",
+          "C": "5 4",
+          "D": "5",
+          "E": "Sonsuz döngü oluşur."
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1760435218266,
+        "text": "Aşağıdaki ifadelerden hangisi yanlıştır?",
+        "options": {
+          "A": "for döngüsü başlangıç, koşul ve artış/azalış bileşenlerinden oluşur.",
+          "B": "while döngüsü koşul sağlanmazsa hiç çalışmayabilir.",
+          "C": "do-while döngüsü koşul ne olursa olsun en az bir kez çalışır.",
+          "D": "break ifadesi sadece switch-case yapısında kullanılabilir.",
+          "E": "continue ifadesi döngünün mevcut adımını atlayarak devam eder."
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1760435234709,
+        "text": "Bir programda 1’den 100’e kadar olan tek sayıların ekrana yazdırılması\nisteniyor. Bunun için en uygun döngü yapısı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "For döngüsü",
+          "B": "While döngüsü",
+          "C": "Do-while döngüsü",
+          "D": "İf-else",
+          "E": "Switch-case"
         },
         "correctAnswer": "A"
       }
