@@ -1199,20 +1199,18 @@ function submitExam() {
 function calculateAndShowResult() {
     let correctCount = 0;
     currentExam.questions.forEach((q, i) => { if (currentExam.answers[i] === q.correctAnswer) correctCount++; });
-    
+
     const score = Math.round((correctCount / currentExam.questions.length) * 100);
     const timeElapsed = Math.floor((Date.now() - examStartTime) / 1000);
-    
+
     results.push({ id: Date.now(), examKey: currentExam.key, score, correctCount, totalQuestions: currentExam.questions.length, timeElapsed, date: new Date().toISOString() });
     saveData();
     updateStats();
     renderResults();
     showAnswersReview();
-    
-    setTimeout(() => {
-        closeExamModal();
-        showResultModal(score, correctCount, currentExam.questions.length);
-    }, 3000);
+
+    // Sonuç modalını hemen göster, sınav modalını açık bırak
+    showResultModal(score, correctCount, currentExam.questions.length);
 }
 
 function showAnswersReview() {
@@ -1245,11 +1243,7 @@ function showResultModal(score, correct, total) {
                 <div>${Math.round((correct / total) * 100)}% Başarı</div>
             </div>
             <div class="result-message">${message} ${emoji}</div>
-            <div class="result-actions">
-                <button class="btn btn-primary" onclick="closeResultModal(); showPage('exams')">
-                    Sınavlara Dön
-                </button>
-            </div>
+
         `;
     }
     
