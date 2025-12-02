@@ -8,7 +8,8 @@
         "4. Ünite : Çalışma Alanı, Çizim Araçları ve Paneller": true,
         "5. Ünite : Katman İşlemleri ve Katman Efektleri": true,
         "6. Ünite : Hizalama, Cetveller, Birimler ve Kılavuz Çizgileri Kullanma, Yazdırma Seçenekleri": true,
-        "7. Ünite : Filtreler ve Değişimler": true
+        "7. Ünite : Filtreler ve Değişimler": true,
+        "8.Ünite : \"Metin İşleme\"": true
       }
     },
     "Programlama Temelleri": {
@@ -297,6 +298,15 @@
       "summary": "İleri CSS Teknikleri – Özet 🎨💻\n\n1. Flexbox\n\nTek boyutlu düzenlerde (satır veya sütun) öğeleri hizalamak için kullanılır. 📏\n\njustify-content → yatay eksen hizalaması\n\nalign-items → dikey eksen hizalaması\n\norder → öğelerin görsel sırasını değiştirir\n\nflex-grow → öğenin diğerlerinden daha fazla alan kaplamasını sağlar\n\nFlexbox, responsive tasarımlarda esnek ve dengeli düzen sağlar.\n\n2. CSS Grid\n\nSatır ve sütun temelli iki boyutlu düzen sağlar. 🟦\n\ngrid-template-columns → sütunları tanımlar\n\ngrid-template-rows → satırları tanımlar\n\ngrid-gap → öğeler arası boşluk\n\ngrid-column: span 2 → bir öğeyi 2 sütun boyunca genişletir\n\nfr birimi → esnek alan payını belirtir (responsive için ideal)\n\n3. Responsive Tasarım & Media Queries\n\nFarklı cihazlarda tutarlı kullanıcı deneyimi sağlar 📱💻\n\n@media ile ekran genişliğine göre farklı CSS kuralları uygulanır\n\nMenü ve grid düzenleri mobilde farklı, masaüstünde farklı olabilir\n\n4. Transition (Geçiş Efektleri)\n\nKullanıcı etkileşimleri (hover, click) ile başlayan yumuşak geçişler sağlar 🌊\n\ntransition: transform 0.3s ease, box-shadow 0.3s ease;\n\ntransform ve opacity animasyonları performans açısından en verimli olanlardır\n\n5. Animation (Animasyonlar)\n\nSayfa yüklenince veya sürekli hareket için kullanılır 🎬\n\n@keyframes ile adım adım hareketler tanımlanır\n\nÖrnek: butonun büyüyüp küçülmesi → pulse animasyonu\n\nAnimasyonlar estetik ve işlevsel olabilir: kullanıcı dikkatini çekmek, içerik vurgulamak\n\n6. Örnek Kullanımlar\n\nÜrün Kartı → hover ile yukarı kalkma ve gölge efekti\n\nPortfolyo Kartları → grid ile düzen, hover ile ölçeklenme\n\nButonlar → pulse animasyonu\n\nResponsive grid ve flexbox sayesinde mobil uyumlu tasarım\n\n7. Genel Notlar\n\nFlexbox, Grid, transition ve animation modern web tasarımının temel yapı taşlarıdır\n\nBirlikte kullanıldığında hem estetik hem fonksiyonel, kullanıcı merkezli deneyim sağlar\n\nPerformans için transform ve opacity tercih edilmeli, width/height/margin gibi layout değişikliklerinden kaçınılmalı",
       "pdfData": null,
       "createdAt": "2025-10-14T12:18:32.744Z"
+    },
+    {
+      "id": 1764713648011,
+      "subject": "Grafik Tasarımı",
+      "unit": "8.Ünite : \"Metin İşleme\"",
+      "title": "Metin işleme.",
+      "summary": "📝 GRAFİK TASARIMI - ÜNİTE 8: METİN İŞLEME\n🎯 TEMEL BİLGİLER\nKonu\tBilgi\nMetinler\tVektör tabanlı anahatlardan oluşur ✨\nMetin ekleme\t\"Yazı girmek\" olarak da adlandırılır\nEski metinleri güncelleme\tMetin > Tüm Metin Katmanlarını Güncelle\n✍️ METİN EKLEME TÜRLERİ\n1️⃣ Noktada Metin Ekleme\nTıklanılan yerden yatay/dikey metin satırı girme\n\n2️⃣ Paragrafta Metin Ekleme\nYazı aracıyla çapraz sürükleyerek alan oluşturma\n\n🔄 Dönüştürme: Metin > Nokta Metnine Dönüştür\n\n📋 METİN PANELLERİ\nPanel\t                Yol\t                                       İçerik\nKarakter\tMetin > Paneller > Karakter\tFont, punto, satır aralığı\nParagraf\tMetin > Paneller > Paragraf\tYaslama, boşluklar\nGlifler\tMetin > Paneller > Glifler\tÖzel simgeler (π gibi)\nKarakter Stilleri\tMetin > Paneller > Karakter Stilleri\tKayıtlı stiller\nParagraf Stilleri\tMetin > Paneller > Paragraf Stilleri\tKayıtlı stiller\n🔤 FONT İŞLEMLERİ\nÖzellik\t                       Açıklama\nOpenType\t        Windows-Mac arası sorunsuz aktarım 🔁\nFontu Eşleştir\t        Görseldeki fontu bulma (Metin > Fontu Eşleştir)\nKenar Yumuşatma\tKeskin/Net/Kuvvetli/Düzgün seçenekleri\n\n⚡ ÖNEMLİ İŞLEMLER\n🔲 Şekle Dönüştür\nMetin > Şekle Dönüştür → Vektör maskesi oluşur\n\n🖼️ Rasterleştirme\n\nMetin katmanını normal katmana dönüştürür\nArtık düzenlenemez (piksele dönüşür)\nKatman > Rasterleştir\n⌨️ KISAYOL TUŞLARI\n\nTuş\tİşlev\nCtrl\tSınır çizgilerini görüntüleme\nShift\tEn boy oranını koruma + 15° döndürme\n📦 YER TUTUCU METİN\n\nMetin > Lorem Ipsum Öğesini Yapıştır 📄\n\n🔧 DİKEY METİN ARACI\nAraç kutusunda T harfi dikey duran simge 🔽",
+      "pdfData": null,
+      "createdAt": "2025-12-02T22:14:08.011Z"
     }
   ],
   "exams": {
@@ -3714,6 +3724,128 @@
           "E": "transition"
         },
         "correctAnswer": "E"
+      }
+    ],
+    "Grafik Tasarımı - 8.Ünite : \"Metin İşleme\" - 8.Ünite \"Metin İşleme\"": [
+      {
+        "id": 1764713740545,
+        "text": "Grafik tasarım uygulamalarındaki metinler aşağıdakilerden hangisinden oluşmaktadır?",
+        "options": {
+          "A": "Vektör tabanlı anahatlardan",
+          "B": "Efektlerden oluşan tasarımlardan",
+          "C": "Opaklık değeri düşürülmüş karakterlerden",
+          "D": "Fotoğraflaştırılmış görsellerden",
+          "E": "Çeşitli renklerden"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1764713922183,
+        "text": "Photoshop'ta metin eklemenin diğer bir adı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Yazı eklemek",
+          "B": "Yazı onaylamak",
+          "C": "Metinleri onaylamak",
+          "D": "Yazı girmek",
+          "E": "Karakter eklemek"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1764713947777,
+        "text": "Photoshop eski sürümlerinde oluşturulmuş metinler içe aktarıldığında vektör türüne dönüştürme için aşağıdaki hangi menü sıralaması seçilir?",
+        "options": {
+          "A": "Pencere > Vektör Türlerini Dönüştür",
+          "B": "Aktar > Vektör Türlerini Dönüştür",
+          "C": "Metin > Tüm Metin Katmanlarını Güncelle",
+          "D": "Ayarlar > Vektör Türlerini Güncelle",
+          "E": "Düzenle > Vektör Türlerini Dönüştür"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 1764713981558,
+        "text": "…………………………..; çalışılan dosya üzerinde tıklanılan yerden yatay veya dikey olarak bir metin satırının girilmesidir.",
+        "options": {
+          "A": "Satırsal metin işlemleri",
+          "B": "Tek metin ekleme",
+          "C": "Metin satırı ekleme",
+          "D": "Paragrafta metin ekleme",
+          "E": "Noktada metin ekleme"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1764714022897,
+        "text": "Dikey metin ekleme aracı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "[simge a]",
+          "B": "[simge b]",
+          "C": "[simge c]",
+          "D": "[simge d]",
+          "E": "[simge e]"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1764714044961,
+        "text": "\"Eklenen metnin sınır çizgileri ekranda görüntülenmek istenildiğinde metin eklenen katmandayken …………………. tuşuna basılması yeterli olmaktadır.\"",
+        "options": {
+          "A": "CTRL",
+          "B": "SHIFT",
+          "C": "ALT",
+          "D": "ALT GR",
+          "E": "WINDOWS"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 1764714070989,
+        "text": "Paragrafta metinle eklenen bir metni noktada metne dönüştürmek için aşağıdaki menü sıralamalarından aşağıdaki hangisi takip edilmelidir?",
+        "options": {
+          "A": "Dosya > Metin Dönüştür > Nokta",
+          "B": "Görünüm > Nokta Metinleri",
+          "C": "Pencere > Metinleri Dönüşür",
+          "D": "Düzenle > Metni Noktaya Dönüştür",
+          "E": "Metin > Nokta Metnine Dönüştür"
+        },
+        "correctAnswer": "E"
+      },
+      {
+        "id": 1764714304488,
+        "text": "Bir sınırlama kutusuna yer tutucu metni eklemek için aşağıdaki menü sıralamalarından hangisi takip edilmelidir?",
+        "options": {
+          "A": "Görünüm > Yer Tutucu Metin",
+          "B": "Görünüm > Metin Ekle",
+          "C": "Metin > Yer Tutucu Metni",
+          "D": "Metin > Lorem Ipsum Öğesini Yapıştır",
+          "E": "Pencere > Nokta Metni Ekle"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 1764714325914,
+        "text": "Sınırlama kutusunu yeniden boyutlandırırken en boy oranlarını korumak için aşağıdaki hangi kısayol tuşu kullanılmalıdır?",
+        "options": {
+          "A": "Ctrl",
+          "B": "Shift",
+          "C": "Alt",
+          "D": "Alt Gr",
+          "E": "Windows"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 1764714343725,
+        "text": "Sınırlama kutusunu döndürme işlemi yapılırken 15° artış sağlamak için aşağıdaki hangi kısayol tuşuna basılı tutulmalıdır?",
+        "options": {
+          "A": "Ctrl",
+          "B": "Shift",
+          "C": "Alt",
+          "D": "Alt Gr",
+          "E": "Windows"
+        },
+        "correctAnswer": "B"
       }
     ]
   },
